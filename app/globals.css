@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+/* UF/IFAS colors and fonts. orange and green are too light for small text,
+   so orange is only used for borders/fills and green isn't used at all */
+
+@theme {
+  --color-uf-blue:      #0021A5;
+  --color-uf-blue-dk:   #002657;
+  --color-uf-orange:    #FA4616;
+  --color-ifas-gray:    #343741;
+  --color-ifas-purple:  #6A2A60;
+  --color-ifas-green:   #22884C;
+  --color-warm-gray:    #D8D4D7;
+  --color-mid-gray:     #C7C9C8;
+
+  --color-surface:      #FFFFFF;
+  --color-ground:       #F4F5F6;
+  --color-line:         #D8D4D7;
+  /* the palette greys are too light for body text so this one is darker */
+  --color-muted:        #5A5F6B;
+  --color-ink:          #343741;  /* same as ifas-gray */
+
+  --font-display: "Anybody", "IBM Plex Sans", system-ui, sans-serif;
+  --font-sans:    "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif:   "Source Serif 4", Georgia, serif;
+  --font-mono:    "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  background: var(--color-ground);
+  color: var(--color-ifas-gray);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+/* stack table cells on mobile, same as the IFAS .stack class */
+@media (max-width: 640px) {
+  /* have to drop the min-width or the stacking doesn't work */
+  table.stack { min-width: 0 !important; }
+  table.stack thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  table.stack tr { display: block; border-bottom: 2px solid var(--color-line); }
+  table.stack td, table.stack th { display: block; width: 100%; text-align: left; }
+  table.stack td::before { content: attr(data-label) " "; font-weight: 600; color: var(--color-ifas-gray); }
+}
+
+.table-scroll { overflow-x: auto; }
+
+/* their blue-arrow-list is actually squares */
+ul.blue-arrow-list { list-style: square; padding-left: 1.25rem; }
+ul.blue-arrow-list::marker { color: var(--color-uf-orange); }
+
+:focus-visible { outline: 3px solid var(--color-uf-blue); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

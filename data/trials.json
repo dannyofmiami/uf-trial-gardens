@@ -1,0 +1,5877 @@
+{
+  "meta": {
+    "source": "DATA Trial Garden Website V.1.xlsx",
+    "generatedAt": "2026-09-15T23:00:25.747Z",
+    "site": "Homestead, FL",
+    "hardinessZone": "11b",
+    "cultivarCount": 89,
+    "evaluationCount": 267,
+    "dataQuality": {
+      "missingFlowerColor": 89,
+      "missingImage": 3,
+      "imagesHotlinked": 86,
+      "imagesMirrored": 74,
+      "perfectScoreShare": 0.963,
+      "latestSnapshotAllPerfect": true,
+      "awardsUndecidedByTie": true,
+      "note": "Latest evaluation rates every entry 5.0 across all four categories, so no award can be decided yet. Needs differentiated scoring before launch."
+    }
+  },
+  "facets": {
+    "genera": [
+      "African Marigold",
+      "Ageratum",
+      "Angelonia",
+      "Begonia",
+      "Calibrachoa",
+      "Coleus",
+      "Coreopsis grandifolia",
+      "Cuphea",
+      "Dahlia",
+      "Dianthus",
+      "Dipladenia",
+      "Evolvulus",
+      "Gaillardia aristata",
+      "Geranium interspecific",
+      "Gerbera",
+      "Impatiens",
+      "Interspecific Impatiens",
+      "Lantana",
+      "Nepeta faassenii",
+      "Osteospermum",
+      "Penstemon hybrid",
+      "Petchoa",
+      "Petunia",
+      "Portulaca",
+      "Salvia",
+      "Scaevola",
+      "Sunflower",
+      "Vinca",
+      "Zinnia"
+    ],
+    "suppliers": [
+      "BallFloral",
+      "Benary",
+      "Danziger",
+      "Dummen Orange",
+      "PanAmerican",
+      "Selecta"
+    ],
+    "colors": [],
+    "dates": [
+      "2026-01-13",
+      "2026-02-18",
+      "2026-03-10"
+    ]
+  },
+  "awards": [
+    {
+      "id": "florida-favorite",
+      "name": "Florida Favorite Award",
+      "basis": "avg",
+      "premier": true,
+      "winnerScore": 5,
+      "tied": 89,
+      "winnerIds": [
+        "ageratum-monarch-magic",
+        "dahlia-venti-pinkburst",
+        "lantana-shamrock-lavendar",
+        "lantana-shamrock-rose",
+        "salvia-mystical-blue",
+        "salvia-mystical-white",
+        "impatiens-glimmer-strawberry-sparkler",
+        "petunia-slingshot-cherrytrtwhl",
+        "calibrachoa-uno-double-light-pink-26",
+        "calibrachoa-cha-cha-diva-orange",
+        "calibrachoa-minfams-neo-coral-flash",
+        "calibrachoa-minfams-neo-rose-flash",
+        "salvia-sallyfun-blue-lagoon",
+        "impatiens-ngi-sol-prime-pearl",
+        "impatiens-ngi-sol-prime-orchid",
+        "petunia-capella-hello-sunshine",
+        "lantana-gem-diva-pink",
+        "lantana-lemon-quartz",
+        "lantana-gem-pearl",
+        "angelonia-big-grape",
+        "angelonia-big-bicolor-pink-imp",
+        "portulaca-mega-pazzaz-tropical-twist",
+        "begonia-big-bronze-leaf-white",
+        "begonia-big-green-leaf-white",
+        "coleus-down-town-bronze-47",
+        "calibrachoa-bloomtastic-orange-cartwheel",
+        "calibrachoa-bloomtastic-peach-grenadine",
+        "calibrachoa-bloomtastic-honey",
+        "penstemon-hybrid-super-star",
+        "nepeta-faassenii-serene-lilac",
+        "evolvulus-beach-bum-blue",
+        "osteospermum-margarita-yellow-2022",
+        "osteospermum-margarita-white-2022",
+        "osteospermum-margarita-cool-purple-2025",
+        "osteospermum-margarita-kardinal-2022",
+        "osteospermum-margarita-dark-pink",
+        "gaillardia-aristata-spintop-mariachi",
+        "coleus-main-street-franklin-street",
+        "cuphea-cupheasy-lavendar",
+        "dahlia-summer-bees-salmon-bicolor",
+        "dahlia-summer-bees-red-bicolor",
+        "scaevola-capello-white",
+        "scaevola-capello-purple",
+        "lantana-havana-sunrise-24",
+        "lantana-havana-sunset-21",
+        "lantana-havana-red-40",
+        "lantana-havana-harvest-moon-2025",
+        "lantana-havana-full-moon-2025",
+        "lantana-heartland-white-2025",
+        "lantana-heartland-citrus-2025",
+        "portulaca-cupcake-burgundy",
+        "geranium-interspecific-glory-days-pink-bicolor",
+        "geranium-interspecific-glory-days-red-orange-bicolor",
+        "geranium-interspecific-santana-fire",
+        "geranium-interspecific-santana-purple",
+        "geranium-interspecific-santana-white-splash",
+        "geranium-interspecific-santana-pink-splash",
+        "geranium-interspecific-santana-pink",
+        "geranium-interspecific-santana-white",
+        "geranium-interspecific-santana-dark-red",
+        "geranium-interspecific-big-eeze-foxy-flamingo",
+        "geranium-interspecific-big-eeze-fuchsia-blue",
+        "geranium-interspecific-big-eeze-pink",
+        "geranium-interspecific-big-eeze-pink-batik",
+        "geranium-interspecific-big-eeze-dark-red",
+        "geranium-interspecific-sarita-lilac-splash",
+        "geranium-interspecific-sarita-sunstar-red",
+        "geranium-interspecific-sarita-dark-red",
+        "geranium-interspecific-sarita-punch",
+        "geranium-interspecific-sarita-wild-salmon",
+        "dipladenia-flordenia-plus-white",
+        "dipladenia-flordenia-plus-chocolate-chill",
+        "coreopsis-grandifolia-radiant-velvet-in-gold",
+        "sunflower-always-sunny-gold",
+        "begonia-dragon-wing-white-bronze-leaf",
+        "begonia-dragon-wing-white-improved",
+        "petunia-e3-easy-wave-midnight-marble",
+        "petchoa-caliburst-nectarine",
+        "gerbera-colorbloom-orange-with-light-eye",
+        "angelonia-serenita-cherry-red",
+        "angelonia-serena-magenta",
+        "dianthus-dart-select-mixture",
+        "zinnia-elegant-full-mixture",
+        "zinnia-elegant-soft-mixture",
+        "african-marigold-lanna-lace",
+        "osteospermum-akila-sunshine-yellow",
+        "vinca-tattoo-boysenberry",
+        "impatiens-beacon-pink",
+        "interspecific-impatiens-solarscape-xl-red-glow"
+      ],
+      "winnerId": null
+    },
+    {
+      "id": "heat-champion",
+      "name": "Heat Champion Award",
+      "basis": "heatResistance",
+      "premier": false,
+      "winnerScore": 5,
+      "tied": 89,
+      "winnerIds": [
+        "ageratum-monarch-magic",
+        "dahlia-venti-pinkburst",
+        "lantana-shamrock-lavendar",
+        "lantana-shamrock-rose",
+        "salvia-mystical-blue",
+        "salvia-mystical-white",
+        "impatiens-glimmer-strawberry-sparkler",
+        "petunia-slingshot-cherrytrtwhl",
+        "calibrachoa-uno-double-light-pink-26",
+        "calibrachoa-cha-cha-diva-orange",
+        "calibrachoa-minfams-neo-coral-flash",
+        "calibrachoa-minfams-neo-rose-flash",
+        "salvia-sallyfun-blue-lagoon",
+        "impatiens-ngi-sol-prime-pearl",
+        "impatiens-ngi-sol-prime-orchid",
+        "petunia-capella-hello-sunshine",
+        "lantana-gem-diva-pink",
+        "lantana-lemon-quartz",
+        "lantana-gem-pearl",
+        "angelonia-big-grape",
+        "angelonia-big-bicolor-pink-imp",
+        "portulaca-mega-pazzaz-tropical-twist",
+        "begonia-big-bronze-leaf-white",
+        "begonia-big-green-leaf-white",
+        "coleus-down-town-bronze-47",
+        "calibrachoa-bloomtastic-orange-cartwheel",
+        "calibrachoa-bloomtastic-peach-grenadine",
+        "calibrachoa-bloomtastic-honey",
+        "penstemon-hybrid-super-star",
+        "nepeta-faassenii-serene-lilac",
+        "evolvulus-beach-bum-blue",
+        "osteospermum-margarita-yellow-2022",
+        "osteospermum-margarita-white-2022",
+        "osteospermum-margarita-cool-purple-2025",
+        "osteospermum-margarita-kardinal-2022",
+        "osteospermum-margarita-dark-pink",
+        "gaillardia-aristata-spintop-mariachi",
+        "coleus-main-street-franklin-street",
+        "cuphea-cupheasy-lavendar",
+        "dahlia-summer-bees-salmon-bicolor",
+        "dahlia-summer-bees-red-bicolor",
+        "scaevola-capello-white",
+        "scaevola-capello-purple",
+        "lantana-havana-sunrise-24",
+        "lantana-havana-sunset-21",
+        "lantana-havana-red-40",
+        "lantana-havana-harvest-moon-2025",
+        "lantana-havana-full-moon-2025",
+        "lantana-heartland-white-2025",
+        "lantana-heartland-citrus-2025",
+        "portulaca-cupcake-burgundy",
+        "geranium-interspecific-glory-days-pink-bicolor",
+        "geranium-interspecific-glory-days-red-orange-bicolor",
+        "geranium-interspecific-santana-fire",
+        "geranium-interspecific-santana-purple",
+        "geranium-interspecific-santana-white-splash",
+        "geranium-interspecific-santana-pink-splash",
+        "geranium-interspecific-santana-pink",
+        "geranium-interspecific-santana-white",
+        "geranium-interspecific-santana-dark-red",
+        "geranium-interspecific-big-eeze-foxy-flamingo",
+        "geranium-interspecific-big-eeze-fuchsia-blue",
+        "geranium-interspecific-big-eeze-pink",
+        "geranium-interspecific-big-eeze-pink-batik",
+        "geranium-interspecific-big-eeze-dark-red",
+        "geranium-interspecific-sarita-lilac-splash",
+        "geranium-interspecific-sarita-sunstar-red",
+        "geranium-interspecific-sarita-dark-red",
+        "geranium-interspecific-sarita-punch",
+        "geranium-interspecific-sarita-wild-salmon",
+        "dipladenia-flordenia-plus-white",
+        "dipladenia-flordenia-plus-chocolate-chill",
+        "coreopsis-grandifolia-radiant-velvet-in-gold",
+        "sunflower-always-sunny-gold",
+        "begonia-dragon-wing-white-bronze-leaf",
+        "begonia-dragon-wing-white-improved",
+        "petunia-e3-easy-wave-midnight-marble",
+        "petchoa-caliburst-nectarine",
+        "gerbera-colorbloom-orange-with-light-eye",
+        "angelonia-serenita-cherry-red",
+        "angelonia-serena-magenta",
+        "dianthus-dart-select-mixture",
+        "zinnia-elegant-full-mixture",
+        "zinnia-elegant-soft-mixture",
+        "african-marigold-lanna-lace",
+        "osteospermum-akila-sunshine-yellow",
+        "vinca-tattoo-boysenberry",
+        "impatiens-beacon-pink",
+        "interspecific-impatiens-solarscape-xl-red-glow"
+      ],
+      "winnerId": null
+    },
+    {
+      "id": "flower-power",
+      "name": "Flower Power Award",
+      "basis": "flowerPower",
+      "premier": false,
+      "winnerScore": 5,
+      "tied": 89,
+      "winnerIds": [
+        "ageratum-monarch-magic",
+        "dahlia-venti-pinkburst",
+        "lantana-shamrock-lavendar",
+        "lantana-shamrock-rose",
+        "salvia-mystical-blue",
+        "salvia-mystical-white",
+        "impatiens-glimmer-strawberry-sparkler",
+        "petunia-slingshot-cherrytrtwhl",
+        "calibrachoa-uno-double-light-pink-26",
+        "calibrachoa-cha-cha-diva-orange",
+        "calibrachoa-minfams-neo-coral-flash",
+        "calibrachoa-minfams-neo-rose-flash",
+        "salvia-sallyfun-blue-lagoon",
+        "impatiens-ngi-sol-prime-pearl",
+        "impatiens-ngi-sol-prime-orchid",
+        "petunia-capella-hello-sunshine",
+        "lantana-gem-diva-pink",
+        "lantana-lemon-quartz",
+        "lantana-gem-pearl",
+        "angelonia-big-grape",
+        "angelonia-big-bicolor-pink-imp",
+        "portulaca-mega-pazzaz-tropical-twist",
+        "begonia-big-bronze-leaf-white",
+        "begonia-big-green-leaf-white",
+        "coleus-down-town-bronze-47",
+        "calibrachoa-bloomtastic-orange-cartwheel",
+        "calibrachoa-bloomtastic-peach-grenadine",
+        "calibrachoa-bloomtastic-honey",
+        "penstemon-hybrid-super-star",
+        "nepeta-faassenii-serene-lilac",
+        "evolvulus-beach-bum-blue",
+        "osteospermum-margarita-yellow-2022",
+        "osteospermum-margarita-white-2022",
+        "osteospermum-margarita-cool-purple-2025",
+        "osteospermum-margarita-kardinal-2022",
+        "osteospermum-margarita-dark-pink",
+        "gaillardia-aristata-spintop-mariachi",
+        "coleus-main-street-franklin-street",
+        "cuphea-cupheasy-lavendar",
+        "dahlia-summer-bees-salmon-bicolor",
+        "dahlia-summer-bees-red-bicolor",
+        "scaevola-capello-white",
+        "scaevola-capello-purple",
+        "lantana-havana-sunrise-24",
+        "lantana-havana-sunset-21",
+        "lantana-havana-red-40",
+        "lantana-havana-harvest-moon-2025",
+        "lantana-havana-full-moon-2025",
+        "lantana-heartland-white-2025",
+        "lantana-heartland-citrus-2025",
+        "portulaca-cupcake-burgundy",
+        "geranium-interspecific-glory-days-pink-bicolor",
+        "geranium-interspecific-glory-days-red-orange-bicolor",
+        "geranium-interspecific-santana-fire",
+        "geranium-interspecific-santana-purple",
+        "geranium-interspecific-santana-white-splash",
+        "geranium-interspecific-santana-pink-splash",
+        "geranium-interspecific-santana-pink",
+        "geranium-interspecific-santana-white",
+        "geranium-interspecific-santana-dark-red",
+        "geranium-interspecific-big-eeze-foxy-flamingo",
+        "geranium-interspecific-big-eeze-fuchsia-blue",
+        "geranium-interspecific-big-eeze-pink",
+        "geranium-interspecific-big-eeze-pink-batik",
+        "geranium-interspecific-big-eeze-dark-red",
+        "geranium-interspecific-sarita-lilac-splash",
+        "geranium-interspecific-sarita-sunstar-red",
+        "geranium-interspecific-sarita-dark-red",
+        "geranium-interspecific-sarita-punch",
+        "geranium-interspecific-sarita-wild-salmon",
+        "dipladenia-flordenia-plus-white",
+        "dipladenia-flordenia-plus-chocolate-chill",
+        "coreopsis-grandifolia-radiant-velvet-in-gold",
+        "sunflower-always-sunny-gold",
+        "begonia-dragon-wing-white-bronze-leaf",
+        "begonia-dragon-wing-white-improved",
+        "petunia-e3-easy-wave-midnight-marble",
+        "petchoa-caliburst-nectarine",
+        "gerbera-colorbloom-orange-with-light-eye",
+        "angelonia-serenita-cherry-red",
+        "angelonia-serena-magenta",
+        "dianthus-dart-select-mixture",
+        "zinnia-elegant-full-mixture",
+        "zinnia-elegant-soft-mixture",
+        "african-marigold-lanna-lace",
+        "osteospermum-akila-sunshine-yellow",
+        "vinca-tattoo-boysenberry",
+        "impatiens-beacon-pink",
+        "interspecific-impatiens-solarscape-xl-red-glow"
+      ],
+      "winnerId": null
+    },
+    {
+      "id": "perfect-foliage",
+      "name": "Perfect Foliage Award",
+      "basis": "foliage",
+      "premier": false,
+      "winnerScore": 5,
+      "tied": 89,
+      "winnerIds": [
+        "ageratum-monarch-magic",
+        "dahlia-venti-pinkburst",
+        "lantana-shamrock-lavendar",
+        "lantana-shamrock-rose",
+        "salvia-mystical-blue",
+        "salvia-mystical-white",
+        "impatiens-glimmer-strawberry-sparkler",
+        "petunia-slingshot-cherrytrtwhl",
+        "calibrachoa-uno-double-light-pink-26",
+        "calibrachoa-cha-cha-diva-orange",
+        "calibrachoa-minfams-neo-coral-flash",
+        "calibrachoa-minfams-neo-rose-flash",
+        "salvia-sallyfun-blue-lagoon",
+        "impatiens-ngi-sol-prime-pearl",
+        "impatiens-ngi-sol-prime-orchid",
+        "petunia-capella-hello-sunshine",
+        "lantana-gem-diva-pink",
+        "lantana-lemon-quartz",
+        "lantana-gem-pearl",
+        "angelonia-big-grape",
+        "angelonia-big-bicolor-pink-imp",
+        "portulaca-mega-pazzaz-tropical-twist",
+        "begonia-big-bronze-leaf-white",
+        "begonia-big-green-leaf-white",
+        "coleus-down-town-bronze-47",
+        "calibrachoa-bloomtastic-orange-cartwheel",
+        "calibrachoa-bloomtastic-peach-grenadine",
+        "calibrachoa-bloomtastic-honey",
+        "penstemon-hybrid-super-star",
+        "nepeta-faassenii-serene-lilac",
+        "evolvulus-beach-bum-blue",
+        "osteospermum-margarita-yellow-2022",
+        "osteospermum-margarita-white-2022",
+        "osteospermum-margarita-cool-purple-2025",
+        "osteospermum-margarita-kardinal-2022",
+        "osteospermum-margarita-dark-pink",
+        "gaillardia-aristata-spintop-mariachi",
+        "coleus-main-street-franklin-street",
+        "cuphea-cupheasy-lavendar",
+        "dahlia-summer-bees-salmon-bicolor",
+        "dahlia-summer-bees-red-bicolor",
+        "scaevola-capello-white",
+        "scaevola-capello-purple",
+        "lantana-havana-sunrise-24",
+        "lantana-havana-sunset-21",
+        "lantana-havana-red-40",
+        "lantana-havana-harvest-moon-2025",
+        "lantana-havana-full-moon-2025",
+        "lantana-heartland-white-2025",
+        "lantana-heartland-citrus-2025",
+        "portulaca-cupcake-burgundy",
+        "geranium-interspecific-glory-days-pink-bicolor",
+        "geranium-interspecific-glory-days-red-orange-bicolor",
+        "geranium-interspecific-santana-fire",
+        "geranium-interspecific-santana-purple",
+        "geranium-interspecific-santana-white-splash",
+        "geranium-interspecific-santana-pink-splash",
+        "geranium-interspecific-santana-pink",
+        "geranium-interspecific-santana-white",
+        "geranium-interspecific-santana-dark-red",
+        "geranium-interspecific-big-eeze-foxy-flamingo",
+        "geranium-interspecific-big-eeze-fuchsia-blue",
+        "geranium-interspecific-big-eeze-pink",
+        "geranium-interspecific-big-eeze-pink-batik",
+        "geranium-interspecific-big-eeze-dark-red",
+        "geranium-interspecific-sarita-lilac-splash",
+        "geranium-interspecific-sarita-sunstar-red",
+        "geranium-interspecific-sarita-dark-red",
+        "geranium-interspecific-sarita-punch",
+        "geranium-interspecific-sarita-wild-salmon",
+        "dipladenia-flordenia-plus-white",
+        "dipladenia-flordenia-plus-chocolate-chill",
+        "coreopsis-grandifolia-radiant-velvet-in-gold",
+        "sunflower-always-sunny-gold",
+        "begonia-dragon-wing-white-bronze-leaf",
+        "begonia-dragon-wing-white-improved",
+        "petunia-e3-easy-wave-midnight-marble",
+        "petchoa-caliburst-nectarine",
+        "gerbera-colorbloom-orange-with-light-eye",
+        "angelonia-serenita-cherry-red",
+        "angelonia-serena-magenta",
+        "dianthus-dart-select-mixture",
+        "zinnia-elegant-full-mixture",
+        "zinnia-elegant-soft-mixture",
+        "african-marigold-lanna-lace",
+        "osteospermum-akila-sunshine-yellow",
+        "vinca-tattoo-boysenberry",
+        "impatiens-beacon-pink",
+        "interspecific-impatiens-solarscape-xl-red-glow"
+      ],
+      "winnerId": null
+    },
+    {
+      "id": "uniformity",
+      "name": "Uniformity Excellence Award",
+      "basis": "uniformity",
+      "premier": false,
+      "winnerScore": 5,
+      "tied": 89,
+      "winnerIds": [
+        "ageratum-monarch-magic",
+        "dahlia-venti-pinkburst",
+        "lantana-shamrock-lavendar",
+        "lantana-shamrock-rose",
+        "salvia-mystical-blue",
+        "salvia-mystical-white",
+        "impatiens-glimmer-strawberry-sparkler",
+        "petunia-slingshot-cherrytrtwhl",
+        "calibrachoa-uno-double-light-pink-26",
+        "calibrachoa-cha-cha-diva-orange",
+        "calibrachoa-minfams-neo-coral-flash",
+        "calibrachoa-minfams-neo-rose-flash",
+        "salvia-sallyfun-blue-lagoon",
+        "impatiens-ngi-sol-prime-pearl",
+        "impatiens-ngi-sol-prime-orchid",
+        "petunia-capella-hello-sunshine",
+        "lantana-gem-diva-pink",
+        "lantana-lemon-quartz",
+        "lantana-gem-pearl",
+        "angelonia-big-grape",
+        "angelonia-big-bicolor-pink-imp",
+        "portulaca-mega-pazzaz-tropical-twist",
+        "begonia-big-bronze-leaf-white",
+        "begonia-big-green-leaf-white",
+        "coleus-down-town-bronze-47",
+        "calibrachoa-bloomtastic-orange-cartwheel",
+        "calibrachoa-bloomtastic-peach-grenadine",
+        "calibrachoa-bloomtastic-honey",
+        "penstemon-hybrid-super-star",
+        "nepeta-faassenii-serene-lilac",
+        "evolvulus-beach-bum-blue",
+        "osteospermum-margarita-yellow-2022",
+        "osteospermum-margarita-white-2022",
+        "osteospermum-margarita-cool-purple-2025",
+        "osteospermum-margarita-kardinal-2022",
+        "osteospermum-margarita-dark-pink",
+        "gaillardia-aristata-spintop-mariachi",
+        "coleus-main-street-franklin-street",
+        "cuphea-cupheasy-lavendar",
+        "dahlia-summer-bees-salmon-bicolor",
+        "dahlia-summer-bees-red-bicolor",
+        "scaevola-capello-white",
+        "scaevola-capello-purple",
+        "lantana-havana-sunrise-24",
+        "lantana-havana-sunset-21",
+        "lantana-havana-red-40",
+        "lantana-havana-harvest-moon-2025",
+        "lantana-havana-full-moon-2025",
+        "lantana-heartland-white-2025",
+        "lantana-heartland-citrus-2025",
+        "portulaca-cupcake-burgundy",
+        "geranium-interspecific-glory-days-pink-bicolor",
+        "geranium-interspecific-glory-days-red-orange-bicolor",
+        "geranium-interspecific-santana-fire",
+        "geranium-interspecific-santana-purple",
+        "geranium-interspecific-santana-white-splash",
+        "geranium-interspecific-santana-pink-splash",
+        "geranium-interspecific-santana-pink",
+        "geranium-interspecific-santana-white",
+        "geranium-interspecific-santana-dark-red",
+        "geranium-interspecific-big-eeze-foxy-flamingo",
+        "geranium-interspecific-big-eeze-fuchsia-blue",
+        "geranium-interspecific-big-eeze-pink",
+        "geranium-interspecific-big-eeze-pink-batik",
+        "geranium-interspecific-big-eeze-dark-red",
+        "geranium-interspecific-sarita-lilac-splash",
+        "geranium-interspecific-sarita-sunstar-red",
+        "geranium-interspecific-sarita-dark-red",
+        "geranium-interspecific-sarita-punch",
+        "geranium-interspecific-sarita-wild-salmon",
+        "dipladenia-flordenia-plus-white",
+        "dipladenia-flordenia-plus-chocolate-chill",
+        "coreopsis-grandifolia-radiant-velvet-in-gold",
+        "sunflower-always-sunny-gold",
+        "begonia-dragon-wing-white-bronze-leaf",
+        "begonia-dragon-wing-white-improved",
+        "petunia-e3-easy-wave-midnight-marble",
+        "petchoa-caliburst-nectarine",
+        "gerbera-colorbloom-orange-with-light-eye",
+        "angelonia-serenita-cherry-red",
+        "angelonia-serena-magenta",
+        "dianthus-dart-select-mixture",
+        "zinnia-elegant-full-mixture",
+        "zinnia-elegant-soft-mixture",
+        "african-marigold-lanna-lace",
+        "osteospermum-akila-sunshine-yellow",
+        "vinca-tattoo-boysenberry",
+        "impatiens-beacon-pink",
+        "interspecific-impatiens-solarscape-xl-red-glow"
+      ],
+      "winnerId": null
+    }
+  ],
+  "cultivars": [
+    {
+      "id": "osteospermum-akila-sunshine-yellow",
+      "name": "Akila Sunshine Yellow",
+      "genus": "Osteospermum",
+      "supplier": "PanAmerican",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/x0n58p288ro07q18n1452/PAN_0012.JPG",
+          "source": "https://www.dropbox.com/scl/fi/x0n58p288ro07q18n1452/PAN_0012.JPG",
+          "local": "/plants/osteospermum-akila-sunshine-yellow.webp",
+          "mirrored": true,
+          "thumb": "/plants/osteospermum-akila-sunshine-yellow-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "sunflower-always-sunny-gold",
+      "name": "Always Sunny Gold",
+      "genus": "Sunflower",
+      "supplier": "PanAmerican",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/d3rvissegsv94asvq57mb/PAN_0016.JPG",
+          "source": "https://www.dropbox.com/scl/fi/d3rvissegsv94asvq57mb/PAN_0016.JPG",
+          "local": "/plants/sunflower-always-sunny-gold.webp",
+          "mirrored": true,
+          "thumb": "/plants/sunflower-always-sunny-gold-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "evolvulus-beach-bum-blue",
+      "name": "Beach Bum Blue",
+      "genus": "Evolvulus",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/4k7mrxh0owm21jzq7tt77/DUM_0042.JPG",
+          "source": "https://www.dropbox.com/scl/fi/4k7mrxh0owm21jzq7tt77/DUM_0042.JPG",
+          "local": "/plants/evolvulus-beach-bum-blue.webp",
+          "mirrored": true,
+          "thumb": "/plants/evolvulus-beach-bum-blue-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "impatiens-beacon-pink",
+      "name": "Beacon Pink",
+      "genus": "Impatiens",
+      "supplier": "PanAmerican",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/x63efq8skvw6rczg4sbua/PAN_0014.JPG",
+          "source": "https://www.dropbox.com/scl/fi/x63efq8skvw6rczg4sbua/PAN_0014.JPG",
+          "local": "/plants/impatiens-beacon-pink.webp",
+          "mirrored": true,
+          "thumb": "/plants/impatiens-beacon-pink-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "angelonia-big-bicolor-pink-imp",
+      "name": "Big Bicolor Pink Imp",
+      "genus": "Angelonia",
+      "supplier": "Danziger",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/otubw9avc45iflnq1n716/DAN_0009.JPG",
+          "source": "https://www.dropbox.com/scl/fi/otubw9avc45iflnq1n716/DAN_0009.JPG",
+          "local": "/plants/angelonia-big-bicolor-pink-imp.jpg",
+          "mirrored": false
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "begonia-big-bronze-leaf-white",
+      "name": "Big Bronze Leaf White",
+      "genus": "Begonia",
+      "supplier": "Benary",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "geranium-interspecific-big-eeze-dark-red",
+      "name": "Big Eeze Dark Red",
+      "genus": "Geranium interspecific",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/wiqpeypwih35z6mhtxe37/DUM_0063.JPG",
+          "source": "https://www.dropbox.com/scl/fi/wiqpeypwih35z6mhtxe37/DUM_0063.JPG",
+          "local": "/plants/geranium-interspecific-big-eeze-dark-red.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-big-eeze-dark-red-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "geranium-interspecific-big-eeze-foxy-flamingo",
+      "name": "Big Eeze Foxy Flamingo",
+      "genus": "Geranium interspecific",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/u2hllcz4xmk3qb0inakis/DUM_0060.JPG",
+          "source": "https://www.dropbox.com/scl/fi/u2hllcz4xmk3qb0inakis/DUM_0060.JPG",
+          "local": "/plants/geranium-interspecific-big-eeze-foxy-flamingo.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-big-eeze-foxy-flamingo-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "geranium-interspecific-big-eeze-fuchsia-blue",
+      "name": "Big Eeze Fuchsia Blue",
+      "genus": "Geranium interspecific",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/arma5rx0v74a4oo1uzcta/DUM_0061.JPG",
+          "source": "https://www.dropbox.com/scl/fi/arma5rx0v74a4oo1uzcta/DUM_0061.JPG",
+          "local": "/plants/geranium-interspecific-big-eeze-fuchsia-blue.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-big-eeze-fuchsia-blue-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "geranium-interspecific-big-eeze-pink",
+      "name": "Big Eeze Pink",
+      "genus": "Geranium interspecific",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/20ff24mqvu2l7gioojb19/DUM_0078.JPG",
+          "source": "https://www.dropbox.com/scl/fi/20ff24mqvu2l7gioojb19/DUM_0078.JPG",
+          "local": "/plants/geranium-interspecific-big-eeze-pink.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-big-eeze-pink-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "geranium-interspecific-big-eeze-pink-batik",
+      "name": "Big Eeze Pink Batik",
+      "genus": "Geranium interspecific",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/5fv4rlq4bj6d809n0ua4e/DUM_0062.JPG",
+          "source": "https://www.dropbox.com/scl/fi/5fv4rlq4bj6d809n0ua4e/DUM_0062.JPG",
+          "local": "/plants/geranium-interspecific-big-eeze-pink-batik.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-big-eeze-pink-batik-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "angelonia-big-grape",
+      "name": "Big Grape",
+      "genus": "Angelonia",
+      "supplier": "Danziger",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/rryaonyqertebodomipr5/DAN_0008.JPG",
+          "source": "https://www.dropbox.com/scl/fi/rryaonyqertebodomipr5/DAN_0008.JPG",
+          "local": "/plants/angelonia-big-grape.jpg",
+          "mirrored": false
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "begonia-big-green-leaf-white",
+      "name": "Big Green Leaf White",
+      "genus": "Begonia",
+      "supplier": "Benary",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "calibrachoa-bloomtastic-honey",
+      "name": "Bloomtastic Honey",
+      "genus": "Calibrachoa",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/ql2f75s8fvg7n3b0iyfzu/DUM_0039.JPG",
+          "source": "https://www.dropbox.com/scl/fi/ql2f75s8fvg7n3b0iyfzu/DUM_0039.JPG",
+          "local": "/plants/calibrachoa-bloomtastic-honey.webp",
+          "mirrored": true,
+          "thumb": "/plants/calibrachoa-bloomtastic-honey-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "calibrachoa-bloomtastic-orange-cartwheel",
+      "name": "Bloomtastic Orange Cartwheel",
+      "genus": "Calibrachoa",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/qw9hnkxcac7pwzrra75ad/DUM_0037.JPG",
+          "source": "https://www.dropbox.com/scl/fi/qw9hnkxcac7pwzrra75ad/DUM_0037.JPG",
+          "local": "/plants/calibrachoa-bloomtastic-orange-cartwheel.webp",
+          "mirrored": true,
+          "thumb": "/plants/calibrachoa-bloomtastic-orange-cartwheel-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "calibrachoa-bloomtastic-peach-grenadine",
+      "name": "Bloomtastic Peach Grenadine",
+      "genus": "Calibrachoa",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/h9szymybi03kdbyk9zwkd/DUM_0038.JPG",
+          "source": "https://www.dropbox.com/scl/fi/h9szymybi03kdbyk9zwkd/DUM_0038.JPG",
+          "local": "/plants/calibrachoa-bloomtastic-peach-grenadine.webp",
+          "mirrored": true,
+          "thumb": "/plants/calibrachoa-bloomtastic-peach-grenadine-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "petchoa-caliburst-nectarine",
+      "name": "Caliburst Nectarine",
+      "genus": "Petchoa",
+      "supplier": "PanAmerican",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/wt1x1hzdlwrlrncqob8x9/PAN_0004.JPG",
+          "source": "https://www.dropbox.com/scl/fi/wt1x1hzdlwrlrncqob8x9/PAN_0004.JPG",
+          "local": "/plants/petchoa-caliburst-nectarine.webp",
+          "mirrored": true,
+          "thumb": "/plants/petchoa-caliburst-nectarine-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "petunia-capella-hello-sunshine",
+      "name": "Capella Hello Sunshine",
+      "genus": "Petunia",
+      "supplier": "Danziger",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/c8akkrdpbi636yv1k27nq/DAN_0004.JPG",
+          "source": "https://www.dropbox.com/scl/fi/c8akkrdpbi636yv1k27nq/DAN_0004.JPG",
+          "local": "/plants/petunia-capella-hello-sunshine.jpg",
+          "mirrored": false
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "scaevola-capello-purple",
+      "name": "Capello Purple",
+      "genus": "Scaevola",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/uyr48qtqq53b6c33d511x/DUM_0077.JPG",
+          "source": "https://www.dropbox.com/scl/fi/uyr48qtqq53b6c33d511x/DUM_0077.JPG",
+          "local": "/plants/scaevola-capello-purple.webp",
+          "mirrored": true,
+          "thumb": "/plants/scaevola-capello-purple-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "scaevola-capello-white",
+      "name": "Capello White",
+      "genus": "Scaevola",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/5okjqd5hotn1h04tn52il/DUM_0076.JPG",
+          "source": "https://www.dropbox.com/scl/fi/5okjqd5hotn1h04tn52il/DUM_0076.JPG",
+          "local": "/plants/scaevola-capello-white.webp",
+          "mirrored": true,
+          "thumb": "/plants/scaevola-capello-white-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "calibrachoa-cha-cha-diva-orange",
+      "name": "Cha-cha Diva Orange",
+      "genus": "Calibrachoa",
+      "supplier": "BallFloral",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/4yc5lbbviql6evx9ock07/BAL_00010.JPG",
+          "source": "https://www.dropbox.com/scl/fi/4yc5lbbviql6evx9ock07/BAL_00010.JPG",
+          "local": "/plants/calibrachoa-cha-cha-diva-orange.jpg",
+          "mirrored": false
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "gerbera-colorbloom-orange-with-light-eye",
+      "name": "Colorbloom Orange with Light Eye",
+      "genus": "Gerbera",
+      "supplier": "PanAmerican",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/vixbydpbhaiv26u6cc9lg/PAN_0005.JPG",
+          "source": "https://www.dropbox.com/scl/fi/vixbydpbhaiv26u6cc9lg/PAN_0005.JPG",
+          "local": "/plants/gerbera-colorbloom-orange-with-light-eye.webp",
+          "mirrored": true,
+          "thumb": "/plants/gerbera-colorbloom-orange-with-light-eye-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "portulaca-cupcake-burgundy",
+      "name": "Cupcake Burgundy",
+      "genus": "Portulaca",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/t7pcnu6i1jdcwvucrz835/DUM_0059.JPG",
+          "source": "https://www.dropbox.com/scl/fi/t7pcnu6i1jdcwvucrz835/DUM_0059.JPG",
+          "local": "/plants/portulaca-cupcake-burgundy.webp",
+          "mirrored": true,
+          "thumb": "/plants/portulaca-cupcake-burgundy-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "cuphea-cupheasy-lavendar",
+      "name": "Cupheasy Lavendar",
+      "genus": "Cuphea",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/rtbcibeyd0qqpnw1u4uut/DUM_0073.JPG",
+          "source": "https://www.dropbox.com/scl/fi/rtbcibeyd0qqpnw1u4uut/DUM_0073.JPG",
+          "local": "/plants/cuphea-cupheasy-lavendar.webp",
+          "mirrored": true,
+          "thumb": "/plants/cuphea-cupheasy-lavendar-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "dianthus-dart-select-mixture",
+      "name": "Dart Select Mixture",
+      "genus": "Dianthus",
+      "supplier": "PanAmerican",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/a0jf1xeenrjaqgmmnktk0/PAN_0008.JPG",
+          "source": "https://www.dropbox.com/scl/fi/a0jf1xeenrjaqgmmnktk0/PAN_0008.JPG",
+          "local": "/plants/dianthus-dart-select-mixture.webp",
+          "mirrored": true,
+          "thumb": "/plants/dianthus-dart-select-mixture-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "coleus-down-town-bronze-47",
+      "name": "Down Town Bronze 47",
+      "genus": "Coleus",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/aokfmhioeiy50r5csjmxz/DUM_0036.JPG",
+          "source": "https://www.dropbox.com/scl/fi/aokfmhioeiy50r5csjmxz/DUM_0036.JPG",
+          "local": "/plants/coleus-down-town-bronze-47.webp",
+          "mirrored": true,
+          "thumb": "/plants/coleus-down-town-bronze-47-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "begonia-dragon-wing-white-bronze-leaf",
+      "name": "Dragon Wing White Bronze Leaf",
+      "genus": "Begonia",
+      "supplier": "PanAmerican",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/qwq678wj2229yxuyuhd7w/PAN_0001.JPG",
+          "source": "https://www.dropbox.com/scl/fi/qwq678wj2229yxuyuhd7w/PAN_0001.JPG",
+          "local": "/plants/begonia-dragon-wing-white-bronze-leaf.webp",
+          "mirrored": true,
+          "thumb": "/plants/begonia-dragon-wing-white-bronze-leaf-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "begonia-dragon-wing-white-improved",
+      "name": "Dragon Wing White Improved",
+      "genus": "Begonia",
+      "supplier": "PanAmerican",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/wrk379i9h2pbn48idhe9t/PAN_0002.JPG",
+          "source": "https://www.dropbox.com/scl/fi/wrk379i9h2pbn48idhe9t/PAN_0002.JPG",
+          "local": "/plants/begonia-dragon-wing-white-improved.webp",
+          "mirrored": true,
+          "thumb": "/plants/begonia-dragon-wing-white-improved-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "petunia-e3-easy-wave-midnight-marble",
+      "name": "E3 Easy Wave Midnight Marble",
+      "genus": "Petunia",
+      "supplier": "PanAmerican",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/a5x3hy2g1rmfifp5zusg9/PAN_0003.JPG",
+          "source": "https://www.dropbox.com/scl/fi/a5x3hy2g1rmfifp5zusg9/PAN_0003.JPG",
+          "local": "/plants/petunia-e3-easy-wave-midnight-marble.jpg",
+          "mirrored": false
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "zinnia-elegant-full-mixture",
+      "name": "Elegant Full Mixture",
+      "genus": "Zinnia",
+      "supplier": "PanAmerican",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/csn6zvsvrkhvv5wmp1sez/PAN_0010.JPG",
+          "source": "https://www.dropbox.com/scl/fi/csn6zvsvrkhvv5wmp1sez/PAN_0010.JPG",
+          "local": "/plants/zinnia-elegant-full-mixture.webp",
+          "mirrored": true,
+          "thumb": "/plants/zinnia-elegant-full-mixture-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "zinnia-elegant-soft-mixture",
+      "name": "Elegant Soft Mixture",
+      "genus": "Zinnia",
+      "supplier": "PanAmerican",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/pyfdo7w1f0ic7hxg5kshv/PAN_0009.JPG",
+          "source": "https://www.dropbox.com/scl/fi/pyfdo7w1f0ic7hxg5kshv/PAN_0009.JPG",
+          "local": "/plants/zinnia-elegant-soft-mixture.webp",
+          "mirrored": true,
+          "thumb": "/plants/zinnia-elegant-soft-mixture-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "dipladenia-flordenia-plus-chocolate-chill",
+      "name": "Flordenia Plus Chocolate Chill",
+      "genus": "Dipladenia",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/7egzwtyma9esxigjtam8g/DUM_0070.JPG",
+          "source": "https://www.dropbox.com/scl/fi/7egzwtyma9esxigjtam8g/DUM_0070.JPG",
+          "local": "/plants/dipladenia-flordenia-plus-chocolate-chill.webp",
+          "mirrored": true,
+          "thumb": "/plants/dipladenia-flordenia-plus-chocolate-chill-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "dipladenia-flordenia-plus-white",
+      "name": "Flordenia Plus White",
+      "genus": "Dipladenia",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "lantana-gem-diva-pink",
+      "name": "Gem Diva Pink",
+      "genus": "Lantana",
+      "supplier": "Danziger",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/pv1clxhw5jv6mfqnfdf4s/DAN_0005.JPG",
+          "source": "https://www.dropbox.com/scl/fi/pv1clxhw5jv6mfqnfdf4s/DAN_0005.JPG",
+          "local": "/plants/lantana-gem-diva-pink.jpg",
+          "mirrored": false
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "lantana-gem-pearl",
+      "name": "Gem Pearl",
+      "genus": "Lantana",
+      "supplier": "Danziger",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/6jia9xnt20kbvonzcmm9p/DAN_0007.JPG",
+          "source": "https://www.dropbox.com/scl/fi/6jia9xnt20kbvonzcmm9p/DAN_0007.JPG",
+          "local": "/plants/lantana-gem-pearl.jpg",
+          "mirrored": false
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "impatiens-glimmer-strawberry-sparkler",
+      "name": "Glimmer Strawberry Sparkler",
+      "genus": "Impatiens",
+      "supplier": "BallFloral",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/a3hvoklrih0xlg7b2wjzb/BAL_0007.JPG",
+          "source": "https://www.dropbox.com/scl/fi/a3hvoklrih0xlg7b2wjzb/BAL_0007.JPG",
+          "local": "/plants/impatiens-glimmer-strawberry-sparkler.webp",
+          "mirrored": true,
+          "thumb": "/plants/impatiens-glimmer-strawberry-sparkler-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "geranium-interspecific-glory-days-pink-bicolor",
+      "name": "Glory Days Pink Bicolor",
+      "genus": "Geranium interspecific",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/g44yjtg1339z5k0xr8tml/DUM_0058.JPG",
+          "source": "https://www.dropbox.com/scl/fi/g44yjtg1339z5k0xr8tml/DUM_0058.JPG",
+          "local": "/plants/geranium-interspecific-glory-days-pink-bicolor.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-glory-days-pink-bicolor-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "geranium-interspecific-glory-days-red-orange-bicolor",
+      "name": "Glory Days Red Orange Bicolor",
+      "genus": "Geranium interspecific",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/mfzwp0in92kgnz5y4f821/DUM_0057.JPG",
+          "source": "https://www.dropbox.com/scl/fi/mfzwp0in92kgnz5y4f821/DUM_0057.JPG",
+          "local": "/plants/geranium-interspecific-glory-days-red-orange-bicolor.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-glory-days-red-orange-bicolor-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "lantana-havana-full-moon-2025",
+      "name": "Havana Full Moon 2025",
+      "genus": "Lantana",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/q8mp0l8xiw27nbtuschuk/DUM_0045.JPG",
+          "source": "https://www.dropbox.com/scl/fi/q8mp0l8xiw27nbtuschuk/DUM_0045.JPG",
+          "local": "/plants/lantana-havana-full-moon-2025.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-full-moon-2025-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "lantana-havana-harvest-moon-2025",
+      "name": "Havana Harvest Moon 2025",
+      "genus": "Lantana",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/fdgsh6upb4gfjsxj2p9t3/DUM_0046.JPG",
+          "source": "https://www.dropbox.com/scl/fi/fdgsh6upb4gfjsxj2p9t3/DUM_0046.JPG",
+          "local": "/plants/lantana-havana-harvest-moon-2025.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-harvest-moon-2025-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "lantana-havana-red-40",
+      "name": "Havana Red 40",
+      "genus": "Lantana",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/0o1jzam5hc7vk4hkffphh/DUM_0047.JPG",
+          "source": "https://www.dropbox.com/scl/fi/0o1jzam5hc7vk4hkffphh/DUM_0047.JPG",
+          "local": "/plants/lantana-havana-red-40.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-red-40-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "lantana-havana-sunrise-24",
+      "name": "Havana Sunrise 24",
+      "genus": "Lantana",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/r93zw4ts5ssmm1kvpjv99/DUM_0049.JPG",
+          "source": "https://www.dropbox.com/scl/fi/r93zw4ts5ssmm1kvpjv99/DUM_0049.JPG",
+          "local": "/plants/lantana-havana-sunrise-24.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-sunrise-24-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "lantana-havana-sunset-21",
+      "name": "Havana Sunset 21",
+      "genus": "Lantana",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/uzzl7kx6nypwexm04zqkp/DUM_0048.JPG",
+          "source": "https://www.dropbox.com/scl/fi/uzzl7kx6nypwexm04zqkp/DUM_0048.JPG",
+          "local": "/plants/lantana-havana-sunset-21.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-sunset-21-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "lantana-heartland-citrus-2025",
+      "name": "Heartland Citrus 2025",
+      "genus": "Lantana",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/4b2b6lq6ceklu7ndjh4zo/DUM_0043.JPG",
+          "source": "https://www.dropbox.com/scl/fi/4b2b6lq6ceklu7ndjh4zo/DUM_0043.JPG",
+          "local": "/plants/lantana-heartland-citrus-2025.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-heartland-citrus-2025-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "lantana-heartland-white-2025",
+      "name": "Heartland White 2025",
+      "genus": "Lantana",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/ohvw6r72w7bqqob141a56/DUM_0044.JPG",
+          "source": "https://www.dropbox.com/scl/fi/ohvw6r72w7bqqob141a56/DUM_0044.JPG",
+          "local": "/plants/lantana-heartland-white-2025.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-heartland-white-2025-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "african-marigold-lanna-lace",
+      "name": "Lanna Lace",
+      "genus": "African Marigold",
+      "supplier": "PanAmerican",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/bed2pf0siwhk4fnmd78ul/PAN_0011.JPG",
+          "source": "https://www.dropbox.com/scl/fi/bed2pf0siwhk4fnmd78ul/PAN_0011.JPG",
+          "local": "/plants/african-marigold-lanna-lace.webp",
+          "mirrored": true,
+          "thumb": "/plants/african-marigold-lanna-lace-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "lantana-lemon-quartz",
+      "name": "Lemon Quartz",
+      "genus": "Lantana",
+      "supplier": "Danziger",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/gdf1bokt8sytfnmnjfu7i/DAN_0006.JPG",
+          "source": "https://www.dropbox.com/scl/fi/gdf1bokt8sytfnmnjfu7i/DAN_0006.JPG",
+          "local": "/plants/lantana-lemon-quartz.jpg",
+          "mirrored": false
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "coleus-main-street-franklin-street",
+      "name": "Main Street Franklin Street",
+      "genus": "Coleus",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/4rlgwymlvjvl822xr80bj/DUM_0035.JPG",
+          "source": "https://www.dropbox.com/scl/fi/4rlgwymlvjvl822xr80bj/DUM_0035.JPG",
+          "local": "/plants/coleus-main-street-franklin-street.webp",
+          "mirrored": true,
+          "thumb": "/plants/coleus-main-street-franklin-street-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "osteospermum-margarita-cool-purple-2025",
+      "name": "Margarita Cool Purple 2025",
+      "genus": "Osteospermum",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/5wb93rd267do7k2osa1md/DUM_0031.JPG",
+          "source": "https://www.dropbox.com/scl/fi/5wb93rd267do7k2osa1md/DUM_0031.JPG",
+          "local": "/plants/osteospermum-margarita-cool-purple-2025.webp",
+          "mirrored": true,
+          "thumb": "/plants/osteospermum-margarita-cool-purple-2025-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "osteospermum-margarita-dark-pink",
+      "name": "Margarita Dark Pink",
+      "genus": "Osteospermum",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/c1l4mjuasqoiena4qkzn5/DUM_0033.JPG",
+          "source": "https://www.dropbox.com/scl/fi/c1l4mjuasqoiena4qkzn5/DUM_0033.JPG",
+          "local": "/plants/osteospermum-margarita-dark-pink.webp",
+          "mirrored": true,
+          "thumb": "/plants/osteospermum-margarita-dark-pink-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "osteospermum-margarita-kardinal-2022",
+      "name": "Margarita Kardinal 2022",
+      "genus": "Osteospermum",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/ip0kg3wbgabvj7t3l24x0/DUM_0032.JPG",
+          "source": "https://www.dropbox.com/scl/fi/ip0kg3wbgabvj7t3l24x0/DUM_0032.JPG",
+          "local": "/plants/osteospermum-margarita-kardinal-2022.webp",
+          "mirrored": true,
+          "thumb": "/plants/osteospermum-margarita-kardinal-2022-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "osteospermum-margarita-white-2022",
+      "name": "Margarita White 2022",
+      "genus": "Osteospermum",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/xvwnpupq3wu8swzs72tla/DUM_0030.JPG",
+          "source": "https://www.dropbox.com/scl/fi/xvwnpupq3wu8swzs72tla/DUM_0030.JPG",
+          "local": "/plants/osteospermum-margarita-white-2022.webp",
+          "mirrored": true,
+          "thumb": "/plants/osteospermum-margarita-white-2022-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "osteospermum-margarita-yellow-2022",
+      "name": "Margarita Yellow 2022",
+      "genus": "Osteospermum",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/onwggae0wj5h4f9qe5am2/DUM_0029.JPG",
+          "source": "https://www.dropbox.com/scl/fi/onwggae0wj5h4f9qe5am2/DUM_0029.JPG",
+          "local": "/plants/osteospermum-margarita-yellow-2022.webp",
+          "mirrored": true,
+          "thumb": "/plants/osteospermum-margarita-yellow-2022-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "portulaca-mega-pazzaz-tropical-twist",
+      "name": "Mega Pazzaz Tropical Twist",
+      "genus": "Portulaca",
+      "supplier": "Danziger",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/ysmdxpfaj9w0rt9tbg5qv/DAN_0010.JPG",
+          "source": "https://www.dropbox.com/scl/fi/ysmdxpfaj9w0rt9tbg5qv/DAN_0010.JPG",
+          "local": "/plants/portulaca-mega-pazzaz-tropical-twist.jpg",
+          "mirrored": false
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "calibrachoa-minfams-neo-coral-flash",
+      "name": "MinFams Neo Coral Flash",
+      "genus": "Calibrachoa",
+      "supplier": "Selecta",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/dw1w4icgp01dhkxkn47ll/BAL_0009.JPG",
+          "source": "https://www.dropbox.com/scl/fi/dw1w4icgp01dhkxkn47ll/BAL_0009.JPG",
+          "local": "/plants/calibrachoa-minfams-neo-coral-flash.webp",
+          "mirrored": true,
+          "thumb": "/plants/calibrachoa-minfams-neo-coral-flash-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "calibrachoa-minfams-neo-rose-flash",
+      "name": "MinFams Neo Rose Flash",
+      "genus": "Calibrachoa",
+      "supplier": "Selecta",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/jt15y0vyezm1phkq38cmj/BAL_0008.JPG",
+          "source": "https://www.dropbox.com/scl/fi/jt15y0vyezm1phkq38cmj/BAL_0008.JPG",
+          "local": "/plants/calibrachoa-minfams-neo-rose-flash.webp",
+          "mirrored": true,
+          "thumb": "/plants/calibrachoa-minfams-neo-rose-flash-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "ageratum-monarch-magic",
+      "name": "Monarch Magic",
+      "genus": "Ageratum",
+      "supplier": "BallFloral",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/w1wlz7ah9aa1x0iladpvj/BAL_0001.JPG",
+          "source": "https://www.dropbox.com/scl/fi/w1wlz7ah9aa1x0iladpvj/BAL_0001.JPG",
+          "local": "/plants/ageratum-monarch-magic.webp",
+          "mirrored": true,
+          "thumb": "/plants/ageratum-monarch-magic-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "salvia-mystical-blue",
+      "name": "Mystical Blue",
+      "genus": "Salvia",
+      "supplier": "BallFloral",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/h34tu94uo1wifi5322sq4/BAL_0005.JPG",
+          "source": "https://www.dropbox.com/scl/fi/h34tu94uo1wifi5322sq4/BAL_0005.JPG",
+          "local": "/plants/salvia-mystical-blue.webp",
+          "mirrored": true,
+          "thumb": "/plants/salvia-mystical-blue-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "salvia-mystical-white",
+      "name": "Mystical White",
+      "genus": "Salvia",
+      "supplier": "BallFloral",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/356rqvdudhnlv636n49o5/BAL_0006.JPG",
+          "source": "https://www.dropbox.com/scl/fi/356rqvdudhnlv636n49o5/BAL_0006.JPG",
+          "local": "/plants/salvia-mystical-white.webp",
+          "mirrored": true,
+          "thumb": "/plants/salvia-mystical-white-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "impatiens-ngi-sol-prime-orchid",
+      "name": "NGI Sol Prime Orchid",
+      "genus": "Impatiens",
+      "supplier": "Danziger",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/5uty4cch6bhsp6x7ohhiw/DAN_0003.JPG",
+          "source": "https://www.dropbox.com/scl/fi/5uty4cch6bhsp6x7ohhiw/DAN_0003.JPG",
+          "local": "/plants/impatiens-ngi-sol-prime-orchid.jpg",
+          "mirrored": false
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "impatiens-ngi-sol-prime-pearl",
+      "name": "NGI Sol Prime Pearl",
+      "genus": "Impatiens",
+      "supplier": "Danziger",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/3nvxbwyf00n72og71b1cm/DAN_0002.JPG",
+          "source": "https://www.dropbox.com/scl/fi/3nvxbwyf00n72og71b1cm/DAN_0002.JPG",
+          "local": "/plants/impatiens-ngi-sol-prime-pearl.jpg",
+          "mirrored": false
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "coreopsis-grandifolia-radiant-velvet-in-gold",
+      "name": "Radiant Velvet in Gold",
+      "genus": "Coreopsis grandifolia",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/dz6c0q6ubrthkn73s5bfo/DUM_0071.JPG",
+          "source": "https://www.dropbox.com/scl/fi/dz6c0q6ubrthkn73s5bfo/DUM_0071.JPG",
+          "local": "/plants/coreopsis-grandifolia-radiant-velvet-in-gold.webp",
+          "mirrored": true,
+          "thumb": "/plants/coreopsis-grandifolia-radiant-velvet-in-gold-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "salvia-sallyfun-blue-lagoon",
+      "name": "Sallyfun Blue Lagoon",
+      "genus": "Salvia",
+      "supplier": "Danziger",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/um7z4jbr5hwu7sg4tk1yt/DAN_0001.JPG",
+          "source": "https://www.dropbox.com/scl/fi/um7z4jbr5hwu7sg4tk1yt/DAN_0001.JPG",
+          "local": "/plants/salvia-sallyfun-blue-lagoon.jpg",
+          "mirrored": false
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "geranium-interspecific-santana-dark-red",
+      "name": "Santana Dark Red",
+      "genus": "Geranium interspecific",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/ee994q2qao5udjs7w6zx4/DUM_0054.JPG",
+          "source": "https://www.dropbox.com/scl/fi/ee994q2qao5udjs7w6zx4/DUM_0054.JPG",
+          "local": "/plants/geranium-interspecific-santana-dark-red.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-dark-red-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "geranium-interspecific-santana-fire",
+      "name": "Santana Fire",
+      "genus": "Geranium interspecific",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/39shywael269qsho1oevw/DUM_0056.JPG",
+          "source": "https://www.dropbox.com/scl/fi/39shywael269qsho1oevw/DUM_0056.JPG",
+          "local": "/plants/geranium-interspecific-santana-fire.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-fire-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "geranium-interspecific-santana-pink",
+      "name": "Santana Pink",
+      "genus": "Geranium interspecific",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/lb0buuzmxa944je09jbau/DUM_0052.JPG",
+          "source": "https://www.dropbox.com/scl/fi/lb0buuzmxa944je09jbau/DUM_0052.JPG",
+          "local": "/plants/geranium-interspecific-santana-pink.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-pink-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "geranium-interspecific-santana-pink-splash",
+      "name": "Santana Pink Splash",
+      "genus": "Geranium interspecific",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/xn6tlzdwncs2qi0n8ghvz/DUM_0051.JPG",
+          "source": "https://www.dropbox.com/scl/fi/xn6tlzdwncs2qi0n8ghvz/DUM_0051.JPG",
+          "local": "/plants/geranium-interspecific-santana-pink-splash.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-pink-splash-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "geranium-interspecific-santana-purple",
+      "name": "Santana Purple",
+      "genus": "Geranium interspecific",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/rdk12eer753otgj1570nh/DUM_0055.JPG",
+          "source": "https://www.dropbox.com/scl/fi/rdk12eer753otgj1570nh/DUM_0055.JPG",
+          "local": "/plants/geranium-interspecific-santana-purple.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-purple-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "geranium-interspecific-santana-white",
+      "name": "Santana White",
+      "genus": "Geranium interspecific",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/ru6gts7z5i4qdbvb7foyf/DUM_0053.JPG",
+          "source": "https://www.dropbox.com/scl/fi/ru6gts7z5i4qdbvb7foyf/DUM_0053.JPG",
+          "local": "/plants/geranium-interspecific-santana-white.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-white-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "geranium-interspecific-santana-white-splash",
+      "name": "Santana White Splash",
+      "genus": "Geranium interspecific",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/mtkpxzxx0mbq2ar9pxrg7/DUM_0050.JPG",
+          "source": "https://www.dropbox.com/scl/fi/mtkpxzxx0mbq2ar9pxrg7/DUM_0050.JPG",
+          "local": "/plants/geranium-interspecific-santana-white-splash.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-white-splash-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "geranium-interspecific-sarita-dark-red",
+      "name": "Sarita Dark Red",
+      "genus": "Geranium interspecific",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/mccttajikdhuqa0p5zwcm/DUM_0066.JPG",
+          "source": "https://www.dropbox.com/scl/fi/mccttajikdhuqa0p5zwcm/DUM_0066.JPG",
+          "local": "/plants/geranium-interspecific-sarita-dark-red.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-sarita-dark-red-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "geranium-interspecific-sarita-lilac-splash",
+      "name": "Sarita Lilac Splash",
+      "genus": "Geranium interspecific",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/c1atfla5i91w9qsrvzw45/DUM_0064.JPG",
+          "source": "https://www.dropbox.com/scl/fi/c1atfla5i91w9qsrvzw45/DUM_0064.JPG",
+          "local": "/plants/geranium-interspecific-sarita-lilac-splash.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-sarita-lilac-splash-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "geranium-interspecific-sarita-punch",
+      "name": "Sarita Punch",
+      "genus": "Geranium interspecific",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/movp7iowz779yr9brs1sg/DUM_0067.JPG",
+          "source": "https://www.dropbox.com/scl/fi/movp7iowz779yr9brs1sg/DUM_0067.JPG",
+          "local": "/plants/geranium-interspecific-sarita-punch.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-sarita-punch-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "geranium-interspecific-sarita-sunstar-red",
+      "name": "Sarita Sunstar Red",
+      "genus": "Geranium interspecific",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/v2ojh1vnoyfb15hysmf5n/DUM_0065.JPG",
+          "source": "https://www.dropbox.com/scl/fi/v2ojh1vnoyfb15hysmf5n/DUM_0065.JPG",
+          "local": "/plants/geranium-interspecific-sarita-sunstar-red.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-sarita-sunstar-red-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "geranium-interspecific-sarita-wild-salmon",
+      "name": "Sarita Wild Salmon",
+      "genus": "Geranium interspecific",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/f73jl96w8y6hol0vvqjkr/DUM_0068.JPG",
+          "source": "https://www.dropbox.com/scl/fi/f73jl96w8y6hol0vvqjkr/DUM_0068.JPG",
+          "local": "/plants/geranium-interspecific-sarita-wild-salmon.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-sarita-wild-salmon-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "angelonia-serena-magenta",
+      "name": "Serena Magenta",
+      "genus": "Angelonia",
+      "supplier": "PanAmerican",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/zt0d252m2jdpicxczklwg/PAN_0007.JPG",
+          "source": "https://www.dropbox.com/scl/fi/zt0d252m2jdpicxczklwg/PAN_0007.JPG",
+          "local": "/plants/angelonia-serena-magenta.webp",
+          "mirrored": true,
+          "thumb": "/plants/angelonia-serena-magenta-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "nepeta-faassenii-serene-lilac",
+      "name": "Serene Lilac",
+      "genus": "Nepeta faassenii",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/lndyfzmojyut6j3z0g97h/DUM_0041.JPG",
+          "source": "https://www.dropbox.com/scl/fi/lndyfzmojyut6j3z0g97h/DUM_0041.JPG",
+          "local": "/plants/nepeta-faassenii-serene-lilac.webp",
+          "mirrored": true,
+          "thumb": "/plants/nepeta-faassenii-serene-lilac-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "angelonia-serenita-cherry-red",
+      "name": "Serenita Cherry Red",
+      "genus": "Angelonia",
+      "supplier": "PanAmerican",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/2zntz1n9nxxfnkxd8lvva/PAN_0006.JPG",
+          "source": "https://www.dropbox.com/scl/fi/2zntz1n9nxxfnkxd8lvva/PAN_0006.JPG",
+          "local": "/plants/angelonia-serenita-cherry-red.webp",
+          "mirrored": true,
+          "thumb": "/plants/angelonia-serenita-cherry-red-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "lantana-shamrock-lavendar",
+      "name": "Shamrock Lavendar",
+      "genus": "Lantana",
+      "supplier": "BallFloral",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/aconf3o2y1wzvlh8o87h1/BAL_0004.JPG",
+          "source": "https://www.dropbox.com/scl/fi/aconf3o2y1wzvlh8o87h1/BAL_0004.JPG",
+          "local": "/plants/lantana-shamrock-lavendar.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-shamrock-lavendar-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "lantana-shamrock-rose",
+      "name": "Shamrock Rose",
+      "genus": "Lantana",
+      "supplier": "BallFloral",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/izd08rcy5ux4aukjojd76/BAL_0003.JPG",
+          "source": "https://www.dropbox.com/scl/fi/izd08rcy5ux4aukjojd76/BAL_0003.JPG",
+          "local": "/plants/lantana-shamrock-rose.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-shamrock-rose-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "petunia-slingshot-cherrytrtwhl",
+      "name": "Slingshot CherryTrtwhl",
+      "genus": "Petunia",
+      "supplier": "BallFloral",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/8jea5jz7xk3du8sqs29m1/BAL_0012.JPG",
+          "source": "https://www.dropbox.com/scl/fi/8jea5jz7xk3du8sqs29m1/BAL_0012.JPG",
+          "local": "/plants/petunia-slingshot-cherrytrtwhl.webp",
+          "mirrored": true,
+          "thumb": "/plants/petunia-slingshot-cherrytrtwhl-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "interspecific-impatiens-solarscape-xl-red-glow",
+      "name": "Solarscape XL Red Glow",
+      "genus": "Interspecific Impatiens",
+      "supplier": "PanAmerican",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/vjwq22ucqchi2g7mknwi5/PAN_0015.JPG",
+          "source": "https://www.dropbox.com/scl/fi/vjwq22ucqchi2g7mknwi5/PAN_0015.JPG",
+          "local": "/plants/interspecific-impatiens-solarscape-xl-red-glow.webp",
+          "mirrored": true,
+          "thumb": "/plants/interspecific-impatiens-solarscape-xl-red-glow-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "gaillardia-aristata-spintop-mariachi",
+      "name": "SpinTop Mariachi",
+      "genus": "Gaillardia aristata",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/rinmujdjrl2o4wapp8qlh/DUM_0034.JPG",
+          "source": "https://www.dropbox.com/scl/fi/rinmujdjrl2o4wapp8qlh/DUM_0034.JPG",
+          "local": "/plants/gaillardia-aristata-spintop-mariachi.webp",
+          "mirrored": true,
+          "thumb": "/plants/gaillardia-aristata-spintop-mariachi-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "dahlia-summer-bees-red-bicolor",
+      "name": "Summer Bees Red Bicolor",
+      "genus": "Dahlia",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/l5ezyzrwwzqnyror8wibc/DUM_0075.JPG",
+          "source": "https://www.dropbox.com/scl/fi/l5ezyzrwwzqnyror8wibc/DUM_0075.JPG",
+          "local": "/plants/dahlia-summer-bees-red-bicolor.webp",
+          "mirrored": true,
+          "thumb": "/plants/dahlia-summer-bees-red-bicolor-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "dahlia-summer-bees-salmon-bicolor",
+      "name": "Summer Bees Salmon Bicolor",
+      "genus": "Dahlia",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/vtigoh9pj26to0tx7pa0n/DUM_0074.JPG",
+          "source": "https://www.dropbox.com/scl/fi/vtigoh9pj26to0tx7pa0n/DUM_0074.JPG",
+          "local": "/plants/dahlia-summer-bees-salmon-bicolor.webp",
+          "mirrored": true,
+          "thumb": "/plants/dahlia-summer-bees-salmon-bicolor-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "penstemon-hybrid-super-star",
+      "name": "Super Star",
+      "genus": "Penstemon hybrid",
+      "supplier": "Dummen Orange",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/fdov45u3awcvs0mzgkj9k/DUM_0040.JPG",
+          "source": "https://www.dropbox.com/scl/fi/fdov45u3awcvs0mzgkj9k/DUM_0040.JPG",
+          "local": "/plants/penstemon-hybrid-super-star.webp",
+          "mirrored": true,
+          "thumb": "/plants/penstemon-hybrid-super-star-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "vinca-tattoo-boysenberry",
+      "name": "Tattoo Boysenberry",
+      "genus": "Vinca",
+      "supplier": "PanAmerican",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/11lj6w4c7d83g4jhsnquz/PAN_0013.JPG",
+          "source": "https://www.dropbox.com/scl/fi/11lj6w4c7d83g4jhsnquz/PAN_0013.JPG",
+          "local": "/plants/vinca-tattoo-boysenberry.webp",
+          "mirrored": true,
+          "thumb": "/plants/vinca-tattoo-boysenberry-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "calibrachoa-uno-double-light-pink-26",
+      "name": "Uno Double Light Pink 26",
+      "genus": "Calibrachoa",
+      "supplier": "Selecta",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/8ohx58bt375oz92vwrddx/BAL_0011.JPG",
+          "source": "https://www.dropbox.com/scl/fi/8ohx58bt375oz92vwrddx/BAL_0011.JPG",
+          "local": "/plants/calibrachoa-uno-double-light-pink-26.webp",
+          "mirrored": true,
+          "thumb": "/plants/calibrachoa-uno-double-light-pink-26-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    },
+    {
+      "id": "dahlia-venti-pinkburst",
+      "name": "Venti PinkBurst",
+      "genus": "Dahlia",
+      "supplier": "Selecta",
+      "flowerColor": null,
+      "year": 2026,
+      "images": [
+        {
+          "url": "https://www.dropbox.com/scl/fi/dyc9lymgzyww5pefarcdk/BAL_0002.JPG",
+          "source": "https://www.dropbox.com/scl/fi/dyc9lymgzyww5pefarcdk/BAL_0002.JPG",
+          "local": "/plants/dahlia-venti-pinkburst.webp",
+          "mirrored": true,
+          "thumb": "/plants/dahlia-venti-pinkburst-thumb.webp"
+        }
+      ],
+      "status": "In Ground",
+      "currentAvg": 5,
+      "latestEvaluation": "2026-03-10",
+      "evaluationCount": 3,
+      "latestScores": {
+        "heatResistance": 5,
+        "uniformity": 5,
+        "flowerPower": 5,
+        "foliage": 5
+      }
+    }
+  ],
+  "evaluations": [
+    {
+      "cultivarId": "ageratum-monarch-magic",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dahlia-venti-pinkburst",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-shamrock-lavendar",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-shamrock-rose",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "salvia-mystical-blue",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "salvia-mystical-white",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "impatiens-glimmer-strawberry-sparkler",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "petunia-slingshot-cherrytrtwhl",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-uno-double-light-pink-26",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-cha-cha-diva-orange",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-minfams-neo-coral-flash",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-minfams-neo-rose-flash",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "salvia-sallyfun-blue-lagoon",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "impatiens-ngi-sol-prime-pearl",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "impatiens-ngi-sol-prime-orchid",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "petunia-capella-hello-sunshine",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-gem-diva-pink",
+      "date": "2026-01-13",
+      "uniformity": 3,
+      "flowerPower": 3,
+      "foliage": 3,
+      "heatResistance": 3,
+      "avg": 3,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-lemon-quartz",
+      "date": "2026-01-13",
+      "uniformity": 3,
+      "flowerPower": 3,
+      "foliage": 3,
+      "heatResistance": 3,
+      "avg": 3,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-gem-pearl",
+      "date": "2026-01-13",
+      "uniformity": 3,
+      "flowerPower": 3,
+      "foliage": 3,
+      "heatResistance": 3,
+      "avg": 3,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "angelonia-big-grape",
+      "date": "2026-01-13",
+      "uniformity": 4,
+      "flowerPower": 4,
+      "foliage": 4,
+      "heatResistance": 4,
+      "avg": 4,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "angelonia-big-bicolor-pink-imp",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "portulaca-mega-pazzaz-tropical-twist",
+      "date": "2026-01-13",
+      "uniformity": 3,
+      "flowerPower": 3,
+      "foliage": 3,
+      "heatResistance": 3,
+      "avg": 3,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "begonia-big-bronze-leaf-white",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "begonia-big-green-leaf-white",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "coleus-down-town-bronze-47",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-bloomtastic-orange-cartwheel",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-bloomtastic-peach-grenadine",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-bloomtastic-honey",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "penstemon-hybrid-super-star",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 4,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "nepeta-faassenii-serene-lilac",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 3,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 4.5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "evolvulus-beach-bum-blue",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "osteospermum-margarita-yellow-2022",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "osteospermum-margarita-white-2022",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "osteospermum-margarita-cool-purple-2025",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "osteospermum-margarita-kardinal-2022",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "osteospermum-margarita-dark-pink",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "gaillardia-aristata-spintop-mariachi",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "coleus-main-street-franklin-street",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "cuphea-cupheasy-lavendar",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dahlia-summer-bees-salmon-bicolor",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dahlia-summer-bees-red-bicolor",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "scaevola-capello-white",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 3,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 4.5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "scaevola-capello-purple",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 3,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 4.5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-havana-sunrise-24",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-havana-sunset-21",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-havana-red-40",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-havana-harvest-moon-2025",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-havana-full-moon-2025",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-heartland-white-2025",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-heartland-citrus-2025",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "portulaca-cupcake-burgundy",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-glory-days-pink-bicolor",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-glory-days-red-orange-bicolor",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-fire",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-purple",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-white-splash",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 3,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 4.5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-pink-splash",
+      "date": "2026-01-13",
+      "uniformity": 4,
+      "flowerPower": 4,
+      "foliage": 4,
+      "heatResistance": 4,
+      "avg": 4,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-pink",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 4,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-white",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-dark-red",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-big-eeze-foxy-flamingo",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-big-eeze-fuchsia-blue",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-big-eeze-pink",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-big-eeze-pink-batik",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-big-eeze-dark-red",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-sarita-lilac-splash",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-sarita-sunstar-red",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-sarita-dark-red",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-sarita-punch",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-sarita-wild-salmon",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dipladenia-flordenia-plus-white",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dipladenia-flordenia-plus-chocolate-chill",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "coreopsis-grandifolia-radiant-velvet-in-gold",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "sunflower-always-sunny-gold",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "begonia-dragon-wing-white-bronze-leaf",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "begonia-dragon-wing-white-improved",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "petunia-e3-easy-wave-midnight-marble",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "petchoa-caliburst-nectarine",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "gerbera-colorbloom-orange-with-light-eye",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "angelonia-serenita-cherry-red",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "angelonia-serena-magenta",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dianthus-dart-select-mixture",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "zinnia-elegant-full-mixture",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "zinnia-elegant-soft-mixture",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "african-marigold-lanna-lace",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "osteospermum-akila-sunshine-yellow",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "vinca-tattoo-boysenberry",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "impatiens-beacon-pink",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "interspecific-impatiens-solarscape-xl-red-glow",
+      "date": "2026-01-13",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "ageratum-monarch-magic",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dahlia-venti-pinkburst",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-shamrock-lavendar",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-shamrock-rose",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "salvia-mystical-blue",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "salvia-mystical-white",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "impatiens-glimmer-strawberry-sparkler",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "petunia-slingshot-cherrytrtwhl",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-uno-double-light-pink-26",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-cha-cha-diva-orange",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-minfams-neo-coral-flash",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-minfams-neo-rose-flash",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "salvia-sallyfun-blue-lagoon",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "impatiens-ngi-sol-prime-pearl",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "impatiens-ngi-sol-prime-orchid",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "petunia-capella-hello-sunshine",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-gem-diva-pink",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-lemon-quartz",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-gem-pearl",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "angelonia-big-grape",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "angelonia-big-bicolor-pink-imp",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "portulaca-mega-pazzaz-tropical-twist",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "begonia-big-bronze-leaf-white",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "begonia-big-green-leaf-white",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "coleus-down-town-bronze-47",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-bloomtastic-orange-cartwheel",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-bloomtastic-peach-grenadine",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-bloomtastic-honey",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "penstemon-hybrid-super-star",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "nepeta-faassenii-serene-lilac",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "evolvulus-beach-bum-blue",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "osteospermum-margarita-yellow-2022",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "osteospermum-margarita-white-2022",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "osteospermum-margarita-cool-purple-2025",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "osteospermum-margarita-kardinal-2022",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "osteospermum-margarita-dark-pink",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "gaillardia-aristata-spintop-mariachi",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "coleus-main-street-franklin-street",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "cuphea-cupheasy-lavendar",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dahlia-summer-bees-salmon-bicolor",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dahlia-summer-bees-red-bicolor",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "scaevola-capello-white",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "scaevola-capello-purple",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-havana-sunrise-24",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-havana-sunset-21",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-havana-red-40",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-havana-harvest-moon-2025",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-havana-full-moon-2025",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-heartland-white-2025",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-heartland-citrus-2025",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "portulaca-cupcake-burgundy",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-glory-days-pink-bicolor",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-glory-days-red-orange-bicolor",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-fire",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-purple",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-white-splash",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-pink-splash",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-pink",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-white",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-dark-red",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-big-eeze-foxy-flamingo",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-big-eeze-fuchsia-blue",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-big-eeze-pink",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-big-eeze-pink-batik",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-big-eeze-dark-red",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-sarita-lilac-splash",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-sarita-sunstar-red",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-sarita-dark-red",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-sarita-punch",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-sarita-wild-salmon",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dipladenia-flordenia-plus-white",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dipladenia-flordenia-plus-chocolate-chill",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "coreopsis-grandifolia-radiant-velvet-in-gold",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "sunflower-always-sunny-gold",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "begonia-dragon-wing-white-bronze-leaf",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "begonia-dragon-wing-white-improved",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "petunia-e3-easy-wave-midnight-marble",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "petchoa-caliburst-nectarine",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "gerbera-colorbloom-orange-with-light-eye",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "angelonia-serenita-cherry-red",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "angelonia-serena-magenta",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dianthus-dart-select-mixture",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "zinnia-elegant-full-mixture",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "zinnia-elegant-soft-mixture",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "african-marigold-lanna-lace",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "osteospermum-akila-sunshine-yellow",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "vinca-tattoo-boysenberry",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "impatiens-beacon-pink",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "interspecific-impatiens-solarscape-xl-red-glow",
+      "date": "2026-02-18",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "ageratum-monarch-magic",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dahlia-venti-pinkburst",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-shamrock-lavendar",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-shamrock-rose",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "salvia-mystical-blue",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "salvia-mystical-white",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "impatiens-glimmer-strawberry-sparkler",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "petunia-slingshot-cherrytrtwhl",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-uno-double-light-pink-26",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-cha-cha-diva-orange",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-minfams-neo-coral-flash",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-minfams-neo-rose-flash",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "salvia-sallyfun-blue-lagoon",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "impatiens-ngi-sol-prime-pearl",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "impatiens-ngi-sol-prime-orchid",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "petunia-capella-hello-sunshine",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-gem-diva-pink",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-lemon-quartz",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-gem-pearl",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "angelonia-big-grape",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "angelonia-big-bicolor-pink-imp",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "portulaca-mega-pazzaz-tropical-twist",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "begonia-big-bronze-leaf-white",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "begonia-big-green-leaf-white",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "coleus-down-town-bronze-47",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-bloomtastic-orange-cartwheel",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-bloomtastic-peach-grenadine",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-bloomtastic-honey",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "penstemon-hybrid-super-star",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "nepeta-faassenii-serene-lilac",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "evolvulus-beach-bum-blue",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "osteospermum-margarita-yellow-2022",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "osteospermum-margarita-white-2022",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "osteospermum-margarita-cool-purple-2025",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "osteospermum-margarita-kardinal-2022",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "osteospermum-margarita-dark-pink",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "gaillardia-aristata-spintop-mariachi",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "coleus-main-street-franklin-street",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "cuphea-cupheasy-lavendar",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dahlia-summer-bees-salmon-bicolor",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dahlia-summer-bees-red-bicolor",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "scaevola-capello-white",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "scaevola-capello-purple",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-havana-sunrise-24",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-havana-sunset-21",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-havana-red-40",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-havana-harvest-moon-2025",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-havana-full-moon-2025",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-heartland-white-2025",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-heartland-citrus-2025",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "portulaca-cupcake-burgundy",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-glory-days-pink-bicolor",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-glory-days-red-orange-bicolor",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-fire",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-purple",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-white-splash",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-pink-splash",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-pink",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-white",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-santana-dark-red",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-big-eeze-foxy-flamingo",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-big-eeze-fuchsia-blue",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-big-eeze-pink",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-big-eeze-pink-batik",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-big-eeze-dark-red",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-sarita-lilac-splash",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-sarita-sunstar-red",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-sarita-dark-red",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-sarita-punch",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "geranium-interspecific-sarita-wild-salmon",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dipladenia-flordenia-plus-white",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dipladenia-flordenia-plus-chocolate-chill",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "coreopsis-grandifolia-radiant-velvet-in-gold",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "sunflower-always-sunny-gold",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "begonia-dragon-wing-white-bronze-leaf",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "begonia-dragon-wing-white-improved",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "petunia-e3-easy-wave-midnight-marble",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "petchoa-caliburst-nectarine",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "gerbera-colorbloom-orange-with-light-eye",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "angelonia-serenita-cherry-red",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "angelonia-serena-magenta",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dianthus-dart-select-mixture",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "zinnia-elegant-full-mixture",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "zinnia-elegant-soft-mixture",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "african-marigold-lanna-lace",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "osteospermum-akila-sunshine-yellow",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "vinca-tattoo-boysenberry",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "impatiens-beacon-pink",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "interspecific-impatiens-solarscape-xl-red-glow",
+      "date": "2026-03-10",
+      "uniformity": 5,
+      "flowerPower": 5,
+      "foliage": 5,
+      "heatResistance": 5,
+      "avg": 5,
+      "notes": null,
+      "weather": null
+    }
+  ]
+}

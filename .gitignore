@@ -1,0 +1,10 @@
+node_modules/
+.next/
+out/
+*.log
+.env*.local
+.DS_Store
+*.tsbuildinfo
+# docs kept local, only README.md is committed
+*.md
+!README.md
