@@ -1,26 +1,31 @@
 'use client';
 
 import { useState } from 'react';
-import { withBase, type Cultivar } from '@/lib/data';
+import {
+  withBase, latestMirroredImage, fmtDate, type Cultivar, type TrialImage,
+} from '@/lib/data';
 
-type Variant = 'card' | 'detail';
+type Variant = 'card' | 'detail' | 'round';
 
 // The Dropbox links in the spreadsheet are private, so visitors just get a
 // sign-in page. Only use the copies in /plants, otherwise show the placeholder.
-function getUrls(c: Cultivar, variant: Variant): string[] {
-  const img = c.images[0];
+function getUrls(img: TrialImage | undefined, variant: Variant): string[] {
   if (!img || !img.mirrored) return [];
 
-  // cards use the small version so the grid isn't loading 89 full size photos
-  const first = variant === 'card' ? (img.thumb ?? img.local) : img.local;
-  if (first === img.local) return [first];
-  return [first, img.local];
+  // cards and round thumbnails use the small version so the page isn't loading
+  // dozens of full-size photos at once
+  const small = variant === 'detail' ? img.local : (img.thumb ?? img.local);
+  if (small === img.local) return [small];
+  return [small, img.local];
 }
 
 export default function TrialPhoto({
-  c, className = '', variant = 'detail',
-}: { c: Cultivar; className?: string; variant?: Variant }) {
-  const urls = getUrls(c, variant);
+  c, className = '', variant = 'detail', image,
+}: { c: Cultivar; className?: string; variant?: Variant; image?: TrialImage }) {
+  // an explicit image (e.g. one evaluation round's photo) wins; otherwise fall
+  // back to the most recently taken photo that's actually been mirrored locally
+  const img = image ?? latestMirroredImage(c);
+  const urls = getUrls(img, variant);
   const [attempt, setAttempt] = useState(0);
 
   const exhausted = attempt >= urls.length;
@@ -32,15 +37,17 @@ export default function TrialPhoto({
         role="img"
         aria-label={
           urls.length === 0
-            ? `No trial photo on file for ${c.name}`
+            ? `No trial photo on file for ${c.name}${image ? ` on ${fmtDate(image.date)}` : ''}`
             : `Trial photo for ${c.name} could not be loaded`
         }
       >
         <div className="flex flex-col items-center gap-2 px-3">
-          <span className="text-4xl">🌱</span>
-          <span className="font-mono text-[10px] uppercase tracking-[.12em] text-muted">
-            {urls.length === 0 ? 'photo unavail' : 'Photo playing hide-and-seek'}
-          </span>
+          <span className={variant === 'round' ? 'text-xl' : 'text-4xl'}>🌱</span>
+          {variant !== 'round' && (
+            <span className="font-mono text-[10px] uppercase tracking-[.12em] text-muted">
+              {urls.length === 0 ? 'photo unavail' : 'Photo playing hide-and-seek'}
+            </span>
+          )}
         </div>
       </div>
     );
@@ -50,7 +57,7 @@ export default function TrialPhoto({
     // eslint-disable-next-line @next/next/no-img-element
     <img
       src={withBase(urls[attempt])}
-      alt={`${c.name} (${c.genus}) growing in the trial beds at Homestead`}
+      alt={`${c.name} (${c.genus}) growing in the trial beds at Homestead${img ? `, photographed ${fmtDate(img.date)}` : ''}`}
       loading="lazy"
       decoding="async"
       onError={() => setAttempt((n) => n + 1)}

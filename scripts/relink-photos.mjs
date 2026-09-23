@@ -3,7 +3,8 @@
 // import-xlsx.mjs rebuilds trials.json from scratch, which wipes the
 // mirrored/local/thumb fields that import-photos.mjs set. The photos are still
 // in public/plants/ but the site stops showing them. This looks for files named
-// <id>.webp and <id>-thumb.webp and puts the fields back. It doesn't change any files.
+// <id>--<date>.webp and <id>--<date>-thumb.webp (one per evaluation date) and puts
+// the fields back. It doesn't change any files.
 //
 //   node scripts/relink-photos.mjs [--dry-run]
 
@@ -19,17 +20,16 @@ const files = new Set(await readdir(PLANTS_DIR));
 
 let relinked = 0;
 for (const c of data.cultivars) {
-  const img = c.images[0];
-  if (!img) continue;
+  for (const img of c.images) {
+    const detail = `${c.id}--${img.date}.webp`;
+    const thumb = `${c.id}--${img.date}-thumb.webp`;
+    if (!files.has(detail)) continue;
 
-  const detail = `${c.id}.webp`;
-  const thumb = `${c.id}-thumb.webp`;
-  if (!files.has(detail)) continue;
-
-  img.local = `/plants/${detail}`;
-  img.thumb = files.has(thumb) ? `/plants/${thumb}` : `/plants/${detail}`;
-  img.mirrored = true;
-  relinked += 1;
+    img.local = `/plants/${detail}`;
+    img.thumb = files.has(thumb) ? `/plants/${thumb}` : `/plants/${detail}`;
+    img.mirrored = true;
+    relinked += 1;
+  }
 }
 
 data.meta.dataQuality.imagesMirrored = data.cultivars

@@ -9,6 +9,8 @@ import { dirname, resolve } from 'node:path';
 
 const SRC = process.argv[2] ?? './DATA Trial Garden Website V.1.xlsx';
 const OUT = resolve('./data/trials.json');
+// outside the repo, next to the source spreadsheets -- same place as missing-photos.txt
+const IMAGE_WARNINGS_OUT = resolve('../../data/image-link-warnings.txt');
 
 const slug = (s) =>
   String(s).toLowerCase().trim()
@@ -40,10 +42,15 @@ const wb = XLSX.readFile(SRC);
 
 const cultivars = new Map();   // slug -> cultivar
 const evaluations = [];        // flat fact table
+// each date's sheet can point the same Dropbox filename at more than one plant row --
+// that's a spreadsheet authoring error (confirmed before: same file, wrong plant's
+// photo), not something the importer can fix, so it's collected and reported instead.
+const imageLinkWarnings = [];  // { date, filename, plants: [{ id, name }] }
 
 for (const sheetName of wb.SheetNames) {
   const date = sheetToDate(sheetName);
   const rows = XLSX.utils.sheet_to_json(wb.Sheets[sheetName], { defval: null });
+  const filenamesThisSheet = new Map(); // lowercased dropbox filename -> [{ id, name }]
 
   for (const row of rows) {
     const name = clean(row['Plant Name']);
@@ -64,18 +71,35 @@ for (const sheetName of wb.SheetNames) {
         status: 'In Ground',
       });
     }
+    const c = cultivars.get(id);
 
-    // Sheet 1 has real URLs here; sheets 2-3 have filename placeholders.
+    // A plant's supplier (or color/year) can be corrected on a later tab -- e.g. the
+    // mentor's Sep 2026 sheet renamed "BallFloral" -> "Ball FloraPlants" and
+    // "PanAmerican" -> "PanAmerican Seed" across the board. Sheets are processed in
+    // workbook order, so the latest non-blank value seen wins over the first one.
+    if (clean(row['SUPPLIER'])) c.supplier = clean(row['SUPPLIER']);
+    if (clean(row['FLOWER COLOR'])) c.flowerColor = clean(row['FLOWER COLOR']);
+    if (num(row['YEAR']) !== null) c.year = num(row['YEAR']);
+
+    // One photo column per sheet, and each sheet is one evaluation date, so a photo
+    // is naturally scoped to the date it was taken -- record that instead of losing it.
     const img = clean(row['PLANT IMAGE 1']);
     const raw = dropboxRaw(img);
-    const c = cultivars.get(id);
-    if (raw && !c.images.some((i) => i.url === raw)) {
+    if (raw && !c.images.some((i) => i.date === date)) {
       c.images.push({
+        date,
         url: raw,
         source: raw,                 // import-photos matches on the filename in this link
-        local: `/plants/${id}.jpg`,
+        local: `/plants/${id}--${date}.jpg`,
         mirrored: false,
       });
+    }
+
+    if (raw) {
+      const filenameMatch = /\/scl\/fi\/[^/]+\/([^?]+)/.exec(raw);
+      const filename = (filenameMatch ? filenameMatch[1] : raw).toLowerCase();
+      if (!filenamesThisSheet.has(filename)) filenamesThisSheet.set(filename, []);
+      filenamesThisSheet.get(filename).push({ id, name: `${genus} / ${name}` });
     }
 
     const scores = {
@@ -98,7 +122,15 @@ for (const sheetName of wb.SheetNames) {
       weather: null,   // not in v1 source
     });
   }
+
+  for (const [filename, plants] of filenamesThisSheet) {
+    if (plants.length > 1) imageLinkWarnings.push({ date, filename, plants });
+  }
 }
+
+// insertion order already follows sheet order, but sort explicitly so a cultivar's
+// images are guaranteed chronological even if the workbook's tabs aren't
+for (const c of cultivars.values()) c.images.sort((a, b) => a.date.localeCompare(b.date));
 
 // latest scores per cultivar
 const byCultivar = new Map();
@@ -169,6 +201,7 @@ const dataQuality = {
   // date with no scored rows yet (e.g. a season that's still all 'na').
   latestSnapshotAllPerfect: latestRows.length > 0 && latestRows.every((e) => e.avg === 5),
   awardsUndecidedByTie: awards.some((a) => a.tied > 1),
+  duplicateImageLinks: imageLinkWarnings.length,
   note:
     'Latest evaluation rates every entry 5.0 across all four categories, so no award ' +
     'can be decided yet. Needs differentiated scoring before launch.',
@@ -202,3 +235,25 @@ const payload = {
 mkdirSync(dirname(OUT), { recursive: true });
 writeFileSync(OUT, JSON.stringify(payload, null, 2));
 console.log(`${list.length} cultivars, ${evaluations.length} evaluations, ${facets.dates.length} dates -> ${OUT}`);
+
+if (imageLinkWarnings.length) {
+  const lines = [
+    'Trial Garden site -- same Dropbox photo linked to more than one plant',
+    `Generated ${new Date().toISOString().slice(0, 10)} from ${SRC.split('/').pop()}`,
+    '',
+    'Each row below is one PLANT IMAGE 1 file that appears on more than one plant\'s',
+    'row within the same evaluation date. At most one of them can be correct -- the',
+    'sheet needs to be checked against the actual photos (confirmed pattern before:',
+    'the filename is right, but it shows a different cultivar than the row it\'s on).',
+    '',
+    ...imageLinkWarnings.map(({ date, filename, plants }) =>
+      `${date}  ${filename}\n${plants.map((p) => `  - ${p.name}  (${p.id})`).join('\n')}`),
+  ];
+  mkdirSync(dirname(IMAGE_WARNINGS_OUT), { recursive: true });
+  writeFileSync(IMAGE_WARNINGS_OUT, lines.join('\n') + '\n');
+  console.log(
+    `\n${imageLinkWarnings.length} duplicate photo link(s) across cultivars -- see ${IMAGE_WARNINGS_OUT}`,
+  );
+} else {
+  console.log('\nno duplicate photo links found across cultivars.');
+}

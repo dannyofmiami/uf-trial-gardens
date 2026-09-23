@@ -1,14 +1,22 @@
 // Copies trial photos from a Dropbox download into public/plants/.
 //
 // The links in the spreadsheet are private so they can't be fetched or hotlinked.
-// Download the folder from Dropbox by hand and point this script at it.
+// Download the folder(s) from Dropbox by hand and point this script at them.
 //
 //   node scripts/import-photos.mjs ~/Downloads/TrialPhotos
+//   node scripts/import-photos.mjs "folder A" "folder B" --date=2026-03-10
 //
-// Photos are matched by original filename (the end of each Dropbox link,
-// like BAL_0001.JPG). All 86 are unique.
+// Photos are matched by original filename (the end of each Dropbox link, like
+// BAL_0001.JPG) -- but each evaluation date's shoot renumbers from 1, so the
+// same filename is reused by a *different* photo on every date. Two safeguards
+// against matching the wrong date's file to a name:
+//   - multiple source folders can be passed (e.g. one per supplier for a single
+//     shoot day) so a matched date's files never have to be merged by hand first
+//   - --date=YYYY-MM-DD restricts which spreadsheet entries this run is even
+//     allowed to match, so a same-named file from an unrelated date already
+//     sitting in the wrong folder can't silently get attached to it
 //
-// Flags: --dry-run, --keep-original
+// Flags: --dry-run, --keep-original, --date=YYYY-MM-DD
 
 import { readFile, writeFile, mkdir, readdir, copyFile, stat } from 'node:fs/promises';
 import { resolve, basename, extname, join } from 'node:path';
@@ -19,10 +27,11 @@ const OUT_DIR = resolve('./public/plants');
 const args = process.argv.slice(2);
 const dryRun = args.includes('--dry-run');
 const keepOriginal = args.includes('--keep-original');
-const srcArg = args.find((a) => !a.startsWith('--'));
+const dateArg = args.find((a) => a.startsWith('--date='))?.slice('--date='.length);
+const srcArgs = args.filter((a) => !a.startsWith('--'));
 
-if (!srcArg) {
-  console.error('usage: node scripts/import-photos.mjs <photo-folder> [--dry-run] [--keep-original]');
+if (!srcArgs.length) {
+  console.error('usage: node scripts/import-photos.mjs <photo-folder>... [--dry-run] [--keep-original] [--date=YYYY-MM-DD]');
   process.exit(1);
 }
 
@@ -68,17 +77,28 @@ function originalName(url) {
 }
 
 const data = JSON.parse(await readFile(DATA, 'utf8'));
-const available = await indexFiles(resolve(srcArg));
-console.log(`${available.size} files in ${srcArg}\n`);
+const available = new Map();
+for (const srcArg of srcArgs) {
+  const found = await indexFiles(resolve(srcArg));
+  console.log(`${found.size} files in ${srcArg}`);
+  for (const [name, full] of found) available.set(name, full);
+}
+console.log(`${available.size} unique filename(s) total\n`);
+
+if (dateArg) console.log(`restricted to evaluation date ${dateArg}\n`);
 
 const jobs = [];
 for (const c of data.cultivars) {
-  c.images.forEach((img, i) => {
+  c.images.forEach((img) => {
+    if (dateArg && img.date !== dateArg) return;
     const wanted = originalName(img.source) ?? originalName(img.url);
     jobs.push({
       cultivar: c,
       img,
-      id: c.images.length > 1 ? `${c.id}-${i + 1}` : c.id,
+      // date-keyed, not index-keyed: a cultivar can have up to one photo per
+      // evaluation date, and the id has to stay the same regardless of how many
+      // of those dates happen to have a matched file in this particular run
+      id: `${c.id}--${img.date}`,
       wanted,
       src: wanted ? available.get(wanted.toLowerCase()) : undefined,
     });
