@@ -21,7 +21,14 @@ const sheetToDate = (name) => {
   return `${m[3]}-${m[1]}-${m[2]}`;
 };
 
-const num = (v) => (v === null || v === undefined || v === '' ? null : Number(v));
+// 'na' / 'n/a' means "not yet rated" (e.g. the 2026 season before scoring starts),
+// not zero -- it must fall out as null, same as a blank cell, not as NaN.
+const num = (v) => {
+  if (v === null || v === undefined || v === '') return null;
+  if (typeof v === 'string' && /^n\/?a$/i.test(v.trim())) return null;
+  const n = Number(v);
+  return Number.isNaN(n) ? null : n;
+};
 const clean = (v) => (v === null || v === undefined ? null : String(v).trim() || null);
 const isUrl = (v) => typeof v === 'string' && /^https?:\/\//i.test(v.trim());
 
@@ -158,7 +165,9 @@ const dataQuality = {
   imagesHotlinked: list.reduce((n, c) => n + c.images.length, 0),
   imagesMirrored: list.reduce((n, c) => n + c.images.filter((i) => i.mirrored).length, 0),
   perfectScoreShare: Math.round((scored.filter((e) => e.avg === 5).length / scored.length) * 1000) / 1000,
-  latestSnapshotAllPerfect: latestRows.every((e) => e.avg === 5),
+  // .every() on an empty array is vacuously true -- guard against a latest
+  // date with no scored rows yet (e.g. a season that's still all 'na').
+  latestSnapshotAllPerfect: latestRows.length > 0 && latestRows.every((e) => e.avg === 5),
   awardsUndecidedByTie: awards.some((a) => a.tied > 1),
   note:
     'Latest evaluation rates every entry 5.0 across all four categories, so no award ' +

@@ -1,21 +1,22 @@
 {
   "meta": {
     "source": "DATA Trial Garden Website V.1.xlsx",
-    "generatedAt": "2026-09-15T23:00:25.747Z",
+    "generatedAt": "2026-09-23T02:17:26.473Z",
     "site": "Homestead, FL",
     "hardinessZone": "11b",
     "cultivarCount": 89,
-    "evaluationCount": 267,
+    "evaluationCount": 343,
     "dataQuality": {
       "missingFlowerColor": 89,
       "missingImage": 3,
-      "imagesHotlinked": 86,
-      "imagesMirrored": 74,
+      "imagesHotlinked": 235,
+      "imagesMirrored": 78,
       "perfectScoreShare": 0.963,
-      "latestSnapshotAllPerfect": true,
+      "latestSnapshotAllPerfect": false,
       "awardsUndecidedByTie": true,
       "note": "Latest evaluation rates every entry 5.0 across all four categories, so no award can be decided yet. Needs differentiated scoring before launch."
-    }
+    },
+    "photosImportedAt": "2026-09-23T03:08:37.708Z"
   },
   "facets": {
     "genera": [
@@ -61,7 +62,9 @@
     "dates": [
       "2026-01-13",
       "2026-02-18",
-      "2026-03-10"
+      "2026-03-10",
+      "2026-04-07",
+      "2026-05-06"
     ]
   },
   "awards": [
@@ -71,30 +74,8 @@
       "basis": "avg",
       "premier": true,
       "winnerScore": 5,
-      "tied": 89,
+      "tied": 51,
       "winnerIds": [
-        "ageratum-monarch-magic",
-        "dahlia-venti-pinkburst",
-        "lantana-shamrock-lavendar",
-        "lantana-shamrock-rose",
-        "salvia-mystical-blue",
-        "salvia-mystical-white",
-        "impatiens-glimmer-strawberry-sparkler",
-        "petunia-slingshot-cherrytrtwhl",
-        "calibrachoa-uno-double-light-pink-26",
-        "calibrachoa-cha-cha-diva-orange",
-        "calibrachoa-minfams-neo-coral-flash",
-        "calibrachoa-minfams-neo-rose-flash",
-        "salvia-sallyfun-blue-lagoon",
-        "impatiens-ngi-sol-prime-pearl",
-        "impatiens-ngi-sol-prime-orchid",
-        "petunia-capella-hello-sunshine",
-        "lantana-gem-diva-pink",
-        "lantana-lemon-quartz",
-        "lantana-gem-pearl",
-        "angelonia-big-grape",
-        "angelonia-big-bicolor-pink-imp",
-        "portulaca-mega-pazzaz-tropical-twist",
         "begonia-big-bronze-leaf-white",
         "begonia-big-green-leaf-white",
         "coleus-down-town-bronze-47",
@@ -145,23 +126,7 @@
         "geranium-interspecific-sarita-wild-salmon",
         "dipladenia-flordenia-plus-white",
         "dipladenia-flordenia-plus-chocolate-chill",
-        "coreopsis-grandifolia-radiant-velvet-in-gold",
-        "sunflower-always-sunny-gold",
-        "begonia-dragon-wing-white-bronze-leaf",
-        "begonia-dragon-wing-white-improved",
-        "petunia-e3-easy-wave-midnight-marble",
-        "petchoa-caliburst-nectarine",
-        "gerbera-colorbloom-orange-with-light-eye",
-        "angelonia-serenita-cherry-red",
-        "angelonia-serena-magenta",
-        "dianthus-dart-select-mixture",
-        "zinnia-elegant-full-mixture",
-        "zinnia-elegant-soft-mixture",
-        "african-marigold-lanna-lace",
-        "osteospermum-akila-sunshine-yellow",
-        "vinca-tattoo-boysenberry",
-        "impatiens-beacon-pink",
-        "interspecific-impatiens-solarscape-xl-red-glow"
+        "coreopsis-grandifolia-radiant-velvet-in-gold"
       ],
       "winnerId": null
     },
@@ -171,30 +136,8 @@
       "basis": "heatResistance",
       "premier": false,
       "winnerScore": 5,
-      "tied": 89,
+      "tied": 51,
       "winnerIds": [
-        "ageratum-monarch-magic",
-        "dahlia-venti-pinkburst",
-        "lantana-shamrock-lavendar",
-        "lantana-shamrock-rose",
-        "salvia-mystical-blue",
-        "salvia-mystical-white",
-        "impatiens-glimmer-strawberry-sparkler",
-        "petunia-slingshot-cherrytrtwhl",
-        "calibrachoa-uno-double-light-pink-26",
-        "calibrachoa-cha-cha-diva-orange",
-        "calibrachoa-minfams-neo-coral-flash",
-        "calibrachoa-minfams-neo-rose-flash",
-        "salvia-sallyfun-blue-lagoon",
-        "impatiens-ngi-sol-prime-pearl",
-        "impatiens-ngi-sol-prime-orchid",
-        "petunia-capella-hello-sunshine",
-        "lantana-gem-diva-pink",
-        "lantana-lemon-quartz",
-        "lantana-gem-pearl",
-        "angelonia-big-grape",
-        "angelonia-big-bicolor-pink-imp",
-        "portulaca-mega-pazzaz-tropical-twist",
         "begonia-big-bronze-leaf-white",
         "begonia-big-green-leaf-white",
         "coleus-down-town-bronze-47",
@@ -245,23 +188,7 @@
         "geranium-interspecific-sarita-wild-salmon",
         "dipladenia-flordenia-plus-white",
         "dipladenia-flordenia-plus-chocolate-chill",
-        "coreopsis-grandifolia-radiant-velvet-in-gold",
-        "sunflower-always-sunny-gold",
-        "begonia-dragon-wing-white-bronze-leaf",
-        "begonia-dragon-wing-white-improved",
-        "petunia-e3-easy-wave-midnight-marble",
-        "petchoa-caliburst-nectarine",
-        "gerbera-colorbloom-orange-with-light-eye",
-        "angelonia-serenita-cherry-red",
-        "angelonia-serena-magenta",
-        "dianthus-dart-select-mixture",
-        "zinnia-elegant-full-mixture",
-        "zinnia-elegant-soft-mixture",
-        "african-marigold-lanna-lace",
-        "osteospermum-akila-sunshine-yellow",
-        "vinca-tattoo-boysenberry",
-        "impatiens-beacon-pink",
-        "interspecific-impatiens-solarscape-xl-red-glow"
+        "coreopsis-grandifolia-radiant-velvet-in-gold"
       ],
       "winnerId": null
     },
@@ -271,30 +198,8 @@
       "basis": "flowerPower",
       "premier": false,
       "winnerScore": 5,
-      "tied": 89,
+      "tied": 51,
       "winnerIds": [
-        "ageratum-monarch-magic",
-        "dahlia-venti-pinkburst",
-        "lantana-shamrock-lavendar",
-        "lantana-shamrock-rose",
-        "salvia-mystical-blue",
-        "salvia-mystical-white",
-        "impatiens-glimmer-strawberry-sparkler",
-        "petunia-slingshot-cherrytrtwhl",
-        "calibrachoa-uno-double-light-pink-26",
-        "calibrachoa-cha-cha-diva-orange",
-        "calibrachoa-minfams-neo-coral-flash",
-        "calibrachoa-minfams-neo-rose-flash",
-        "salvia-sallyfun-blue-lagoon",
-        "impatiens-ngi-sol-prime-pearl",
-        "impatiens-ngi-sol-prime-orchid",
-        "petunia-capella-hello-sunshine",
-        "lantana-gem-diva-pink",
-        "lantana-lemon-quartz",
-        "lantana-gem-pearl",
-        "angelonia-big-grape",
-        "angelonia-big-bicolor-pink-imp",
-        "portulaca-mega-pazzaz-tropical-twist",
         "begonia-big-bronze-leaf-white",
         "begonia-big-green-leaf-white",
         "coleus-down-town-bronze-47",
@@ -345,23 +250,7 @@
         "geranium-interspecific-sarita-wild-salmon",
         "dipladenia-flordenia-plus-white",
         "dipladenia-flordenia-plus-chocolate-chill",
-        "coreopsis-grandifolia-radiant-velvet-in-gold",
-        "sunflower-always-sunny-gold",
-        "begonia-dragon-wing-white-bronze-leaf",
-        "begonia-dragon-wing-white-improved",
-        "petunia-e3-easy-wave-midnight-marble",
-        "petchoa-caliburst-nectarine",
-        "gerbera-colorbloom-orange-with-light-eye",
-        "angelonia-serenita-cherry-red",
-        "angelonia-serena-magenta",
-        "dianthus-dart-select-mixture",
-        "zinnia-elegant-full-mixture",
-        "zinnia-elegant-soft-mixture",
-        "african-marigold-lanna-lace",
-        "osteospermum-akila-sunshine-yellow",
-        "vinca-tattoo-boysenberry",
-        "impatiens-beacon-pink",
-        "interspecific-impatiens-solarscape-xl-red-glow"
+        "coreopsis-grandifolia-radiant-velvet-in-gold"
       ],
       "winnerId": null
     },
@@ -371,30 +260,8 @@
       "basis": "foliage",
       "premier": false,
       "winnerScore": 5,
-      "tied": 89,
+      "tied": 51,
       "winnerIds": [
-        "ageratum-monarch-magic",
-        "dahlia-venti-pinkburst",
-        "lantana-shamrock-lavendar",
-        "lantana-shamrock-rose",
-        "salvia-mystical-blue",
-        "salvia-mystical-white",
-        "impatiens-glimmer-strawberry-sparkler",
-        "petunia-slingshot-cherrytrtwhl",
-        "calibrachoa-uno-double-light-pink-26",
-        "calibrachoa-cha-cha-diva-orange",
-        "calibrachoa-minfams-neo-coral-flash",
-        "calibrachoa-minfams-neo-rose-flash",
-        "salvia-sallyfun-blue-lagoon",
-        "impatiens-ngi-sol-prime-pearl",
-        "impatiens-ngi-sol-prime-orchid",
-        "petunia-capella-hello-sunshine",
-        "lantana-gem-diva-pink",
-        "lantana-lemon-quartz",
-        "lantana-gem-pearl",
-        "angelonia-big-grape",
-        "angelonia-big-bicolor-pink-imp",
-        "portulaca-mega-pazzaz-tropical-twist",
         "begonia-big-bronze-leaf-white",
         "begonia-big-green-leaf-white",
         "coleus-down-town-bronze-47",
@@ -445,23 +312,7 @@
         "geranium-interspecific-sarita-wild-salmon",
         "dipladenia-flordenia-plus-white",
         "dipladenia-flordenia-plus-chocolate-chill",
-        "coreopsis-grandifolia-radiant-velvet-in-gold",
-        "sunflower-always-sunny-gold",
-        "begonia-dragon-wing-white-bronze-leaf",
-        "begonia-dragon-wing-white-improved",
-        "petunia-e3-easy-wave-midnight-marble",
-        "petchoa-caliburst-nectarine",
-        "gerbera-colorbloom-orange-with-light-eye",
-        "angelonia-serenita-cherry-red",
-        "angelonia-serena-magenta",
-        "dianthus-dart-select-mixture",
-        "zinnia-elegant-full-mixture",
-        "zinnia-elegant-soft-mixture",
-        "african-marigold-lanna-lace",
-        "osteospermum-akila-sunshine-yellow",
-        "vinca-tattoo-boysenberry",
-        "impatiens-beacon-pink",
-        "interspecific-impatiens-solarscape-xl-red-glow"
+        "coreopsis-grandifolia-radiant-velvet-in-gold"
       ],
       "winnerId": null
     },
@@ -471,30 +322,8 @@
       "basis": "uniformity",
       "premier": false,
       "winnerScore": 5,
-      "tied": 89,
+      "tied": 51,
       "winnerIds": [
-        "ageratum-monarch-magic",
-        "dahlia-venti-pinkburst",
-        "lantana-shamrock-lavendar",
-        "lantana-shamrock-rose",
-        "salvia-mystical-blue",
-        "salvia-mystical-white",
-        "impatiens-glimmer-strawberry-sparkler",
-        "petunia-slingshot-cherrytrtwhl",
-        "calibrachoa-uno-double-light-pink-26",
-        "calibrachoa-cha-cha-diva-orange",
-        "calibrachoa-minfams-neo-coral-flash",
-        "calibrachoa-minfams-neo-rose-flash",
-        "salvia-sallyfun-blue-lagoon",
-        "impatiens-ngi-sol-prime-pearl",
-        "impatiens-ngi-sol-prime-orchid",
-        "petunia-capella-hello-sunshine",
-        "lantana-gem-diva-pink",
-        "lantana-lemon-quartz",
-        "lantana-gem-pearl",
-        "angelonia-big-grape",
-        "angelonia-big-bicolor-pink-imp",
-        "portulaca-mega-pazzaz-tropical-twist",
         "begonia-big-bronze-leaf-white",
         "begonia-big-green-leaf-white",
         "coleus-down-town-bronze-47",
@@ -545,23 +374,7 @@
         "geranium-interspecific-sarita-wild-salmon",
         "dipladenia-flordenia-plus-white",
         "dipladenia-flordenia-plus-chocolate-chill",
-        "coreopsis-grandifolia-radiant-velvet-in-gold",
-        "sunflower-always-sunny-gold",
-        "begonia-dragon-wing-white-bronze-leaf",
-        "begonia-dragon-wing-white-improved",
-        "petunia-e3-easy-wave-midnight-marble",
-        "petchoa-caliburst-nectarine",
-        "gerbera-colorbloom-orange-with-light-eye",
-        "angelonia-serenita-cherry-red",
-        "angelonia-serena-magenta",
-        "dianthus-dart-select-mixture",
-        "zinnia-elegant-full-mixture",
-        "zinnia-elegant-soft-mixture",
-        "african-marigold-lanna-lace",
-        "osteospermum-akila-sunshine-yellow",
-        "vinca-tattoo-boysenberry",
-        "impatiens-beacon-pink",
-        "interspecific-impatiens-solarscape-xl-red-glow"
+        "coreopsis-grandifolia-radiant-velvet-in-gold"
       ],
       "winnerId": null
     }
@@ -576,22 +389,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/x0n58p288ro07q18n1452/PAN_0012.JPG",
-          "source": "https://www.dropbox.com/scl/fi/x0n58p288ro07q18n1452/PAN_0012.JPG",
-          "local": "/plants/osteospermum-akila-sunshine-yellow.webp",
+          "url": "https://www.dropbox.com/scl/fi/haimuwcva78gn10gddwqy/PAN_0012.JPG",
+          "source": "https://www.dropbox.com/scl/fi/haimuwcva78gn10gddwqy/PAN_0012.JPG",
+          "local": "/plants/osteospermum-akila-sunshine-yellow-1.webp",
           "mirrored": true,
-          "thumb": "/plants/osteospermum-akila-sunshine-yellow-thumb.webp"
+          "thumb": "/plants/osteospermum-akila-sunshine-yellow-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/2ovhlcs41yq6k516aqjoh/PAN_0011.JPG",
+          "source": "https://www.dropbox.com/scl/fi/2ovhlcs41yq6k516aqjoh/PAN_0011.JPG",
+          "local": "/plants/osteospermum-akila-sunshine-yellow.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/rmolfigg5e3rfy7qrgpnl/PAN_0011.JPG",
+          "source": "https://www.dropbox.com/scl/fi/rmolfigg5e3rfy7qrgpnl/PAN_0011.JPG",
+          "local": "/plants/osteospermum-akila-sunshine-yellow.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/hwhr55t1z8vr8cf543fuo/PAN_0071.JPG",
+          "source": "https://www.dropbox.com/scl/fi/hwhr55t1z8vr8cf543fuo/PAN_0071.JPG",
+          "local": "/plants/osteospermum-akila-sunshine-yellow.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/12dyxn2tde9v4p11yecrt/PAN_0026.JPG",
+          "source": "https://www.dropbox.com/scl/fi/12dyxn2tde9v4p11yecrt/PAN_0026.JPG",
+          "local": "/plants/osteospermum-akila-sunshine-yellow.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -603,22 +440,34 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/d3rvissegsv94asvq57mb/PAN_0016.JPG",
-          "source": "https://www.dropbox.com/scl/fi/d3rvissegsv94asvq57mb/PAN_0016.JPG",
-          "local": "/plants/sunflower-always-sunny-gold.webp",
+          "url": "https://www.dropbox.com/scl/fi/3ff6os5tbviq2d48qxq03/PAN_0016.JPG",
+          "source": "https://www.dropbox.com/scl/fi/3ff6os5tbviq2d48qxq03/PAN_0016.JPG",
+          "local": "/plants/sunflower-always-sunny-gold-1.webp",
           "mirrored": true,
-          "thumb": "/plants/sunflower-always-sunny-gold-thumb.webp"
+          "thumb": "/plants/sunflower-always-sunny-gold-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/g0ogchit75opyjez31t8j/PAN_0016.JPG",
+          "source": "https://www.dropbox.com/scl/fi/g0ogchit75opyjez31t8j/PAN_0016.JPG",
+          "local": "/plants/sunflower-always-sunny-gold.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/hgvtueveayssps4uldik7/PAN_0019.JPG",
+          "source": "https://www.dropbox.com/scl/fi/hgvtueveayssps4uldik7/PAN_0019.JPG",
+          "local": "/plants/sunflower-always-sunny-gold.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -657,22 +506,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/x63efq8skvw6rczg4sbua/PAN_0014.JPG",
-          "source": "https://www.dropbox.com/scl/fi/x63efq8skvw6rczg4sbua/PAN_0014.JPG",
-          "local": "/plants/impatiens-beacon-pink.webp",
+          "url": "https://www.dropbox.com/scl/fi/rc68lk1a15wuanxm8sisl/PAN_0014.JPG",
+          "source": "https://www.dropbox.com/scl/fi/rc68lk1a15wuanxm8sisl/PAN_0014.JPG",
+          "local": "/plants/impatiens-beacon-pink-1.webp",
           "mirrored": true,
-          "thumb": "/plants/impatiens-beacon-pink-thumb.webp"
+          "thumb": "/plants/impatiens-beacon-pink-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/6g0hw435bw3ixsdwvjutp/PAN_0009.JPG",
+          "source": "https://www.dropbox.com/scl/fi/6g0hw435bw3ixsdwvjutp/PAN_0009.JPG",
+          "local": "/plants/impatiens-beacon-pink.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/6mh32dvccap93j4fz5p7t/PAN_0009.JPG",
+          "source": "https://www.dropbox.com/scl/fi/6mh32dvccap93j4fz5p7t/PAN_0009.JPG",
+          "local": "/plants/impatiens-beacon-pink.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/8ftdw63i6xonva43gz1u6/PAN_0073.JPG",
+          "source": "https://www.dropbox.com/scl/fi/8ftdw63i6xonva43gz1u6/PAN_0073.JPG",
+          "local": "/plants/impatiens-beacon-pink.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/refsx1j4h432p577xcrkc/PAN_0028.JPG",
+          "source": "https://www.dropbox.com/scl/fi/refsx1j4h432p577xcrkc/PAN_0028.JPG",
+          "local": "/plants/impatiens-beacon-pink.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -684,21 +557,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/otubw9avc45iflnq1n716/DAN_0009.JPG",
-          "source": "https://www.dropbox.com/scl/fi/otubw9avc45iflnq1n716/DAN_0009.JPG",
+          "url": "https://www.dropbox.com/scl/fi/dkbk94hqow0id9z8f705z/DAN_0009.JPG",
+          "source": "https://www.dropbox.com/scl/fi/dkbk94hqow0id9z8f705z/DAN_0009.JPG",
+          "local": "/plants/angelonia-big-bicolor-pink-imp-1.webp",
+          "mirrored": true,
+          "thumb": "/plants/angelonia-big-bicolor-pink-imp-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/aw752bnb27w16hijnhilt/DAN_0061.JPG",
+          "source": "https://www.dropbox.com/scl/fi/aw752bnb27w16hijnhilt/DAN_0061.JPG",
+          "local": "/plants/angelonia-big-bicolor-pink-imp.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/lj0enefwrb69i9y8kp1f3/DAN_0039.JPG",
+          "source": "https://www.dropbox.com/scl/fi/lj0enefwrb69i9y8kp1f3/DAN_0039.JPG",
+          "local": "/plants/angelonia-big-bicolor-pink-imp.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/q2e2nznhrgz7mfdccek07/DAN_0041.JPG",
+          "source": "https://www.dropbox.com/scl/fi/q2e2nznhrgz7mfdccek07/DAN_0041.JPG",
+          "local": "/plants/angelonia-big-bicolor-pink-imp.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/3ou777p9g5y6q3qk8l5ey/DAN_0046.JPG",
+          "source": "https://www.dropbox.com/scl/fi/3ou777p9g5y6q3qk8l5ey/DAN_0046.JPG",
           "local": "/plants/angelonia-big-bicolor-pink-imp.jpg",
           "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -864,21 +762,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/rryaonyqertebodomipr5/DAN_0008.JPG",
-          "source": "https://www.dropbox.com/scl/fi/rryaonyqertebodomipr5/DAN_0008.JPG",
+          "url": "https://www.dropbox.com/scl/fi/vd83kxahe8d5v571v7frv/DAN_0008.JPG",
+          "source": "https://www.dropbox.com/scl/fi/vd83kxahe8d5v571v7frv/DAN_0008.JPG",
+          "local": "/plants/angelonia-big-grape-1.webp",
+          "mirrored": true,
+          "thumb": "/plants/angelonia-big-grape-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/or6m1jgoi382h978k51qw/DAN_0062.JPG",
+          "source": "https://www.dropbox.com/scl/fi/or6m1jgoi382h978k51qw/DAN_0062.JPG",
+          "local": "/plants/angelonia-big-grape.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/nwgws2yyytp2db7l81ype/DAN_0040.JPG",
+          "source": "https://www.dropbox.com/scl/fi/nwgws2yyytp2db7l81ype/DAN_0040.JPG",
+          "local": "/plants/angelonia-big-grape.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/49fq3zezbd9zsdt3d9rbb/DAN_0042.JPG",
+          "source": "https://www.dropbox.com/scl/fi/49fq3zezbd9zsdt3d9rbb/DAN_0042.JPG",
+          "local": "/plants/angelonia-big-grape.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/atbh3fymnxmsrzou7uski/DAN_0048.JPG",
+          "source": "https://www.dropbox.com/scl/fi/atbh3fymnxmsrzou7uski/DAN_0048.JPG",
           "local": "/plants/angelonia-big-grape.jpg",
           "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -990,22 +913,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/wt1x1hzdlwrlrncqob8x9/PAN_0004.JPG",
-          "source": "https://www.dropbox.com/scl/fi/wt1x1hzdlwrlrncqob8x9/PAN_0004.JPG",
-          "local": "/plants/petchoa-caliburst-nectarine.webp",
+          "url": "https://www.dropbox.com/scl/fi/9ql9c45uxmiycac96gv21/PAN_0004.JPG",
+          "source": "https://www.dropbox.com/scl/fi/9ql9c45uxmiycac96gv21/PAN_0004.JPG",
+          "local": "/plants/petchoa-caliburst-nectarine-1.webp",
           "mirrored": true,
-          "thumb": "/plants/petchoa-caliburst-nectarine-thumb.webp"
+          "thumb": "/plants/petchoa-caliburst-nectarine-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/79tgi9tr3h4fkmfuhk44y/PAN_0004.JPG",
+          "source": "https://www.dropbox.com/scl/fi/79tgi9tr3h4fkmfuhk44y/PAN_0004.JPG",
+          "local": "/plants/petchoa-caliburst-nectarine.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/py9yj0k0ez2zipu9fpatz/PAN_0004.JPG",
+          "source": "https://www.dropbox.com/scl/fi/py9yj0k0ez2zipu9fpatz/PAN_0004.JPG",
+          "local": "/plants/petchoa-caliburst-nectarine.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/x53paroh24sjsaviamjdf/PAN_0062.JPG",
+          "source": "https://www.dropbox.com/scl/fi/x53paroh24sjsaviamjdf/PAN_0062.JPG",
+          "local": "/plants/petchoa-caliburst-nectarine.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/p3ma7rdyq0lsh2qkaj7ui/PAN_0018.JPG",
+          "source": "https://www.dropbox.com/scl/fi/p3ma7rdyq0lsh2qkaj7ui/PAN_0018.JPG",
+          "local": "/plants/petchoa-caliburst-nectarine.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -1017,21 +964,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/c8akkrdpbi636yv1k27nq/DAN_0004.JPG",
-          "source": "https://www.dropbox.com/scl/fi/c8akkrdpbi636yv1k27nq/DAN_0004.JPG",
+          "url": "https://www.dropbox.com/scl/fi/s9voha3f89rtnt88osx7v/DAN_0004.JPG",
+          "source": "https://www.dropbox.com/scl/fi/s9voha3f89rtnt88osx7v/DAN_0004.JPG",
+          "local": "/plants/petunia-capella-hello-sunshine-1.webp",
+          "mirrored": true,
+          "thumb": "/plants/petunia-capella-hello-sunshine-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/5c38e5bheplrjvngcclzi/DAN_0056.JPG",
+          "source": "https://www.dropbox.com/scl/fi/5c38e5bheplrjvngcclzi/DAN_0056.JPG",
+          "local": "/plants/petunia-capella-hello-sunshine.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/icji261ndr4yum9rbn1a6/DAN_0037.JPG",
+          "source": "https://www.dropbox.com/scl/fi/icji261ndr4yum9rbn1a6/DAN_0037.JPG",
+          "local": "/plants/petunia-capella-hello-sunshine.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/rijl2gp2q5zu4v5a82r96/DAN_0036.JPG",
+          "source": "https://www.dropbox.com/scl/fi/rijl2gp2q5zu4v5a82r96/DAN_0036.JPG",
+          "local": "/plants/petunia-capella-hello-sunshine.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/mbvrqk2i1ay9r7pjv8vli/DAN_0042.JPG",
+          "source": "https://www.dropbox.com/scl/fi/mbvrqk2i1ay9r7pjv8vli/DAN_0042.JPG",
           "local": "/plants/petunia-capella-hello-sunshine.jpg",
           "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -1097,21 +1069,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/4yc5lbbviql6evx9ock07/BAL_00010.JPG",
-          "source": "https://www.dropbox.com/scl/fi/4yc5lbbviql6evx9ock07/BAL_00010.JPG",
+          "url": "https://www.dropbox.com/scl/fi/flnrg7lh8uw2zdb39xa7p/BAL_00010.JPG",
+          "source": "https://www.dropbox.com/scl/fi/flnrg7lh8uw2zdb39xa7p/BAL_00010.JPG",
+          "local": "/plants/calibrachoa-cha-cha-diva-orange-1.webp",
+          "mirrored": true,
+          "thumb": "/plants/calibrachoa-cha-cha-diva-orange-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/5gijxpug46f09kjchb0je/BAL_0028.JPG",
+          "source": "https://www.dropbox.com/scl/fi/5gijxpug46f09kjchb0je/BAL_0028.JPG",
+          "local": "/plants/calibrachoa-cha-cha-diva-orange.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/nbnmq7mfs7z576hpekz7c/BAL_0031.JPG",
+          "source": "https://www.dropbox.com/scl/fi/nbnmq7mfs7z576hpekz7c/BAL_0031.JPG",
+          "local": "/plants/calibrachoa-cha-cha-diva-orange.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/4l0zgqc8pg589x3sbbv05/BAL_0084.JPG",
+          "source": "https://www.dropbox.com/scl/fi/4l0zgqc8pg589x3sbbv05/BAL_0084.JPG",
+          "local": "/plants/calibrachoa-cha-cha-diva-orange.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/6jagy7g0gfo1w50vdi7cj/BAL_0039.JPG",
+          "source": "https://www.dropbox.com/scl/fi/6jagy7g0gfo1w50vdi7cj/BAL_0039.JPG",
           "local": "/plants/calibrachoa-cha-cha-diva-orange.jpg",
           "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -1123,22 +1120,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/vixbydpbhaiv26u6cc9lg/PAN_0005.JPG",
-          "source": "https://www.dropbox.com/scl/fi/vixbydpbhaiv26u6cc9lg/PAN_0005.JPG",
-          "local": "/plants/gerbera-colorbloom-orange-with-light-eye.webp",
+          "url": "https://www.dropbox.com/scl/fi/xhc9070gw9nl2u3rvqr3y/PAN_0005.JPG",
+          "source": "https://www.dropbox.com/scl/fi/xhc9070gw9nl2u3rvqr3y/PAN_0005.JPG",
+          "local": "/plants/gerbera-colorbloom-orange-with-light-eye-1.webp",
           "mirrored": true,
-          "thumb": "/plants/gerbera-colorbloom-orange-with-light-eye-thumb.webp"
+          "thumb": "/plants/gerbera-colorbloom-orange-with-light-eye-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/5ob41ifxb0ngze25xny9n/PAN_0003.JPG",
+          "source": "https://www.dropbox.com/scl/fi/5ob41ifxb0ngze25xny9n/PAN_0003.JPG",
+          "local": "/plants/gerbera-colorbloom-orange-with-light-eye.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/1bdjtghqybnvksg92wahg/PAN_0014.JPG",
+          "source": "https://www.dropbox.com/scl/fi/1bdjtghqybnvksg92wahg/PAN_0014.JPG",
+          "local": "/plants/gerbera-colorbloom-orange-with-light-eye.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/dgkcff4fbvm29kszb1m1e/PAN_0063.JPG",
+          "source": "https://www.dropbox.com/scl/fi/dgkcff4fbvm29kszb1m1e/PAN_0063.JPG",
+          "local": "/plants/gerbera-colorbloom-orange-with-light-eye.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/xk0ixpucegbc1awoopja7/PAN_0019.JPG",
+          "source": "https://www.dropbox.com/scl/fi/xk0ixpucegbc1awoopja7/PAN_0019.JPG",
+          "local": "/plants/gerbera-colorbloom-orange-with-light-eye.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -1204,22 +1225,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/a0jf1xeenrjaqgmmnktk0/PAN_0008.JPG",
-          "source": "https://www.dropbox.com/scl/fi/a0jf1xeenrjaqgmmnktk0/PAN_0008.JPG",
-          "local": "/plants/dianthus-dart-select-mixture.webp",
+          "url": "https://www.dropbox.com/scl/fi/k82uegda95fp3102pd4l1/PAN_0008.JPG",
+          "source": "https://www.dropbox.com/scl/fi/k82uegda95fp3102pd4l1/PAN_0008.JPG",
+          "local": "/plants/dianthus-dart-select-mixture-1.webp",
           "mirrored": true,
-          "thumb": "/plants/dianthus-dart-select-mixture-thumb.webp"
+          "thumb": "/plants/dianthus-dart-select-mixture-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/1f3r09sv4pvzmshpd9zyz/PAN_0015.JPG",
+          "source": "https://www.dropbox.com/scl/fi/1f3r09sv4pvzmshpd9zyz/PAN_0015.JPG",
+          "local": "/plants/dianthus-dart-select-mixture.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/t8ylk609d1n9inl04ya3u/PAN_0018.JPG",
+          "source": "https://www.dropbox.com/scl/fi/t8ylk609d1n9inl04ya3u/PAN_0018.JPG",
+          "local": "/plants/dianthus-dart-select-mixture.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/w6vlk1jn3wjfl0ezwsftc/PAN_0066.JPG",
+          "source": "https://www.dropbox.com/scl/fi/w6vlk1jn3wjfl0ezwsftc/PAN_0066.JPG",
+          "local": "/plants/dianthus-dart-select-mixture.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/60x1vbksfgdu340pb88sd/PAN_0022.JPG",
+          "source": "https://www.dropbox.com/scl/fi/60x1vbksfgdu340pb88sd/PAN_0022.JPG",
+          "local": "/plants/dianthus-dart-select-mixture.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -1258,22 +1303,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/qwq678wj2229yxuyuhd7w/PAN_0001.JPG",
-          "source": "https://www.dropbox.com/scl/fi/qwq678wj2229yxuyuhd7w/PAN_0001.JPG",
-          "local": "/plants/begonia-dragon-wing-white-bronze-leaf.webp",
+          "url": "https://www.dropbox.com/scl/fi/6cwsq41bpbeie07zyrz77/PAN_0001.JPG",
+          "source": "https://www.dropbox.com/scl/fi/6cwsq41bpbeie07zyrz77/PAN_0001.JPG",
+          "local": "/plants/begonia-dragon-wing-white-bronze-leaf-1.webp",
           "mirrored": true,
-          "thumb": "/plants/begonia-dragon-wing-white-bronze-leaf-thumb.webp"
+          "thumb": "/plants/begonia-dragon-wing-white-bronze-leaf-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/a4frjyn976xsbc72zgcto/PAN_0007.JPG",
+          "source": "https://www.dropbox.com/scl/fi/a4frjyn976xsbc72zgcto/PAN_0007.JPG",
+          "local": "/plants/begonia-dragon-wing-white-bronze-leaf.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/gbmojrdj1gld9cfehjfl9/PAN_0007.JPG",
+          "source": "https://www.dropbox.com/scl/fi/gbmojrdj1gld9cfehjfl9/PAN_0007.JPG",
+          "local": "/plants/begonia-dragon-wing-white-bronze-leaf.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/87dqn1p9zgpfgwp6f3nkm/PAN_0059.JPG",
+          "source": "https://www.dropbox.com/scl/fi/87dqn1p9zgpfgwp6f3nkm/PAN_0059.JPG",
+          "local": "/plants/begonia-dragon-wing-white-bronze-leaf.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/0hk06oeb8sr3ca9yyovr8/PAN_0015.JPG",
+          "source": "https://www.dropbox.com/scl/fi/0hk06oeb8sr3ca9yyovr8/PAN_0015.JPG",
+          "local": "/plants/begonia-dragon-wing-white-bronze-leaf.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -1285,22 +1354,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/wrk379i9h2pbn48idhe9t/PAN_0002.JPG",
-          "source": "https://www.dropbox.com/scl/fi/wrk379i9h2pbn48idhe9t/PAN_0002.JPG",
-          "local": "/plants/begonia-dragon-wing-white-improved.webp",
+          "url": "https://www.dropbox.com/scl/fi/2dzyvwgzbhpqurbl82f2p/PAN_0002.JPG",
+          "source": "https://www.dropbox.com/scl/fi/2dzyvwgzbhpqurbl82f2p/PAN_0002.JPG",
+          "local": "/plants/begonia-dragon-wing-white-improved-1.webp",
           "mirrored": true,
-          "thumb": "/plants/begonia-dragon-wing-white-improved-thumb.webp"
+          "thumb": "/plants/begonia-dragon-wing-white-improved-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/8535rl68s8d1jt21s4jbl/PAN_0006.JPG",
+          "source": "https://www.dropbox.com/scl/fi/8535rl68s8d1jt21s4jbl/PAN_0006.JPG",
+          "local": "/plants/begonia-dragon-wing-white-improved.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/wgpvqqed625ynsc0ecjav/PAN_0006.JPG",
+          "source": "https://www.dropbox.com/scl/fi/wgpvqqed625ynsc0ecjav/PAN_0006.JPG",
+          "local": "/plants/begonia-dragon-wing-white-improved.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/zkar7vhejej7d6s6szrvx/PAN_0060.JPG",
+          "source": "https://www.dropbox.com/scl/fi/zkar7vhejej7d6s6szrvx/PAN_0060.JPG",
+          "local": "/plants/begonia-dragon-wing-white-improved.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/lff259cl9l6gvg8ssdmpx/PAN_0016.JPG",
+          "source": "https://www.dropbox.com/scl/fi/lff259cl9l6gvg8ssdmpx/PAN_0016.JPG",
+          "local": "/plants/begonia-dragon-wing-white-improved.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -1312,21 +1405,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/a5x3hy2g1rmfifp5zusg9/PAN_0003.JPG",
-          "source": "https://www.dropbox.com/scl/fi/a5x3hy2g1rmfifp5zusg9/PAN_0003.JPG",
+          "url": "https://www.dropbox.com/scl/fi/19l2zl6ocdikfrh2apd8p/PAN_0003.JPG",
+          "source": "https://www.dropbox.com/scl/fi/19l2zl6ocdikfrh2apd8p/PAN_0003.JPG",
+          "local": "/plants/petunia-e3-easy-wave-midnight-marble-1.webp",
+          "mirrored": true,
+          "thumb": "/plants/petunia-e3-easy-wave-midnight-marble-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/clnhjc5ly9h43wp6zy7ey/PAN_0005.JPG",
+          "source": "https://www.dropbox.com/scl/fi/clnhjc5ly9h43wp6zy7ey/PAN_0005.JPG",
+          "local": "/plants/petunia-e3-easy-wave-midnight-marble.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/lo968j5yzy5u5cc3w2gs2/PAN_0005.JPG",
+          "source": "https://www.dropbox.com/scl/fi/lo968j5yzy5u5cc3w2gs2/PAN_0005.JPG",
+          "local": "/plants/petunia-e3-easy-wave-midnight-marble.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/rg653z4h2oie413942n8e/PAN_0061.JPG",
+          "source": "https://www.dropbox.com/scl/fi/rg653z4h2oie413942n8e/PAN_0061.JPG",
+          "local": "/plants/petunia-e3-easy-wave-midnight-marble.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/1jd0x2d34zwmo7qoal7x7/PAN_0017.JPG",
+          "source": "https://www.dropbox.com/scl/fi/1jd0x2d34zwmo7qoal7x7/PAN_0017.JPG",
           "local": "/plants/petunia-e3-easy-wave-midnight-marble.jpg",
           "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -1338,22 +1456,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/csn6zvsvrkhvv5wmp1sez/PAN_0010.JPG",
-          "source": "https://www.dropbox.com/scl/fi/csn6zvsvrkhvv5wmp1sez/PAN_0010.JPG",
-          "local": "/plants/zinnia-elegant-full-mixture.webp",
+          "url": "https://www.dropbox.com/scl/fi/6qes9gk27jbg25dobzg89/PAN_0009.JPG",
+          "source": "https://www.dropbox.com/scl/fi/6qes9gk27jbg25dobzg89/PAN_0009.JPG",
+          "local": "/plants/zinnia-elegant-full-mixture-1.webp",
           "mirrored": true,
-          "thumb": "/plants/zinnia-elegant-full-mixture-thumb.webp"
+          "thumb": "/plants/zinnia-elegant-full-mixture-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/6mp54ab9pbww1k08z8wrx/PAN_0014.JPG",
+          "source": "https://www.dropbox.com/scl/fi/6mp54ab9pbww1k08z8wrx/PAN_0014.JPG",
+          "local": "/plants/zinnia-elegant-full-mixture.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/1jplpoz6zjr3sl0xeqvs1/PAN_0017.JPG",
+          "source": "https://www.dropbox.com/scl/fi/1jplpoz6zjr3sl0xeqvs1/PAN_0017.JPG",
+          "local": "/plants/zinnia-elegant-full-mixture.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/l2bkeumyeckt3aw9bpwow/PAN_0067.JPG",
+          "source": "https://www.dropbox.com/scl/fi/l2bkeumyeckt3aw9bpwow/PAN_0067.JPG",
+          "local": "/plants/zinnia-elegant-full-mixture.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/o5busdajd9kkrtqpqstl8/PAN_0023.JPG",
+          "source": "https://www.dropbox.com/scl/fi/o5busdajd9kkrtqpqstl8/PAN_0023.JPG",
+          "local": "/plants/zinnia-elegant-full-mixture.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -1365,22 +1507,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/pyfdo7w1f0ic7hxg5kshv/PAN_0009.JPG",
-          "source": "https://www.dropbox.com/scl/fi/pyfdo7w1f0ic7hxg5kshv/PAN_0009.JPG",
-          "local": "/plants/zinnia-elegant-soft-mixture.webp",
+          "url": "https://www.dropbox.com/scl/fi/9gskg4odwwxervt93egms/PAN_0010.JPG",
+          "source": "https://www.dropbox.com/scl/fi/9gskg4odwwxervt93egms/PAN_0010.JPG",
+          "local": "/plants/zinnia-elegant-soft-mixture-1.webp",
           "mirrored": true,
-          "thumb": "/plants/zinnia-elegant-soft-mixture-thumb.webp"
+          "thumb": "/plants/zinnia-elegant-soft-mixture-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/0ukt6r8ylqa12thhtzt6x/PAN_0013.JPG",
+          "source": "https://www.dropbox.com/scl/fi/0ukt6r8ylqa12thhtzt6x/PAN_0013.JPG",
+          "local": "/plants/zinnia-elegant-soft-mixture.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/r08pi546nqnapxke7gsp0/PAN_0016.JPG",
+          "source": "https://www.dropbox.com/scl/fi/r08pi546nqnapxke7gsp0/PAN_0016.JPG",
+          "local": "/plants/zinnia-elegant-soft-mixture.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/adeb73r5j6zxwl7it7jly/PAN_0068.JPG",
+          "source": "https://www.dropbox.com/scl/fi/adeb73r5j6zxwl7it7jly/PAN_0068.JPG",
+          "local": "/plants/zinnia-elegant-soft-mixture.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/zzgnxobakiu2r2vq8w3qd/PAN_0024.JPG",
+          "source": "https://www.dropbox.com/scl/fi/zzgnxobakiu2r2vq8w3qd/PAN_0024.JPG",
+          "local": "/plants/zinnia-elegant-soft-mixture.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -1438,21 +1604,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/pv1clxhw5jv6mfqnfdf4s/DAN_0005.JPG",
-          "source": "https://www.dropbox.com/scl/fi/pv1clxhw5jv6mfqnfdf4s/DAN_0005.JPG",
+          "url": "https://www.dropbox.com/scl/fi/ypr1vl3o1q7gwn5mu989c/DAN_0005.JPG",
+          "source": "https://www.dropbox.com/scl/fi/ypr1vl3o1q7gwn5mu989c/DAN_0005.JPG",
+          "local": "/plants/lantana-gem-diva-pink-1.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-gem-diva-pink-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/toaj2ojzmh3nsv4sdo1li/DAN_0065.JPG",
+          "source": "https://www.dropbox.com/scl/fi/toaj2ojzmh3nsv4sdo1li/DAN_0065.JPG",
+          "local": "/plants/lantana-gem-diva-pink.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/am01vpc7gm2yci2k751e6/DAN_0045.JPG",
+          "source": "https://www.dropbox.com/scl/fi/am01vpc7gm2yci2k751e6/DAN_0045.JPG",
+          "local": "/plants/lantana-gem-diva-pink.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/oiqefa7jafo6459smnuf6/DAN_0045.JPG",
+          "source": "https://www.dropbox.com/scl/fi/oiqefa7jafo6459smnuf6/DAN_0045.JPG",
+          "local": "/plants/lantana-gem-diva-pink.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/je8ns0kj175o2kn6rilxc/DAN_0051.JPG",
+          "source": "https://www.dropbox.com/scl/fi/je8ns0kj175o2kn6rilxc/DAN_0051.JPG",
           "local": "/plants/lantana-gem-diva-pink.jpg",
           "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -1464,21 +1655,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/6jia9xnt20kbvonzcmm9p/DAN_0007.JPG",
-          "source": "https://www.dropbox.com/scl/fi/6jia9xnt20kbvonzcmm9p/DAN_0007.JPG",
+          "url": "https://www.dropbox.com/scl/fi/iyi4ovaq81dnbmz7xo421/DAN_0007.JPG",
+          "source": "https://www.dropbox.com/scl/fi/iyi4ovaq81dnbmz7xo421/DAN_0007.JPG",
+          "local": "/plants/lantana-gem-pearl-1.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-gem-pearl-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/i9pp2di0zr4woczyla9cw/DAN_0063.JPG",
+          "source": "https://www.dropbox.com/scl/fi/i9pp2di0zr4woczyla9cw/DAN_0063.JPG",
+          "local": "/plants/lantana-gem-pearl.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/8x2li8ebytsdol18rge6j/DAN_0042.JPG",
+          "source": "https://www.dropbox.com/scl/fi/8x2li8ebytsdol18rge6j/DAN_0042.JPG",
+          "local": "/plants/lantana-gem-pearl.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/9oy4n45caf7jm7diri8im/DAN_0043.JPG",
+          "source": "https://www.dropbox.com/scl/fi/9oy4n45caf7jm7diri8im/DAN_0043.JPG",
+          "local": "/plants/lantana-gem-pearl.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/1qbygv15gaqzxoyb08io5/DAN_0049.JPG",
+          "source": "https://www.dropbox.com/scl/fi/1qbygv15gaqzxoyb08io5/DAN_0049.JPG",
           "local": "/plants/lantana-gem-pearl.jpg",
           "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -1490,22 +1706,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/a3hvoklrih0xlg7b2wjzb/BAL_0007.JPG",
-          "source": "https://www.dropbox.com/scl/fi/a3hvoklrih0xlg7b2wjzb/BAL_0007.JPG",
-          "local": "/plants/impatiens-glimmer-strawberry-sparkler.webp",
+          "url": "https://www.dropbox.com/scl/fi/b6me8lxrbjdpxg42asles/BAL_0007.JPG",
+          "source": "https://www.dropbox.com/scl/fi/b6me8lxrbjdpxg42asles/BAL_0007.JPG",
+          "local": "/plants/impatiens-glimmer-strawberry-sparkler-1.webp",
           "mirrored": true,
-          "thumb": "/plants/impatiens-glimmer-strawberry-sparkler-thumb.webp"
+          "thumb": "/plants/impatiens-glimmer-strawberry-sparkler-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/r6et0smgiiew5qssox4sd/BAL_0019.JPG",
+          "source": "https://www.dropbox.com/scl/fi/r6et0smgiiew5qssox4sd/BAL_0019.JPG",
+          "local": "/plants/impatiens-glimmer-strawberry-sparkler.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/bc7l68rscl9nb2o3plztp/BAL_0028.JPG",
+          "source": "https://www.dropbox.com/scl/fi/bc7l68rscl9nb2o3plztp/BAL_0028.JPG",
+          "local": "/plants/impatiens-glimmer-strawberry-sparkler.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/fe1c5tost5z2ft205ehga/BAL_0075.JPG",
+          "source": "https://www.dropbox.com/scl/fi/fe1c5tost5z2ft205ehga/BAL_0075.JPG",
+          "local": "/plants/impatiens-glimmer-strawberry-sparkler.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/ok2vtynsr371wkfmqiodd/BAL_0030.JPG",
+          "source": "https://www.dropbox.com/scl/fi/ok2vtynsr371wkfmqiodd/BAL_0030.JPG",
+          "local": "/plants/impatiens-glimmer-strawberry-sparkler.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -1654,9 +1894,8 @@
         {
           "url": "https://www.dropbox.com/scl/fi/r93zw4ts5ssmm1kvpjv99/DUM_0049.JPG",
           "source": "https://www.dropbox.com/scl/fi/r93zw4ts5ssmm1kvpjv99/DUM_0049.JPG",
-          "local": "/plants/lantana-havana-sunrise-24.webp",
-          "mirrored": true,
-          "thumb": "/plants/lantana-havana-sunrise-24-thumb.webp"
+          "local": "/plants/lantana-havana-sunrise-24.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
@@ -1681,9 +1920,8 @@
         {
           "url": "https://www.dropbox.com/scl/fi/uzzl7kx6nypwexm04zqkp/DUM_0048.JPG",
           "source": "https://www.dropbox.com/scl/fi/uzzl7kx6nypwexm04zqkp/DUM_0048.JPG",
-          "local": "/plants/lantana-havana-sunset-21.webp",
-          "mirrored": true,
-          "thumb": "/plants/lantana-havana-sunset-21-thumb.webp"
+          "local": "/plants/lantana-havana-sunset-21.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
@@ -1760,22 +1998,40 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/bed2pf0siwhk4fnmd78ul/PAN_0011.JPG",
-          "source": "https://www.dropbox.com/scl/fi/bed2pf0siwhk4fnmd78ul/PAN_0011.JPG",
-          "local": "/plants/african-marigold-lanna-lace.webp",
+          "url": "https://www.dropbox.com/scl/fi/yh4p3ntlc1bcwecq6g81j/PAN_0011.JPG",
+          "source": "https://www.dropbox.com/scl/fi/yh4p3ntlc1bcwecq6g81j/PAN_0011.JPG",
+          "local": "/plants/african-marigold-lanna-lace-1.webp",
           "mirrored": true,
-          "thumb": "/plants/african-marigold-lanna-lace-thumb.webp"
+          "thumb": "/plants/african-marigold-lanna-lace-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/uvwoan43pbox2kasvohyv/PAN_0012.JPG",
+          "source": "https://www.dropbox.com/scl/fi/uvwoan43pbox2kasvohyv/PAN_0012.JPG",
+          "local": "/plants/african-marigold-lanna-lace.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/swseurat190wb26ddt9ol/PAN_0013.JPG",
+          "source": "https://www.dropbox.com/scl/fi/swseurat190wb26ddt9ol/PAN_0013.JPG",
+          "local": "/plants/african-marigold-lanna-lace.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/b9u8l93fj1bcfg9slf6sx/PAN_0069.JPG",
+          "source": "https://www.dropbox.com/scl/fi/b9u8l93fj1bcfg9slf6sx/PAN_0069.JPG",
+          "local": "/plants/african-marigold-lanna-lace.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -1787,21 +2043,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/gdf1bokt8sytfnmnjfu7i/DAN_0006.JPG",
-          "source": "https://www.dropbox.com/scl/fi/gdf1bokt8sytfnmnjfu7i/DAN_0006.JPG",
+          "url": "https://www.dropbox.com/scl/fi/owu3jc55oeek60m5q6vk8/DAN_0006.JPG",
+          "source": "https://www.dropbox.com/scl/fi/owu3jc55oeek60m5q6vk8/DAN_0006.JPG",
+          "local": "/plants/lantana-lemon-quartz-1.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-lemon-quartz-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/dd3eyqtq2qop1v1oswvgu/DAN_0064.JPG",
+          "source": "https://www.dropbox.com/scl/fi/dd3eyqtq2qop1v1oswvgu/DAN_0064.JPG",
+          "local": "/plants/lantana-lemon-quartz.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/1w1vdmbbvwkweuu2jzvyq/DAN_0044.JPG",
+          "source": "https://www.dropbox.com/scl/fi/1w1vdmbbvwkweuu2jzvyq/DAN_0044.JPG",
+          "local": "/plants/lantana-lemon-quartz.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/56jm0fyw1muj5rp6t3h5m/DAN_0044.JPG",
+          "source": "https://www.dropbox.com/scl/fi/56jm0fyw1muj5rp6t3h5m/DAN_0044.JPG",
+          "local": "/plants/lantana-lemon-quartz.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/xxy026isre1rjjb8v2feg/DAN_0050.JPG",
+          "source": "https://www.dropbox.com/scl/fi/xxy026isre1rjjb8v2feg/DAN_0050.JPG",
           "local": "/plants/lantana-lemon-quartz.jpg",
           "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -1975,21 +2256,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/ysmdxpfaj9w0rt9tbg5qv/DAN_0010.JPG",
-          "source": "https://www.dropbox.com/scl/fi/ysmdxpfaj9w0rt9tbg5qv/DAN_0010.JPG",
+          "url": "https://www.dropbox.com/scl/fi/pxajhxjljrzpyqnpjyegq/DAN_0010.JPG",
+          "source": "https://www.dropbox.com/scl/fi/pxajhxjljrzpyqnpjyegq/DAN_0010.JPG",
+          "local": "/plants/portulaca-mega-pazzaz-tropical-twist-1.webp",
+          "mirrored": true,
+          "thumb": "/plants/portulaca-mega-pazzaz-tropical-twist-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/rl5kf7zo0n192c8utfopc/DAN_0060.JPG",
+          "source": "https://www.dropbox.com/scl/fi/rl5kf7zo0n192c8utfopc/DAN_0060.JPG",
+          "local": "/plants/portulaca-mega-pazzaz-tropical-twist.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/bry75ofkc4g2ov5znhquu/DAN_0038.JPG",
+          "source": "https://www.dropbox.com/scl/fi/bry75ofkc4g2ov5znhquu/DAN_0038.JPG",
+          "local": "/plants/portulaca-mega-pazzaz-tropical-twist.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/p4m2132qu10uy98bs7l4k/DAN_0040.JPG",
+          "source": "https://www.dropbox.com/scl/fi/p4m2132qu10uy98bs7l4k/DAN_0040.JPG",
+          "local": "/plants/portulaca-mega-pazzaz-tropical-twist.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/3ou777p9g5y6q3qk8l5ey/DAN_0046.JPG",
+          "source": "https://www.dropbox.com/scl/fi/3ou777p9g5y6q3qk8l5ey/DAN_0046.JPG",
           "local": "/plants/portulaca-mega-pazzaz-tropical-twist.jpg",
           "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -2001,22 +2307,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/dw1w4icgp01dhkxkn47ll/BAL_0009.JPG",
-          "source": "https://www.dropbox.com/scl/fi/dw1w4icgp01dhkxkn47ll/BAL_0009.JPG",
-          "local": "/plants/calibrachoa-minfams-neo-coral-flash.webp",
+          "url": "https://www.dropbox.com/scl/fi/ijvs8ct5lvovfwyjzods6/BAL_0011.JPG",
+          "source": "https://www.dropbox.com/scl/fi/ijvs8ct5lvovfwyjzods6/BAL_0011.JPG",
+          "local": "/plants/calibrachoa-minfams-neo-coral-flash-1.webp",
           "mirrored": true,
-          "thumb": "/plants/calibrachoa-minfams-neo-coral-flash-thumb.webp"
+          "thumb": "/plants/calibrachoa-minfams-neo-coral-flash-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/rliq6dgiyoe8q3dhts5w4/BAL_0027.JPG",
+          "source": "https://www.dropbox.com/scl/fi/rliq6dgiyoe8q3dhts5w4/BAL_0027.JPG",
+          "local": "/plants/calibrachoa-minfams-neo-coral-flash.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/hxbhor8d0bnvagjd18phr/BAL_0032.JPG",
+          "source": "https://www.dropbox.com/scl/fi/hxbhor8d0bnvagjd18phr/BAL_0032.JPG",
+          "local": "/plants/calibrachoa-minfams-neo-coral-flash.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/n13v37hank8ga3lvb2q3q/BAL_0085.JPG",
+          "source": "https://www.dropbox.com/scl/fi/n13v37hank8ga3lvb2q3q/BAL_0085.JPG",
+          "local": "/plants/calibrachoa-minfams-neo-coral-flash.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/lkdhhrk95h2p0yismtek8/BAL_0038.JPG",
+          "source": "https://www.dropbox.com/scl/fi/lkdhhrk95h2p0yismtek8/BAL_0038.JPG",
+          "local": "/plants/calibrachoa-minfams-neo-coral-flash.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -2028,22 +2358,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/jt15y0vyezm1phkq38cmj/BAL_0008.JPG",
-          "source": "https://www.dropbox.com/scl/fi/jt15y0vyezm1phkq38cmj/BAL_0008.JPG",
-          "local": "/plants/calibrachoa-minfams-neo-rose-flash.webp",
+          "url": "https://www.dropbox.com/scl/fi/6ndffwhir10284pjjeul2/BAL_0012.JPG",
+          "source": "https://www.dropbox.com/scl/fi/6ndffwhir10284pjjeul2/BAL_0012.JPG",
+          "local": "/plants/calibrachoa-minfams-neo-rose-flash-1.webp",
           "mirrored": true,
-          "thumb": "/plants/calibrachoa-minfams-neo-rose-flash-thumb.webp"
+          "thumb": "/plants/calibrachoa-minfams-neo-rose-flash-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/rpebic9cdpwo611c8r29e/BAL_0026.JPG",
+          "source": "https://www.dropbox.com/scl/fi/rpebic9cdpwo611c8r29e/BAL_0026.JPG",
+          "local": "/plants/calibrachoa-minfams-neo-rose-flash.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/t9zaopbejstwz9qjlytf0/BAL_0033.JPG",
+          "source": "https://www.dropbox.com/scl/fi/t9zaopbejstwz9qjlytf0/BAL_0033.JPG",
+          "local": "/plants/calibrachoa-minfams-neo-rose-flash.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/p10lwxio5b6xqtq08phwa/BAL_0086.JPG",
+          "source": "https://www.dropbox.com/scl/fi/p10lwxio5b6xqtq08phwa/BAL_0086.JPG",
+          "local": "/plants/calibrachoa-minfams-neo-rose-flash.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/2ojvg2659qi6pxqo2jda1/BAL_0037.JPG",
+          "source": "https://www.dropbox.com/scl/fi/2ojvg2659qi6pxqo2jda1/BAL_0037.JPG",
+          "local": "/plants/calibrachoa-minfams-neo-rose-flash.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -2055,22 +2409,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/w1wlz7ah9aa1x0iladpvj/BAL_0001.JPG",
-          "source": "https://www.dropbox.com/scl/fi/w1wlz7ah9aa1x0iladpvj/BAL_0001.JPG",
-          "local": "/plants/ageratum-monarch-magic.webp",
+          "url": "https://www.dropbox.com/scl/fi/m50lly71s18gfwlgi6lf9/BAL_0001.JPG",
+          "source": "https://www.dropbox.com/scl/fi/m50lly71s18gfwlgi6lf9/BAL_0001.JPG",
+          "local": "/plants/ageratum-monarch-magic-1.webp",
           "mirrored": true,
-          "thumb": "/plants/ageratum-monarch-magic-thumb.webp"
+          "thumb": "/plants/ageratum-monarch-magic-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/d50vtz3b4zyjwslcxykrk/BAL_0025.JPG",
+          "source": "https://www.dropbox.com/scl/fi/d50vtz3b4zyjwslcxykrk/BAL_0025.JPG",
+          "local": "/plants/ageratum-monarch-magic.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/4sqc28rqrop5q0fwv6ajg/BAL_0022.JPG",
+          "source": "https://www.dropbox.com/scl/fi/4sqc28rqrop5q0fwv6ajg/BAL_0022.JPG",
+          "local": "/plants/ageratum-monarch-magic.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/dzaa8omea4ag71hep50ta/BAL_0081.JPG",
+          "source": "https://www.dropbox.com/scl/fi/dzaa8omea4ag71hep50ta/BAL_0081.JPG",
+          "local": "/plants/ageratum-monarch-magic.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/h1ok75gfnhxdoljq90too/BAL_0036.JPG",
+          "source": "https://www.dropbox.com/scl/fi/h1ok75gfnhxdoljq90too/BAL_0036.JPG",
+          "local": "/plants/ageratum-monarch-magic.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -2082,22 +2460,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/h34tu94uo1wifi5322sq4/BAL_0005.JPG",
-          "source": "https://www.dropbox.com/scl/fi/h34tu94uo1wifi5322sq4/BAL_0005.JPG",
-          "local": "/plants/salvia-mystical-blue.webp",
+          "url": "https://www.dropbox.com/scl/fi/mum1eo8brz11vnap1of1u/BAL_0005.JPG",
+          "source": "https://www.dropbox.com/scl/fi/mum1eo8brz11vnap1of1u/BAL_0005.JPG",
+          "local": "/plants/salvia-mystical-blue-1.webp",
           "mirrored": true,
-          "thumb": "/plants/salvia-mystical-blue-thumb.webp"
+          "thumb": "/plants/salvia-mystical-blue-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/vv9p5490ok44zi3b6drqe/BAL_0021.JPG",
+          "source": "https://www.dropbox.com/scl/fi/vv9p5490ok44zi3b6drqe/BAL_0021.JPG",
+          "local": "/plants/salvia-mystical-blue.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/8urfg9ikoltbtar3wldbb/BAL_0026.JPG",
+          "source": "https://www.dropbox.com/scl/fi/8urfg9ikoltbtar3wldbb/BAL_0026.JPG",
+          "local": "/plants/salvia-mystical-blue.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/ihg8bxwoqdj72tpmiean0/BAL_0077.JPG",
+          "source": "https://www.dropbox.com/scl/fi/ihg8bxwoqdj72tpmiean0/BAL_0077.JPG",
+          "local": "/plants/salvia-mystical-blue.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/va12iut9qy2jucuv2tluj/BAL_0032.JPG",
+          "source": "https://www.dropbox.com/scl/fi/va12iut9qy2jucuv2tluj/BAL_0032.JPG",
+          "local": "/plants/salvia-mystical-blue.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -2109,22 +2511,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/356rqvdudhnlv636n49o5/BAL_0006.JPG",
-          "source": "https://www.dropbox.com/scl/fi/356rqvdudhnlv636n49o5/BAL_0006.JPG",
-          "local": "/plants/salvia-mystical-white.webp",
+          "url": "https://www.dropbox.com/scl/fi/6j73xd14nupe1szjox43i/BAL_0006.JPG",
+          "source": "https://www.dropbox.com/scl/fi/6j73xd14nupe1szjox43i/BAL_0006.JPG",
+          "local": "/plants/salvia-mystical-white-1.webp",
           "mirrored": true,
-          "thumb": "/plants/salvia-mystical-white-thumb.webp"
+          "thumb": "/plants/salvia-mystical-white-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/762iqpzk553mycvb1ggiu/BAL_0020.JPG",
+          "source": "https://www.dropbox.com/scl/fi/762iqpzk553mycvb1ggiu/BAL_0020.JPG",
+          "local": "/plants/salvia-mystical-white.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/2463laf4mp7p577l3ftvg/BAL_0027.JPG",
+          "source": "https://www.dropbox.com/scl/fi/2463laf4mp7p577l3ftvg/BAL_0027.JPG",
+          "local": "/plants/salvia-mystical-white.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/cpjdpsrxn3n8zast2uri2/BAL_0076.JPG",
+          "source": "https://www.dropbox.com/scl/fi/cpjdpsrxn3n8zast2uri2/BAL_0076.JPG",
+          "local": "/plants/salvia-mystical-white.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/9yabff4wdy71puzkcc7fp/BAL_0031.JPG",
+          "source": "https://www.dropbox.com/scl/fi/9yabff4wdy71puzkcc7fp/BAL_0031.JPG",
+          "local": "/plants/salvia-mystical-white.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -2136,21 +2562,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/5uty4cch6bhsp6x7ohhiw/DAN_0003.JPG",
-          "source": "https://www.dropbox.com/scl/fi/5uty4cch6bhsp6x7ohhiw/DAN_0003.JPG",
+          "url": "https://www.dropbox.com/scl/fi/tg80iw13bjr26sfqpu2fi/DAN_0003.JPG",
+          "source": "https://www.dropbox.com/scl/fi/tg80iw13bjr26sfqpu2fi/DAN_0003.JPG",
+          "local": "/plants/impatiens-ngi-sol-prime-orchid-1.webp",
+          "mirrored": true,
+          "thumb": "/plants/impatiens-ngi-sol-prime-orchid-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/5pfb2btnx8gz8cp4cv7l4/DAN_0057.JPG",
+          "source": "https://www.dropbox.com/scl/fi/5pfb2btnx8gz8cp4cv7l4/DAN_0057.JPG",
+          "local": "/plants/impatiens-ngi-sol-prime-orchid.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/xko2ia4qtr1ha5g2f3jyk/DAN_0036.JPG",
+          "source": "https://www.dropbox.com/scl/fi/xko2ia4qtr1ha5g2f3jyk/DAN_0036.JPG",
+          "local": "/plants/impatiens-ngi-sol-prime-orchid.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/aswqt9ysx4089qdxvwpkn/DAN_0037.JPG",
+          "source": "https://www.dropbox.com/scl/fi/aswqt9ysx4089qdxvwpkn/DAN_0037.JPG",
+          "local": "/plants/impatiens-ngi-sol-prime-orchid.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/nbwcye6tfy2o1458lz94v/DAN_0043.JPG",
+          "source": "https://www.dropbox.com/scl/fi/nbwcye6tfy2o1458lz94v/DAN_0043.JPG",
           "local": "/plants/impatiens-ngi-sol-prime-orchid.jpg",
           "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -2162,21 +2613,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/3nvxbwyf00n72og71b1cm/DAN_0002.JPG",
-          "source": "https://www.dropbox.com/scl/fi/3nvxbwyf00n72og71b1cm/DAN_0002.JPG",
+          "url": "https://www.dropbox.com/scl/fi/xccwrx5kouw138jtdz070/DAN_0002.JPG",
+          "source": "https://www.dropbox.com/scl/fi/xccwrx5kouw138jtdz070/DAN_0002.JPG",
+          "local": "/plants/impatiens-ngi-sol-prime-pearl-1.webp",
+          "mirrored": true,
+          "thumb": "/plants/impatiens-ngi-sol-prime-pearl-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/kn7dn4erhkvnb66355riw/DAN_0058.JPG",
+          "source": "https://www.dropbox.com/scl/fi/kn7dn4erhkvnb66355riw/DAN_0058.JPG",
+          "local": "/plants/impatiens-ngi-sol-prime-pearl.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/htkocwnjysr2fi4ai2mze/DAN_0035.JPG",
+          "source": "https://www.dropbox.com/scl/fi/htkocwnjysr2fi4ai2mze/DAN_0035.JPG",
+          "local": "/plants/impatiens-ngi-sol-prime-pearl.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/4zjnkllwtnorwdpxoiwfk/DAN_0038.JPG",
+          "source": "https://www.dropbox.com/scl/fi/4zjnkllwtnorwdpxoiwfk/DAN_0038.JPG",
+          "local": "/plants/impatiens-ngi-sol-prime-pearl.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/6jq672arytzciuz53zdsw/DAN_0044.JPG",
+          "source": "https://www.dropbox.com/scl/fi/6jq672arytzciuz53zdsw/DAN_0044.JPG",
           "local": "/plants/impatiens-ngi-sol-prime-pearl.jpg",
           "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -2215,21 +2691,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/um7z4jbr5hwu7sg4tk1yt/DAN_0001.JPG",
-          "source": "https://www.dropbox.com/scl/fi/um7z4jbr5hwu7sg4tk1yt/DAN_0001.JPG",
+          "url": "https://www.dropbox.com/scl/fi/sey728tp5qjimhukmwzra/DAN_0001.JPG",
+          "source": "https://www.dropbox.com/scl/fi/sey728tp5qjimhukmwzra/DAN_0001.JPG",
+          "local": "/plants/salvia-sallyfun-blue-lagoon-1.webp",
+          "mirrored": true,
+          "thumb": "/plants/salvia-sallyfun-blue-lagoon-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/us5dczg78jzkheerllwen/DAN_0059.JPG",
+          "source": "https://www.dropbox.com/scl/fi/us5dczg78jzkheerllwen/DAN_0059.JPG",
+          "local": "/plants/salvia-sallyfun-blue-lagoon.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/at194jgjc1u90sslr40ag/DAN_0034.JPG",
+          "source": "https://www.dropbox.com/scl/fi/at194jgjc1u90sslr40ag/DAN_0034.JPG",
+          "local": "/plants/salvia-sallyfun-blue-lagoon.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/ttokf1llriwwbiybdxvls/DAN_0039.JPG",
+          "source": "https://www.dropbox.com/scl/fi/ttokf1llriwwbiybdxvls/DAN_0039.JPG",
+          "local": "/plants/salvia-sallyfun-blue-lagoon.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/7fd5ozspv6y6q7h9m0ax2/DAN_0045.JPG",
+          "source": "https://www.dropbox.com/scl/fi/7fd5ozspv6y6q7h9m0ax2/DAN_0045.JPG",
           "local": "/plants/salvia-sallyfun-blue-lagoon.jpg",
           "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -2243,9 +2744,8 @@
         {
           "url": "https://www.dropbox.com/scl/fi/ee994q2qao5udjs7w6zx4/DUM_0054.JPG",
           "source": "https://www.dropbox.com/scl/fi/ee994q2qao5udjs7w6zx4/DUM_0054.JPG",
-          "local": "/plants/geranium-interspecific-santana-dark-red.webp",
-          "mirrored": true,
-          "thumb": "/plants/geranium-interspecific-santana-dark-red-thumb.webp"
+          "local": "/plants/geranium-interspecific-santana-dark-red.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
@@ -2297,9 +2797,8 @@
         {
           "url": "https://www.dropbox.com/scl/fi/lb0buuzmxa944je09jbau/DUM_0052.JPG",
           "source": "https://www.dropbox.com/scl/fi/lb0buuzmxa944je09jbau/DUM_0052.JPG",
-          "local": "/plants/geranium-interspecific-santana-pink.webp",
-          "mirrored": true,
-          "thumb": "/plants/geranium-interspecific-santana-pink-thumb.webp"
+          "local": "/plants/geranium-interspecific-santana-pink.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
@@ -2324,9 +2823,8 @@
         {
           "url": "https://www.dropbox.com/scl/fi/xn6tlzdwncs2qi0n8ghvz/DUM_0051.JPG",
           "source": "https://www.dropbox.com/scl/fi/xn6tlzdwncs2qi0n8ghvz/DUM_0051.JPG",
-          "local": "/plants/geranium-interspecific-santana-pink-splash.webp",
-          "mirrored": true,
-          "thumb": "/plants/geranium-interspecific-santana-pink-splash-thumb.webp"
+          "local": "/plants/geranium-interspecific-santana-pink-splash.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
@@ -2351,9 +2849,8 @@
         {
           "url": "https://www.dropbox.com/scl/fi/rdk12eer753otgj1570nh/DUM_0055.JPG",
           "source": "https://www.dropbox.com/scl/fi/rdk12eer753otgj1570nh/DUM_0055.JPG",
-          "local": "/plants/geranium-interspecific-santana-purple.webp",
-          "mirrored": true,
-          "thumb": "/plants/geranium-interspecific-santana-purple-thumb.webp"
+          "local": "/plants/geranium-interspecific-santana-purple.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
@@ -2378,9 +2875,8 @@
         {
           "url": "https://www.dropbox.com/scl/fi/ru6gts7z5i4qdbvb7foyf/DUM_0053.JPG",
           "source": "https://www.dropbox.com/scl/fi/ru6gts7z5i4qdbvb7foyf/DUM_0053.JPG",
-          "local": "/plants/geranium-interspecific-santana-white.webp",
-          "mirrored": true,
-          "thumb": "/plants/geranium-interspecific-santana-white-thumb.webp"
+          "local": "/plants/geranium-interspecific-santana-white.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
@@ -2405,9 +2901,8 @@
         {
           "url": "https://www.dropbox.com/scl/fi/mtkpxzxx0mbq2ar9pxrg7/DUM_0050.JPG",
           "source": "https://www.dropbox.com/scl/fi/mtkpxzxx0mbq2ar9pxrg7/DUM_0050.JPG",
-          "local": "/plants/geranium-interspecific-santana-white-splash.webp",
-          "mirrored": true,
-          "thumb": "/plants/geranium-interspecific-santana-white-splash-thumb.webp"
+          "local": "/plants/geranium-interspecific-santana-white-splash.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
@@ -2565,22 +3060,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/zt0d252m2jdpicxczklwg/PAN_0007.JPG",
-          "source": "https://www.dropbox.com/scl/fi/zt0d252m2jdpicxczklwg/PAN_0007.JPG",
-          "local": "/plants/angelonia-serena-magenta.webp",
+          "url": "https://www.dropbox.com/scl/fi/t7j8xzcybc867k8azan82/PAN_0007.JPG",
+          "source": "https://www.dropbox.com/scl/fi/t7j8xzcybc867k8azan82/PAN_0007.JPG",
+          "local": "/plants/angelonia-serena-magenta-1.webp",
           "mirrored": true,
-          "thumb": "/plants/angelonia-serena-magenta-thumb.webp"
+          "thumb": "/plants/angelonia-serena-magenta-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/4yurg3pi3doi2qo2rgep5/PAN_0001.JPG",
+          "source": "https://www.dropbox.com/scl/fi/4yurg3pi3doi2qo2rgep5/PAN_0001.JPG",
+          "local": "/plants/angelonia-serena-magenta.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/hlx5d8clz38hai0284b3l/PAN_0001.JPG",
+          "source": "https://www.dropbox.com/scl/fi/hlx5d8clz38hai0284b3l/PAN_0001.JPG",
+          "local": "/plants/angelonia-serena-magenta.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/ya21b8bw86t79lhlcrike/PAN_0065.JPG",
+          "source": "https://www.dropbox.com/scl/fi/ya21b8bw86t79lhlcrike/PAN_0065.JPG",
+          "local": "/plants/angelonia-serena-magenta.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/4yolcfp08zwraq6l06uin/PAN_0021.JPG",
+          "source": "https://www.dropbox.com/scl/fi/4yolcfp08zwraq6l06uin/PAN_0021.JPG",
+          "local": "/plants/angelonia-serena-magenta.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -2619,22 +3138,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/2zntz1n9nxxfnkxd8lvva/PAN_0006.JPG",
-          "source": "https://www.dropbox.com/scl/fi/2zntz1n9nxxfnkxd8lvva/PAN_0006.JPG",
-          "local": "/plants/angelonia-serenita-cherry-red.webp",
+          "url": "https://www.dropbox.com/scl/fi/mxdcnhiqybtryaafpnlfm/PAN_0006.JPG",
+          "source": "https://www.dropbox.com/scl/fi/mxdcnhiqybtryaafpnlfm/PAN_0006.JPG",
+          "local": "/plants/angelonia-serenita-cherry-red-1.webp",
           "mirrored": true,
-          "thumb": "/plants/angelonia-serenita-cherry-red-thumb.webp"
+          "thumb": "/plants/angelonia-serenita-cherry-red-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/irt69sfwztyo1ujbihgyc/PAN_0002.JPG",
+          "source": "https://www.dropbox.com/scl/fi/irt69sfwztyo1ujbihgyc/PAN_0002.JPG",
+          "local": "/plants/angelonia-serenita-cherry-red.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/36dyjfmtv8nrg85tu2d6w/PAN_0002.JPG",
+          "source": "https://www.dropbox.com/scl/fi/36dyjfmtv8nrg85tu2d6w/PAN_0002.JPG",
+          "local": "/plants/angelonia-serenita-cherry-red.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/mvftpl51gv5ceog5b7no7/PAN_0064.JPG",
+          "source": "https://www.dropbox.com/scl/fi/mvftpl51gv5ceog5b7no7/PAN_0064.JPG",
+          "local": "/plants/angelonia-serenita-cherry-red.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/23e1u5bqr3d51d5x7gjay/PAN_0020.JPG",
+          "source": "https://www.dropbox.com/scl/fi/23e1u5bqr3d51d5x7gjay/PAN_0020.JPG",
+          "local": "/plants/angelonia-serenita-cherry-red.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -2646,22 +3189,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/aconf3o2y1wzvlh8o87h1/BAL_0004.JPG",
-          "source": "https://www.dropbox.com/scl/fi/aconf3o2y1wzvlh8o87h1/BAL_0004.JPG",
-          "local": "/plants/lantana-shamrock-lavendar.webp",
+          "url": "https://www.dropbox.com/scl/fi/xs6o82a2ytrvp6bndfv5j/BAL_0003.JPG",
+          "source": "https://www.dropbox.com/scl/fi/xs6o82a2ytrvp6bndfv5j/BAL_0003.JPG",
+          "local": "/plants/lantana-shamrock-lavendar-1.webp",
           "mirrored": true,
-          "thumb": "/plants/lantana-shamrock-lavendar-thumb.webp"
+          "thumb": "/plants/lantana-shamrock-lavendar-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/3wpr57xs726jlr4fmb32u/BAL_0023.JPG",
+          "source": "https://www.dropbox.com/scl/fi/3wpr57xs726jlr4fmb32u/BAL_0023.JPG",
+          "local": "/plants/lantana-shamrock-lavendar.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/zver0ijv0j47s8sp4xlrw/BAL_0024.JPG",
+          "source": "https://www.dropbox.com/scl/fi/zver0ijv0j47s8sp4xlrw/BAL_0024.JPG",
+          "local": "/plants/lantana-shamrock-lavendar.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/xrguqyyficjywq7prqhs6/BAL_0079.JPG",
+          "source": "https://www.dropbox.com/scl/fi/xrguqyyficjywq7prqhs6/BAL_0079.JPG",
+          "local": "/plants/lantana-shamrock-lavendar.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/qtanow2q80mgg5fswgarg/BAL_0034.JPG",
+          "source": "https://www.dropbox.com/scl/fi/qtanow2q80mgg5fswgarg/BAL_0034.JPG",
+          "local": "/plants/lantana-shamrock-lavendar.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -2673,22 +3240,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/izd08rcy5ux4aukjojd76/BAL_0003.JPG",
-          "source": "https://www.dropbox.com/scl/fi/izd08rcy5ux4aukjojd76/BAL_0003.JPG",
-          "local": "/plants/lantana-shamrock-rose.webp",
+          "url": "https://www.dropbox.com/scl/fi/6fen9mw3m1zyzxwnx44uv/BAL_0004.JPG",
+          "source": "https://www.dropbox.com/scl/fi/6fen9mw3m1zyzxwnx44uv/BAL_0004.JPG",
+          "local": "/plants/lantana-shamrock-rose-1.webp",
           "mirrored": true,
-          "thumb": "/plants/lantana-shamrock-rose-thumb.webp"
+          "thumb": "/plants/lantana-shamrock-rose-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/b7x7nw51cwrkbuifa1xww/BAL_0022.JPG",
+          "source": "https://www.dropbox.com/scl/fi/b7x7nw51cwrkbuifa1xww/BAL_0022.JPG",
+          "local": "/plants/lantana-shamrock-rose.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/ln43gvkmiz2vyq2s20xry/BAL_0025.JPG",
+          "source": "https://www.dropbox.com/scl/fi/ln43gvkmiz2vyq2s20xry/BAL_0025.JPG",
+          "local": "/plants/lantana-shamrock-rose.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/95fk6kszk6uwlbuk345wh/BAL_0078.JPG",
+          "source": "https://www.dropbox.com/scl/fi/95fk6kszk6uwlbuk345wh/BAL_0078.JPG",
+          "local": "/plants/lantana-shamrock-rose.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/ena0tyimdapi9rwdnn0gp/BAL_0033.JPG",
+          "source": "https://www.dropbox.com/scl/fi/ena0tyimdapi9rwdnn0gp/BAL_0033.JPG",
+          "local": "/plants/lantana-shamrock-rose.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -2700,22 +3291,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/8jea5jz7xk3du8sqs29m1/BAL_0012.JPG",
-          "source": "https://www.dropbox.com/scl/fi/8jea5jz7xk3du8sqs29m1/BAL_0012.JPG",
-          "local": "/plants/petunia-slingshot-cherrytrtwhl.webp",
+          "url": "https://www.dropbox.com/scl/fi/zqv53x2qwm8srnhg4mzww/BAL_0008.JPG",
+          "source": "https://www.dropbox.com/scl/fi/zqv53x2qwm8srnhg4mzww/BAL_0008.JPG",
+          "local": "/plants/petunia-slingshot-cherrytrtwhl-1.webp",
           "mirrored": true,
-          "thumb": "/plants/petunia-slingshot-cherrytrtwhl-thumb.webp"
+          "thumb": "/plants/petunia-slingshot-cherrytrtwhl-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/yzborj1bv7rmp5atxnv9k/BAL_0030.JPG",
+          "source": "https://www.dropbox.com/scl/fi/yzborj1bv7rmp5atxnv9k/BAL_0030.JPG",
+          "local": "/plants/petunia-slingshot-cherrytrtwhl.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/y6in1gl0x0uihmh7090m4/BAL_0029.JPG",
+          "source": "https://www.dropbox.com/scl/fi/y6in1gl0x0uihmh7090m4/BAL_0029.JPG",
+          "local": "/plants/petunia-slingshot-cherrytrtwhl.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/zgk721x121nc33q0oahmw/BAL_0082.JPG",
+          "source": "https://www.dropbox.com/scl/fi/zgk721x121nc33q0oahmw/BAL_0082.JPG",
+          "local": "/plants/petunia-slingshot-cherrytrtwhl.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/d7a2pspek8shrd0oasyjc/BAL_0041.JPG",
+          "source": "https://www.dropbox.com/scl/fi/d7a2pspek8shrd0oasyjc/BAL_0041.JPG",
+          "local": "/plants/petunia-slingshot-cherrytrtwhl.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -2727,22 +3342,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/vjwq22ucqchi2g7mknwi5/PAN_0015.JPG",
-          "source": "https://www.dropbox.com/scl/fi/vjwq22ucqchi2g7mknwi5/PAN_0015.JPG",
-          "local": "/plants/interspecific-impatiens-solarscape-xl-red-glow.webp",
+          "url": "https://www.dropbox.com/scl/fi/3zlqz9z04i7v3ol38adpa/PAN_0015.JPG",
+          "source": "https://www.dropbox.com/scl/fi/3zlqz9z04i7v3ol38adpa/PAN_0015.JPG",
+          "local": "/plants/interspecific-impatiens-solarscape-xl-red-glow-1.webp",
           "mirrored": true,
-          "thumb": "/plants/interspecific-impatiens-solarscape-xl-red-glow-thumb.webp"
+          "thumb": "/plants/interspecific-impatiens-solarscape-xl-red-glow-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/868bn2bti3mud3l0e22sd/PAN_0008.JPG",
+          "source": "https://www.dropbox.com/scl/fi/868bn2bti3mud3l0e22sd/PAN_0008.JPG",
+          "local": "/plants/interspecific-impatiens-solarscape-xl-red-glow.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/gbmojrdj1gld9cfehjfl9/PAN_0007.JPG",
+          "source": "https://www.dropbox.com/scl/fi/gbmojrdj1gld9cfehjfl9/PAN_0007.JPG",
+          "local": "/plants/interspecific-impatiens-solarscape-xl-red-glow.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/0armr8vjjwvskf7az3yyh/PAN_0074.JPG",
+          "source": "https://www.dropbox.com/scl/fi/0armr8vjjwvskf7az3yyh/PAN_0074.JPG",
+          "local": "/plants/interspecific-impatiens-solarscape-xl-red-glow.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/h8i8dc2tm725vsetmqy81/PAN_0029.JPG",
+          "source": "https://www.dropbox.com/scl/fi/h8i8dc2tm725vsetmqy81/PAN_0029.JPG",
+          "local": "/plants/interspecific-impatiens-solarscape-xl-red-glow.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -2862,22 +3501,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/11lj6w4c7d83g4jhsnquz/PAN_0013.JPG",
-          "source": "https://www.dropbox.com/scl/fi/11lj6w4c7d83g4jhsnquz/PAN_0013.JPG",
-          "local": "/plants/vinca-tattoo-boysenberry.webp",
+          "url": "https://www.dropbox.com/scl/fi/n6enjsbat2y7pko0qn0yf/PAN_0013.JPG",
+          "source": "https://www.dropbox.com/scl/fi/n6enjsbat2y7pko0qn0yf/PAN_0013.JPG",
+          "local": "/plants/vinca-tattoo-boysenberry-1.webp",
           "mirrored": true,
-          "thumb": "/plants/vinca-tattoo-boysenberry-thumb.webp"
+          "thumb": "/plants/vinca-tattoo-boysenberry-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/fssg9hekbbjvr0oo0d0oz/PAN_0010.JPG",
+          "source": "https://www.dropbox.com/scl/fi/fssg9hekbbjvr0oo0d0oz/PAN_0010.JPG",
+          "local": "/plants/vinca-tattoo-boysenberry.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/886nsmn8dkrbg754qo6dy/PAN_0010.JPG",
+          "source": "https://www.dropbox.com/scl/fi/886nsmn8dkrbg754qo6dy/PAN_0010.JPG",
+          "local": "/plants/vinca-tattoo-boysenberry.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/xdsiblxzi9qgnmrgk9fpo/PAN_0072.JPG",
+          "source": "https://www.dropbox.com/scl/fi/xdsiblxzi9qgnmrgk9fpo/PAN_0072.JPG",
+          "local": "/plants/vinca-tattoo-boysenberry.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/4l6tzh6v7v3onvwanb4al/PAN_0027.JPG",
+          "source": "https://www.dropbox.com/scl/fi/4l6tzh6v7v3onvwanb4al/PAN_0027.JPG",
+          "local": "/plants/vinca-tattoo-boysenberry.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -2889,22 +3552,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/8ohx58bt375oz92vwrddx/BAL_0011.JPG",
-          "source": "https://www.dropbox.com/scl/fi/8ohx58bt375oz92vwrddx/BAL_0011.JPG",
-          "local": "/plants/calibrachoa-uno-double-light-pink-26.webp",
+          "url": "https://www.dropbox.com/scl/fi/5sftnxj7s6ez1yez2e2gu/BAL_0009.JPG",
+          "source": "https://www.dropbox.com/scl/fi/5sftnxj7s6ez1yez2e2gu/BAL_0009.JPG",
+          "local": "/plants/calibrachoa-uno-double-light-pink-26-1.webp",
           "mirrored": true,
-          "thumb": "/plants/calibrachoa-uno-double-light-pink-26-thumb.webp"
+          "thumb": "/plants/calibrachoa-uno-double-light-pink-26-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/srvzz84qrdx51lqwtjjw4/BAL_0029.JPG",
+          "source": "https://www.dropbox.com/scl/fi/srvzz84qrdx51lqwtjjw4/BAL_0029.JPG",
+          "local": "/plants/calibrachoa-uno-double-light-pink-26.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/2cfbzc38p6qoe2vp5qm2q/BAL_0030.JPG",
+          "source": "https://www.dropbox.com/scl/fi/2cfbzc38p6qoe2vp5qm2q/BAL_0030.JPG",
+          "local": "/plants/calibrachoa-uno-double-light-pink-26.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/c7ltt4hlc5tfu3l6s8lhl/BAL_0083.JPG",
+          "source": "https://www.dropbox.com/scl/fi/c7ltt4hlc5tfu3l6s8lhl/BAL_0083.JPG",
+          "local": "/plants/calibrachoa-uno-double-light-pink-26.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/1iqbrqbecgwokh6e9f7pi/BAL_0040.JPG",
+          "source": "https://www.dropbox.com/scl/fi/1iqbrqbecgwokh6e9f7pi/BAL_0040.JPG",
+          "local": "/plants/calibrachoa-uno-double-light-pink-26.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     },
     {
@@ -2916,22 +3603,46 @@
       "year": 2026,
       "images": [
         {
-          "url": "https://www.dropbox.com/scl/fi/dyc9lymgzyww5pefarcdk/BAL_0002.JPG",
-          "source": "https://www.dropbox.com/scl/fi/dyc9lymgzyww5pefarcdk/BAL_0002.JPG",
-          "local": "/plants/dahlia-venti-pinkburst.webp",
+          "url": "https://www.dropbox.com/scl/fi/co68hj0rpgpvw564dd9ej/BAL_0002.JPG",
+          "source": "https://www.dropbox.com/scl/fi/co68hj0rpgpvw564dd9ej/BAL_0002.JPG",
+          "local": "/plants/dahlia-venti-pinkburst-1.webp",
           "mirrored": true,
-          "thumb": "/plants/dahlia-venti-pinkburst-thumb.webp"
+          "thumb": "/plants/dahlia-venti-pinkburst-1-thumb.webp"
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/opfshodo32aro0yovknoy/BAL_0024.JPG",
+          "source": "https://www.dropbox.com/scl/fi/opfshodo32aro0yovknoy/BAL_0024.JPG",
+          "local": "/plants/dahlia-venti-pinkburst.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/8asx3urh89xc6r7hk5mc4/BAL_0023.JPG",
+          "source": "https://www.dropbox.com/scl/fi/8asx3urh89xc6r7hk5mc4/BAL_0023.JPG",
+          "local": "/plants/dahlia-venti-pinkburst.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/sm4rgcbgftbf6m1agkobv/BAL_0080.JPG",
+          "source": "https://www.dropbox.com/scl/fi/sm4rgcbgftbf6m1agkobv/BAL_0080.JPG",
+          "local": "/plants/dahlia-venti-pinkburst.jpg",
+          "mirrored": false
+        },
+        {
+          "url": "https://www.dropbox.com/scl/fi/3ifdpndlqvm6un2xfb1gh/BAL_0035.JPG",
+          "source": "https://www.dropbox.com/scl/fi/3ifdpndlqvm6un2xfb1gh/BAL_0035.JPG",
+          "local": "/plants/dahlia-venti-pinkburst.jpg",
+          "mirrored": false
         }
       ],
       "status": "In Ground",
-      "currentAvg": 5,
-      "latestEvaluation": "2026-03-10",
-      "evaluationCount": 3,
+      "currentAvg": null,
+      "latestEvaluation": "2026-05-06",
+      "evaluationCount": 5,
       "latestScores": {
-        "heatResistance": 5,
-        "uniformity": 5,
-        "flowerPower": 5,
-        "foliage": 5
+        "heatResistance": null,
+        "uniformity": null,
+        "flowerPower": null,
+        "foliage": null
       }
     }
   ],
@@ -5870,6 +6581,842 @@
       "foliage": 5,
       "heatResistance": 5,
       "avg": 5,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "ageratum-monarch-magic",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dahlia-venti-pinkburst",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-shamrock-lavendar",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-shamrock-rose",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "salvia-mystical-blue",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "salvia-mystical-white",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "impatiens-glimmer-strawberry-sparkler",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "petunia-slingshot-cherrytrtwhl",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-uno-double-light-pink-26",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-cha-cha-diva-orange",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-minfams-neo-coral-flash",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-minfams-neo-rose-flash",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "salvia-sallyfun-blue-lagoon",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "impatiens-ngi-sol-prime-pearl",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "impatiens-ngi-sol-prime-orchid",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "petunia-capella-hello-sunshine",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-gem-diva-pink",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-lemon-quartz",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-gem-pearl",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "angelonia-big-grape",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "angelonia-big-bicolor-pink-imp",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "portulaca-mega-pazzaz-tropical-twist",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "sunflower-always-sunny-gold",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "begonia-dragon-wing-white-bronze-leaf",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "begonia-dragon-wing-white-improved",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "petunia-e3-easy-wave-midnight-marble",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "petchoa-caliburst-nectarine",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "gerbera-colorbloom-orange-with-light-eye",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "angelonia-serenita-cherry-red",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "angelonia-serena-magenta",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dianthus-dart-select-mixture",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "zinnia-elegant-full-mixture",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "zinnia-elegant-soft-mixture",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "african-marigold-lanna-lace",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "osteospermum-akila-sunshine-yellow",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "vinca-tattoo-boysenberry",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "impatiens-beacon-pink",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "interspecific-impatiens-solarscape-xl-red-glow",
+      "date": "2026-04-07",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "ageratum-monarch-magic",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dahlia-venti-pinkburst",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-shamrock-lavendar",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-shamrock-rose",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "salvia-mystical-blue",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "salvia-mystical-white",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "impatiens-glimmer-strawberry-sparkler",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "petunia-slingshot-cherrytrtwhl",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-uno-double-light-pink-26",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-cha-cha-diva-orange",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-minfams-neo-coral-flash",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "calibrachoa-minfams-neo-rose-flash",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "salvia-sallyfun-blue-lagoon",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "impatiens-ngi-sol-prime-pearl",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "impatiens-ngi-sol-prime-orchid",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "petunia-capella-hello-sunshine",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-gem-diva-pink",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-lemon-quartz",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "lantana-gem-pearl",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "angelonia-big-grape",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "angelonia-big-bicolor-pink-imp",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "portulaca-mega-pazzaz-tropical-twist",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "sunflower-always-sunny-gold",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "begonia-dragon-wing-white-bronze-leaf",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "begonia-dragon-wing-white-improved",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "petunia-e3-easy-wave-midnight-marble",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "petchoa-caliburst-nectarine",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "gerbera-colorbloom-orange-with-light-eye",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "angelonia-serenita-cherry-red",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "angelonia-serena-magenta",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "dianthus-dart-select-mixture",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "zinnia-elegant-full-mixture",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "zinnia-elegant-soft-mixture",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "african-marigold-lanna-lace",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "osteospermum-akila-sunshine-yellow",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "vinca-tattoo-boysenberry",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "impatiens-beacon-pink",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
+      "notes": null,
+      "weather": null
+    },
+    {
+      "cultivarId": "interspecific-impatiens-solarscape-xl-red-glow",
+      "date": "2026-05-06",
+      "uniformity": null,
+      "flowerPower": null,
+      "foliage": null,
+      "heatResistance": null,
+      "avg": null,
       "notes": null,
       "weather": null
     }
