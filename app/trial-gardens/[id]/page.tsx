@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import {
-  cultivars, getCultivar, getEvaluations, meta, CATEGORIES, fmtDate,
+  cultivars, getCultivar, getEvaluations, imageForDate, meta, CATEGORIES, fmtDate,
 } from '@/lib/data';
 import { Section, Notice, ScoreBar, AvgBadge } from '@/components/Ui';
 import TrialPhoto from '@/components/TrialPhoto';
@@ -110,6 +110,7 @@ export default async function CultivarPage({ params }: { params: Promise<Params>
             <thead className="bg-ground text-left">
               <tr>
                 <th scope="col" className="px-4 py-3 font-mono text-[11px] uppercase tracking-[.1em]">Round</th>
+                <th scope="col" className="px-4 py-3 font-mono text-[11px] uppercase tracking-[.1em]">Photo</th>
                 {CATEGORIES.map((cat) => (
                   <th key={cat.key} scope="col" className="px-4 py-3 font-mono text-[11px] uppercase tracking-[.1em]" title={cat.label}>
                     {cat.code}
@@ -124,6 +125,14 @@ export default async function CultivarPage({ params }: { params: Promise<Params>
                   <th scope="row" data-label="Round" className="whitespace-nowrap px-4 py-3 text-left font-medium">
                     {fmtDate(e.date)}
                   </th>
+                  <td data-label="Photo" className="px-4 py-3">
+                    <TrialPhoto
+                      c={c}
+                      variant="round"
+                      image={imageForDate(c, e.date)}
+                      className="h-14 w-14"
+                    />
+                  </td>
                   {CATEGORIES.map((cat) => (
                     <td key={cat.key} data-label={cat.label} className="px-4 py-3 font-mono tabular-nums">
                       {e[cat.key]?.toFixed(1) ?? '—'}
@@ -143,8 +152,8 @@ export default async function CultivarPage({ params }: { params: Promise<Params>
             The source export carries no observation notes, weather readings or flower color for
             this cultivar. All three fields exist in the data model and populate as soon as the
             trial team supplies them.{' '}
-            {c.images.length > 0 && !c.images[0].mirrored &&
-              'The photo above is hotlinked from Dropbox, run npm run mirror to serve it from UF-controlled storage.'}
+            {c.images.length > 0 && !c.images.some((i) => i.mirrored) &&
+              'None of this cultivar\'s photos have been mirrored from Dropbox yet, run npm run photos once they\'re downloaded.'}
           </Notice>
         </div>
       </Section>

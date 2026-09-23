@@ -8,10 +8,11 @@ export type Scores = {
 };
 
 export type TrialImage = {
-  url: string;      // dropbox link, rewritten with raw=1
-  source: string;   // original link from the sheet; import-photos matches on its filename
-  local: string;    // /plants/<id>.webp once imported
-  thumb?: string;   // small variant, same as local if nothing was resized
+  date: string;      // ISO date of the evaluation this photo was taken for
+  url: string;       // dropbox link, rewritten with raw=1
+  source: string;    // original link from the sheet; import-photos matches on its filename
+  local: string;     // /plants/<id>--<date>.webp once imported
+  thumb?: string;    // small variant, same as local if nothing was resized
   mirrored: boolean;
 };
 
@@ -87,6 +88,13 @@ export const cultivars = data.cultivars;
 export const evaluations = data.evaluations;
 
 export const getCultivar = (id: string) => cultivars.find((c) => c.id === id);
+
+// most recent mirrored photo, for the hero/card image -- images are stored oldest-first
+export const latestMirroredImage = (c: Cultivar): TrialImage | undefined =>
+  [...c.images].reverse().find((i) => i.mirrored);
+
+export const imageForDate = (c: Cultivar, date: string): TrialImage | undefined =>
+  c.images.find((i) => i.date === date);
 
 export const getEvaluations = (id: string) =>
   evaluations.filter((e) => e.cultivarId === id).sort((a, b) => b.date.localeCompare(a.date));
