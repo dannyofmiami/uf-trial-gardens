@@ -1,13 +1,14 @@
 'use client';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import Link from 'next/link';
 import {
-  fmtDate, imageForDate, latestMirroredImage, CATEGORIES,
+  fmtDate, imageForDate, latestMirroredImage, withBase, CATEGORIES,
   type Cultivar, type Evaluation, type TrialData,
 } from '@/lib/data';
 import { Section, Notice, ScoreBar, AvgBadge } from '@/components/Ui';
 import TrialPhoto from '@/components/TrialPhoto';
+import PhotoLightbox from '@/components/PhotoLightbox';
 
 export default function CultivarDetail({
   c, evals, meta,
@@ -17,6 +18,12 @@ export default function CultivarDetail({
     latestMirroredImage(c)?.date ?? latest?.date,
   );
   const heroImage = selectedDate ? imageForDate(c, selectedDate) : undefined;
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const heroButton = useRef<HTMLButtonElement>(null);
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+    heroButton.current?.focus();
+  };
 
   return (
     <>
@@ -31,7 +38,28 @@ export default function CultivarDetail({
 
           <div className="mt-6 grid gap-8 lg:grid-cols-[320px_1fr]">
             <div>
-              <TrialPhoto c={c} image={heroImage} className="aspect-[4/3] w-full" />
+              {heroImage?.mirrored ? (
+                <>
+                  <button
+                    ref={heroButton}
+                    type="button"
+                    onClick={() => setLightboxOpen(true)}
+                    aria-label={`View larger photo of ${c.name}, ${fmtDate(heroImage.date)}`}
+                    className="block w-full cursor-zoom-in focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-uf-blue"
+                  >
+                    <TrialPhoto c={c} image={heroImage} className="aspect-[4/3] w-full" />
+                  </button>
+                  <PhotoLightbox
+                    open={lightboxOpen}
+                    onClose={closeLightbox}
+                    src={withBase(heroImage.local)}
+                    alt={`${c.name} (${c.genus}), photographed ${fmtDate(heroImage.date)}`}
+                    caption={`${c.name} · ${fmtDate(heroImage.date)}`}
+                  />
+                </>
+              ) : (
+                <TrialPhoto c={c} image={heroImage} className="aspect-[4/3] w-full" />
+              )}
               {selectedDate && (
                 <p className="mt-2 font-mono text-[11px] uppercase tracking-[.1em] text-muted">
                   {selectedDate === latestMirroredImage(c)?.date ? 'Latest photo' : 'Showing'}
