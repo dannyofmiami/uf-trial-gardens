@@ -191,20 +191,47 @@ for (const a of awards) {
 const scored = evaluations.filter((e) => e.avg !== null);
 const latestDate = evaluations.reduce((m, e) => (e.date > m ? e.date : m), '');
 const latestRows = scored.filter((e) => e.date === latestDate);
+// scored.length === 0 would make this NaN, which JSON.stringify silently turns into
+// null -- make the "no scores at all" case an explicit null instead of an accident.
+const perfectScoreShare = scored.length
+  ? Math.round((scored.filter((e) => e.avg === 5).length / scored.length) * 1000) / 1000
+  : null;
+
+let note;
+if (evaluations.length === 0) {
+  note = 'No evaluations in this import.';
+} else if (scored.length === 0) {
+  note =
+    `None of the ${evaluations.length} evaluations across ${facetsDatesCount(evaluations)} ` +
+    'date(s) have a score yet -- every Uniformity/Flower Power/Foliage/Heat Resistance/' +
+    'Overall Rating cell in the source sheet is "na". This source file has the plant, ' +
+    'supplier and photo data but no ratings at all yet -- needs the trial team to fill in ' +
+    'scores before the site shows anything but dashes.';
+} else if (latestRows.length > 0 && latestRows.every((e) => e.avg === 5)) {
+  note =
+    'Latest evaluation rates every entry 5.0 across all four categories, so no award ' +
+    'can be decided yet. Needs differentiated scoring before launch.';
+} else {
+  note = null;
+}
+
+function facetsDatesCount(evals) {
+  return new Set(evals.map((e) => e.date)).size;
+}
+
 const dataQuality = {
   missingFlowerColor: list.filter((c) => !c.flowerColor).length,
   missingImage: list.filter((c) => !c.images.length).length,
   imagesHotlinked: list.reduce((n, c) => n + c.images.length, 0),
   imagesMirrored: list.reduce((n, c) => n + c.images.filter((i) => i.mirrored).length, 0),
-  perfectScoreShare: Math.round((scored.filter((e) => e.avg === 5).length / scored.length) * 1000) / 1000,
+  perfectScoreShare,
   // .every() on an empty array is vacuously true -- guard against a latest
   // date with no scored rows yet (e.g. a season that's still all 'na').
   latestSnapshotAllPerfect: latestRows.length > 0 && latestRows.every((e) => e.avg === 5),
   awardsUndecidedByTie: awards.some((a) => a.tied > 1),
   duplicateImageLinks: imageLinkWarnings.length,
-  note:
-    'Latest evaluation rates every entry 5.0 across all four categories, so no award ' +
-    'can be decided yet. Needs differentiated scoring before launch.',
+  unscoredEvaluations: evaluations.length - scored.length,
+  note,
 };
 
 // filter facets
