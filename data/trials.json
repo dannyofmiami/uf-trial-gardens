@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "InitiationData 2.xlsx",
-    "generatedAt": "2026-09-23T20:05:32.499Z",
+    "generatedAt": "2026-09-24T16:33:50.802Z",
     "site": "Homestead, FL",
     "hardinessZone": "11b",
     "cultivarCount": 87,
@@ -10,14 +10,15 @@
       "missingFlowerColor": 87,
       "missingImage": 0,
       "imagesHotlinked": 430,
-      "imagesMirrored": 277,
+      "imagesMirrored": 430,
       "perfectScoreShare": null,
       "latestSnapshotAllPerfect": false,
       "awardsUndecidedByTie": false,
       "duplicateImageLinks": 7,
-      "note": "Latest evaluation rates every entry 5.0 across all four categories, so no award can be decided yet. Needs differentiated scoring before launch."
+      "unscoredEvaluations": 435,
+      "note": "None of the 435 evaluations across 5 date(s) have a score yet -- every Uniformity/Flower Power/Foliage/Heat Resistance/Overall Rating cell in the source sheet is \"na\". This source file has the plant, supplier and photo data but no ratings at all yet -- needs the trial team to fill in scores before the site shows anything but dashes."
     },
-    "photosImportedAt": "2026-09-23T20:24:23.314Z"
+    "photosImportedAt": "2026-09-24T16:45:46.486Z"
   },
   "facets": {
     "genera": [
@@ -245,8 +246,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/k45jsvzb8fqqg5hivqvlt/DUM_0001.JPG",
           "source": "https://www.dropbox.com/scl/fi/k45jsvzb8fqqg5hivqvlt/DUM_0001.JPG",
-          "local": "/plants/evolvulus-beach-bum-blue--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/evolvulus-beach-bum-blue--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/evolvulus-beach-bum-blue--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -268,8 +270,9 @@
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/byom9hbwq23hidoa4yjjj/DUM_0027.JPG",
           "source": "https://www.dropbox.com/scl/fi/byom9hbwq23hidoa4yjjj/DUM_0027.JPG",
-          "local": "/plants/evolvulus-beach-bum-blue--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/evolvulus-beach-bum-blue--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/evolvulus-beach-bum-blue--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -363,22 +366,25 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/aw752bnb27w16hijnhilt/DAN_0061.JPG",
           "source": "https://www.dropbox.com/scl/fi/aw752bnb27w16hijnhilt/DAN_0061.JPG",
-          "local": "/plants/angelonia-big-bicolor-pink-imp--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/angelonia-big-bicolor-pink-imp--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/angelonia-big-bicolor-pink-imp--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
           "url": "https://www.dropbox.com/scl/fi/lj0enefwrb69i9y8kp1f3/DAN_0039.JPG",
           "source": "https://www.dropbox.com/scl/fi/lj0enefwrb69i9y8kp1f3/DAN_0039.JPG",
-          "local": "/plants/angelonia-big-bicolor-pink-imp--2026-03-10.jpg",
-          "mirrored": false
+          "local": "/plants/angelonia-big-bicolor-pink-imp--2026-03-10.webp",
+          "mirrored": true,
+          "thumb": "/plants/angelonia-big-bicolor-pink-imp--2026-03-10-thumb.webp"
         },
         {
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/q2e2nznhrgz7mfdccek07/DAN_0041.JPG",
           "source": "https://www.dropbox.com/scl/fi/q2e2nznhrgz7mfdccek07/DAN_0041.JPG",
-          "local": "/plants/angelonia-big-bicolor-pink-imp--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/angelonia-big-bicolor-pink-imp--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/angelonia-big-bicolor-pink-imp--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -420,8 +426,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/hjpjhk54s0a9nhevc6p5k/DUM_0041.JPG",
           "source": "https://www.dropbox.com/scl/fi/hjpjhk54s0a9nhevc6p5k/DUM_0041.JPG",
-          "local": "/plants/geranium-interspecific-big-eeze-dark-red--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-big-eeze-dark-red--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-big-eeze-dark-red--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -435,8 +442,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/878h31d8e5rqdrebtxt65/DUM_0087.JPG",
           "source": "https://www.dropbox.com/scl/fi/878h31d8e5rqdrebtxt65/DUM_0087.JPG",
-          "local": "/plants/geranium-interspecific-big-eeze-dark-red--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-big-eeze-dark-red--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-big-eeze-dark-red--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -478,8 +486,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/0aa7kj9mtdrav3rxdpl7c/DUM_0037.JPG",
           "source": "https://www.dropbox.com/scl/fi/0aa7kj9mtdrav3rxdpl7c/DUM_0037.JPG",
-          "local": "/plants/geranium-interspecific-big-eeze-foxy-flamingo--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-big-eeze-foxy-flamingo--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-big-eeze-foxy-flamingo--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -493,8 +502,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/ygoey3d0zb85ls32uihj5/DUM_0083.JPG",
           "source": "https://www.dropbox.com/scl/fi/ygoey3d0zb85ls32uihj5/DUM_0083.JPG",
-          "local": "/plants/geranium-interspecific-big-eeze-foxy-flamingo--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-big-eeze-foxy-flamingo--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-big-eeze-foxy-flamingo--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -536,8 +546,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/3opxm52hs7gyukxmsl110/DUM_0038.JPG",
           "source": "https://www.dropbox.com/scl/fi/3opxm52hs7gyukxmsl110/DUM_0038.JPG",
-          "local": "/plants/geranium-interspecific-big-eeze-fuchsia-blue--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-big-eeze-fuchsia-blue--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-big-eeze-fuchsia-blue--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -551,8 +562,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/6zh0puiq3sckomo4kvuhq/DUM_0084.JPG",
           "source": "https://www.dropbox.com/scl/fi/6zh0puiq3sckomo4kvuhq/DUM_0084.JPG",
-          "local": "/plants/geranium-interspecific-big-eeze-fuchsia-blue--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-big-eeze-fuchsia-blue--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-big-eeze-fuchsia-blue--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -594,8 +606,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/eteb5yx4l0viqbl0kkopy/DUM_0039.JPG",
           "source": "https://www.dropbox.com/scl/fi/eteb5yx4l0viqbl0kkopy/DUM_0039.JPG",
-          "local": "/plants/geranium-interspecific-big-eeze-pink--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-big-eeze-pink--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-big-eeze-pink--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -609,8 +622,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/n89w6w03jedfk803n6t0k/DUM_0085.JPG",
           "source": "https://www.dropbox.com/scl/fi/n89w6w03jedfk803n6t0k/DUM_0085.JPG",
-          "local": "/plants/geranium-interspecific-big-eeze-pink--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-big-eeze-pink--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-big-eeze-pink--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -652,8 +666,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/295wt36zvpj5pglu6bbrv/DUM_0040.JPG",
           "source": "https://www.dropbox.com/scl/fi/295wt36zvpj5pglu6bbrv/DUM_0040.JPG",
-          "local": "/plants/geranium-interspecific-big-eeze-pink-batik--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-big-eeze-pink-batik--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-big-eeze-pink-batik--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -667,8 +682,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/smkzztm06hi67q2buzglj/DUM_0086.JPG",
           "source": "https://www.dropbox.com/scl/fi/smkzztm06hi67q2buzglj/DUM_0086.JPG",
-          "local": "/plants/geranium-interspecific-big-eeze-pink-batik--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-big-eeze-pink-batik--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-big-eeze-pink-batik--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -710,22 +726,25 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/or6m1jgoi382h978k51qw/DAN_0062.JPG",
           "source": "https://www.dropbox.com/scl/fi/or6m1jgoi382h978k51qw/DAN_0062.JPG",
-          "local": "/plants/angelonia-big-grape--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/angelonia-big-grape--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/angelonia-big-grape--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
           "url": "https://www.dropbox.com/scl/fi/nwgws2yyytp2db7l81ype/DAN_0040.JPG",
           "source": "https://www.dropbox.com/scl/fi/nwgws2yyytp2db7l81ype/DAN_0040.JPG",
-          "local": "/plants/angelonia-big-grape--2026-03-10.jpg",
-          "mirrored": false
+          "local": "/plants/angelonia-big-grape--2026-03-10.webp",
+          "mirrored": true,
+          "thumb": "/plants/angelonia-big-grape--2026-03-10-thumb.webp"
         },
         {
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/49fq3zezbd9zsdt3d9rbb/DAN_0042.JPG",
           "source": "https://www.dropbox.com/scl/fi/49fq3zezbd9zsdt3d9rbb/DAN_0042.JPG",
-          "local": "/plants/angelonia-big-grape--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/angelonia-big-grape--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/angelonia-big-grape--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -767,8 +786,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/ntiyv80lf5978ukr61i0m/DUM_0004.JPG",
           "source": "https://www.dropbox.com/scl/fi/ntiyv80lf5978ukr61i0m/DUM_0004.JPG",
-          "local": "/plants/calibrachoa-bloomtastic-honey--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/calibrachoa-bloomtastic-honey--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/calibrachoa-bloomtastic-honey--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -790,8 +810,9 @@
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/nb1g4c7lqa3zvr7j8xj2t/DUM_0030.JPG",
           "source": "https://www.dropbox.com/scl/fi/nb1g4c7lqa3zvr7j8xj2t/DUM_0030.JPG",
-          "local": "/plants/calibrachoa-bloomtastic-honey--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/calibrachoa-bloomtastic-honey--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/calibrachoa-bloomtastic-honey--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -825,8 +846,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/dpzokdbln5yumjctrszm2/DUM_0006.JPG",
           "source": "https://www.dropbox.com/scl/fi/dpzokdbln5yumjctrszm2/DUM_0006.JPG",
-          "local": "/plants/calibrachoa-bloomtastic-orange-cartwheel--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/calibrachoa-bloomtastic-orange-cartwheel--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/calibrachoa-bloomtastic-orange-cartwheel--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -848,8 +870,9 @@
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/zs9ewou4r633o0pt00xmw/DUM_0032.JPG",
           "source": "https://www.dropbox.com/scl/fi/zs9ewou4r633o0pt00xmw/DUM_0032.JPG",
-          "local": "/plants/calibrachoa-bloomtastic-orange-cartwheel--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/calibrachoa-bloomtastic-orange-cartwheel--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/calibrachoa-bloomtastic-orange-cartwheel--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -875,15 +898,17 @@
           "date": "2026-01-13",
           "url": "https://www.dropbox.com/scl/fi/txo12bayb2r2lc5vmf71g/DUM_0038.JPG",
           "source": "https://www.dropbox.com/scl/fi/txo12bayb2r2lc5vmf71g/DUM_0038.JPG",
-          "local": "/plants/calibrachoa-bloomtastic-peach-grenadine-25--2026-01-13.jpg",
-          "mirrored": false
+          "local": "/plants/calibrachoa-bloomtastic-peach-grenadine-25--2026-01-13.webp",
+          "mirrored": true,
+          "thumb": "/plants/calibrachoa-bloomtastic-peach-grenadine-25--2026-01-13-thumb.webp"
         },
         {
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/9qdccq4mgbe5tl0chrmxs/DUM_0005.JPG",
           "source": "https://www.dropbox.com/scl/fi/9qdccq4mgbe5tl0chrmxs/DUM_0005.JPG",
-          "local": "/plants/calibrachoa-bloomtastic-peach-grenadine-25--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/calibrachoa-bloomtastic-peach-grenadine-25--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/calibrachoa-bloomtastic-peach-grenadine-25--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -905,8 +930,9 @@
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/1s8yt5gea6q6nef9xqbb4/DUM_0031.JPG",
           "source": "https://www.dropbox.com/scl/fi/1s8yt5gea6q6nef9xqbb4/DUM_0031.JPG",
-          "local": "/plants/calibrachoa-bloomtastic-peach-grenadine-25--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/calibrachoa-bloomtastic-peach-grenadine-25--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/calibrachoa-bloomtastic-peach-grenadine-25--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -1000,22 +1026,25 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/5c38e5bheplrjvngcclzi/DAN_0056.JPG",
           "source": "https://www.dropbox.com/scl/fi/5c38e5bheplrjvngcclzi/DAN_0056.JPG",
-          "local": "/plants/petunia-capella-hello-sunshine--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/petunia-capella-hello-sunshine--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/petunia-capella-hello-sunshine--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
           "url": "https://www.dropbox.com/scl/fi/icji261ndr4yum9rbn1a6/DAN_0037.JPG",
           "source": "https://www.dropbox.com/scl/fi/icji261ndr4yum9rbn1a6/DAN_0037.JPG",
-          "local": "/plants/petunia-capella-hello-sunshine--2026-03-10.jpg",
-          "mirrored": false
+          "local": "/plants/petunia-capella-hello-sunshine--2026-03-10.webp",
+          "mirrored": true,
+          "thumb": "/plants/petunia-capella-hello-sunshine--2026-03-10-thumb.webp"
         },
         {
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/rijl2gp2q5zu4v5a82r96/DAN_0036.JPG",
           "source": "https://www.dropbox.com/scl/fi/rijl2gp2q5zu4v5a82r96/DAN_0036.JPG",
-          "local": "/plants/petunia-capella-hello-sunshine--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/petunia-capella-hello-sunshine--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/petunia-capella-hello-sunshine--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -1057,8 +1086,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/zezlwt6ct7i17jjavdxcd/DUM_0019.JPG",
           "source": "https://www.dropbox.com/scl/fi/zezlwt6ct7i17jjavdxcd/DUM_0019.JPG",
-          "local": "/plants/scaevola-capello-purple--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/scaevola-capello-purple--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/scaevola-capello-purple--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -1072,15 +1102,17 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/digxzcbcqtavxhpwi24g0/DUM_0065.JPG",
           "source": "https://www.dropbox.com/scl/fi/digxzcbcqtavxhpwi24g0/DUM_0065.JPG",
-          "local": "/plants/scaevola-capello-purple--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/scaevola-capello-purple--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/scaevola-capello-purple--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/36d4q9gh6we2jytj2byrb/DUM_0045.JPG",
           "source": "https://www.dropbox.com/scl/fi/36d4q9gh6we2jytj2byrb/DUM_0045.JPG",
-          "local": "/plants/scaevola-capello-purple--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/scaevola-capello-purple--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/scaevola-capello-purple--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -1114,8 +1146,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/4xbod77387l96aqmx9pie/DUM_0018.JPG",
           "source": "https://www.dropbox.com/scl/fi/4xbod77387l96aqmx9pie/DUM_0018.JPG",
-          "local": "/plants/scaevola-capello-white--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/scaevola-capello-white--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/scaevola-capello-white--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -1129,15 +1162,17 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/bc4wwoqwf9sehi9esbv3u/DUM_0064.JPG",
           "source": "https://www.dropbox.com/scl/fi/bc4wwoqwf9sehi9esbv3u/DUM_0064.JPG",
-          "local": "/plants/scaevola-capello-white--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/scaevola-capello-white--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/scaevola-capello-white--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/ztyaq6tbislfo7wssfg9c/DUM_0044.JPG",
           "source": "https://www.dropbox.com/scl/fi/ztyaq6tbislfo7wssfg9c/DUM_0044.JPG",
-          "local": "/plants/scaevola-capello-white--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/scaevola-capello-white--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/scaevola-capello-white--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -1291,8 +1326,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/tjvnt6asxsdvwq4zuor5q/DUM_0027.JPG",
           "source": "https://www.dropbox.com/scl/fi/tjvnt6asxsdvwq4zuor5q/DUM_0027.JPG",
-          "local": "/plants/portulaca-cupcake-burgundy--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/portulaca-cupcake-burgundy--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/portulaca-cupcake-burgundy--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -1306,8 +1342,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/4d5m2jpckln8bo10da7mk/DUM_0073.JPG",
           "source": "https://www.dropbox.com/scl/fi/4d5m2jpckln8bo10da7mk/DUM_0073.JPG",
-          "local": "/plants/portulaca-cupcake-burgundy--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/portulaca-cupcake-burgundy--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/portulaca-cupcake-burgundy--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -1349,8 +1386,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/wxe8ofnnnz437n7ikkx57/DUM_0015.JPG",
           "source": "https://www.dropbox.com/scl/fi/wxe8ofnnnz437n7ikkx57/DUM_0015.JPG",
-          "local": "/plants/cuphea-cupheasy-lavendar--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/cuphea-cupheasy-lavendar--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/cuphea-cupheasy-lavendar--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -1364,15 +1402,17 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/38humor2m69f3ygolqhcl/DUM_0061.JPG",
           "source": "https://www.dropbox.com/scl/fi/38humor2m69f3ygolqhcl/DUM_0061.JPG",
-          "local": "/plants/cuphea-cupheasy-lavendar--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/cuphea-cupheasy-lavendar--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/cuphea-cupheasy-lavendar--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/46ors3z5mws65x49wmz14/DUM_0041.JPG",
           "source": "https://www.dropbox.com/scl/fi/46ors3z5mws65x49wmz14/DUM_0041.JPG",
-          "local": "/plants/cuphea-cupheasy-lavendar--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/cuphea-cupheasy-lavendar--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/cuphea-cupheasy-lavendar--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -1466,8 +1506,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/dpzokdbln5yumjctrszm2/DUM_0006.JPG",
           "source": "https://www.dropbox.com/scl/fi/dpzokdbln5yumjctrszm2/DUM_0006.JPG",
-          "local": "/plants/coleus-down-town-bronze-47--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/coleus-down-town-bronze-47--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/coleus-down-town-bronze-47--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -1489,8 +1530,9 @@
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/oz178dv337ak54mlwhxt7/DUM_0033.JPG",
           "source": "https://www.dropbox.com/scl/fi/oz178dv337ak54mlwhxt7/DUM_0033.JPG",
-          "local": "/plants/coleus-down-town-bronze-47--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/coleus-down-town-bronze-47--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/coleus-down-town-bronze-47--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -1824,8 +1866,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/48lwtepngcib3nipce1w1/DUM_0050.JPG",
           "source": "https://www.dropbox.com/scl/fi/48lwtepngcib3nipce1w1/DUM_0050.JPG",
-          "local": "/plants/dipladenia-flordenia-plus-chocolate-chill--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/dipladenia-flordenia-plus-chocolate-chill--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/dipladenia-flordenia-plus-chocolate-chill--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -1839,8 +1882,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/wk03daxmidzwdohuk7fdv/DUM_0096.JPG",
           "source": "https://www.dropbox.com/scl/fi/wk03daxmidzwdohuk7fdv/DUM_0096.JPG",
-          "local": "/plants/dipladenia-flordenia-plus-chocolate-chill--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/dipladenia-flordenia-plus-chocolate-chill--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/dipladenia-flordenia-plus-chocolate-chill--2026-04-07-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -1866,8 +1910,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/mmacn5mgzx7fhf3nf50eb/DUM_0047.JPG",
           "source": "https://www.dropbox.com/scl/fi/mmacn5mgzx7fhf3nf50eb/DUM_0047.JPG",
-          "local": "/plants/dipladenia-flordenia-plus-white--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/dipladenia-flordenia-plus-white--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/dipladenia-flordenia-plus-white--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -1881,8 +1926,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/liylf04pcmzj2fiy98bdz/DUM_0093.JPG",
           "source": "https://www.dropbox.com/scl/fi/liylf04pcmzj2fiy98bdz/DUM_0093.JPG",
-          "local": "/plants/dipladenia-flordenia-plus-white--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/dipladenia-flordenia-plus-white--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/dipladenia-flordenia-plus-white--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -1924,22 +1970,25 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/toaj2ojzmh3nsv4sdo1li/DAN_0065.JPG",
           "source": "https://www.dropbox.com/scl/fi/toaj2ojzmh3nsv4sdo1li/DAN_0065.JPG",
-          "local": "/plants/lantana-gem-diva-pink--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-gem-diva-pink--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-gem-diva-pink--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
           "url": "https://www.dropbox.com/scl/fi/am01vpc7gm2yci2k751e6/DAN_0045.JPG",
           "source": "https://www.dropbox.com/scl/fi/am01vpc7gm2yci2k751e6/DAN_0045.JPG",
-          "local": "/plants/lantana-gem-diva-pink--2026-03-10.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-gem-diva-pink--2026-03-10.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-gem-diva-pink--2026-03-10-thumb.webp"
         },
         {
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/oiqefa7jafo6459smnuf6/DAN_0045.JPG",
           "source": "https://www.dropbox.com/scl/fi/oiqefa7jafo6459smnuf6/DAN_0045.JPG",
-          "local": "/plants/lantana-gem-diva-pink--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-gem-diva-pink--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-gem-diva-pink--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -1981,22 +2030,25 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/i9pp2di0zr4woczyla9cw/DAN_0063.JPG",
           "source": "https://www.dropbox.com/scl/fi/i9pp2di0zr4woczyla9cw/DAN_0063.JPG",
-          "local": "/plants/lantana-gem-pearl--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-gem-pearl--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-gem-pearl--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
           "url": "https://www.dropbox.com/scl/fi/8x2li8ebytsdol18rge6j/DAN_0042.JPG",
           "source": "https://www.dropbox.com/scl/fi/8x2li8ebytsdol18rge6j/DAN_0042.JPG",
-          "local": "/plants/lantana-gem-pearl--2026-03-10.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-gem-pearl--2026-03-10.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-gem-pearl--2026-03-10-thumb.webp"
         },
         {
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/9oy4n45caf7jm7diri8im/DAN_0043.JPG",
           "source": "https://www.dropbox.com/scl/fi/9oy4n45caf7jm7diri8im/DAN_0043.JPG",
-          "local": "/plants/lantana-gem-pearl--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-gem-pearl--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-gem-pearl--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -2098,8 +2150,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/zu08n9s3a78hs3ggbklt0/DUM_0028.JPG",
           "source": "https://www.dropbox.com/scl/fi/zu08n9s3a78hs3ggbklt0/DUM_0028.JPG",
-          "local": "/plants/geranium-interspecific-glory-days-pink-bicolor--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-glory-days-pink-bicolor--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-glory-days-pink-bicolor--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -2113,8 +2166,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/f6e0la2te030wwtjqbtts/DUM_0074.JPG",
           "source": "https://www.dropbox.com/scl/fi/f6e0la2te030wwtjqbtts/DUM_0074.JPG",
-          "local": "/plants/geranium-interspecific-glory-days-pink-bicolor--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-glory-days-pink-bicolor--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-glory-days-pink-bicolor--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -2156,8 +2210,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/0sya42u93wq3pbu1v31gj/DUM_0029.JPG",
           "source": "https://www.dropbox.com/scl/fi/0sya42u93wq3pbu1v31gj/DUM_0029.JPG",
-          "local": "/plants/geranium-interspecific-glory-days-red-orange-bicolor--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-glory-days-red-orange-bicolor--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-glory-days-red-orange-bicolor--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -2171,8 +2226,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/9p8phv2rzpotxwpjgrpmd/DUM_0075.JPG",
           "source": "https://www.dropbox.com/scl/fi/9p8phv2rzpotxwpjgrpmd/DUM_0075.JPG",
-          "local": "/plants/geranium-interspecific-glory-days-red-orange-bicolor--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-glory-days-red-orange-bicolor--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-glory-days-red-orange-bicolor--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -2214,8 +2270,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/3kw73k1stnr81etl20yjl/DUM_0024.JPG",
           "source": "https://www.dropbox.com/scl/fi/3kw73k1stnr81etl20yjl/DUM_0024.JPG",
-          "local": "/plants/lantana-havana-full-moon-2025--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-havana-full-moon-2025--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-full-moon-2025--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -2229,15 +2286,17 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/7oasrcbkn4nsdl6w62h36/DUM_0070.JPG",
           "source": "https://www.dropbox.com/scl/fi/7oasrcbkn4nsdl6w62h36/DUM_0070.JPG",
-          "local": "/plants/lantana-havana-full-moon-2025--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-havana-full-moon-2025--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-full-moon-2025--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/op8fzd8gua3wkwh5lzhws/DUM_0050.JPG",
           "source": "https://www.dropbox.com/scl/fi/op8fzd8gua3wkwh5lzhws/DUM_0050.JPG",
-          "local": "/plants/lantana-havana-full-moon-2025--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-havana-full-moon-2025--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-full-moon-2025--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -2271,8 +2330,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/cijnd8kn294ambrenesod/DUM_0023.JPG",
           "source": "https://www.dropbox.com/scl/fi/cijnd8kn294ambrenesod/DUM_0023.JPG",
-          "local": "/plants/lantana-havana-harvest-moon-2025--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-havana-harvest-moon-2025--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-harvest-moon-2025--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -2286,15 +2346,17 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/nhgtnzb2vqvwv71sym7ix/DUM_0069.JPG",
           "source": "https://www.dropbox.com/scl/fi/nhgtnzb2vqvwv71sym7ix/DUM_0069.JPG",
-          "local": "/plants/lantana-havana-harvest-moon-2025--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-havana-harvest-moon-2025--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-harvest-moon-2025--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/kyeys3ukfv1optu7u0mca/DUM_0049.JPG",
           "source": "https://www.dropbox.com/scl/fi/kyeys3ukfv1optu7u0mca/DUM_0049.JPG",
-          "local": "/plants/lantana-havana-harvest-moon-2025--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-havana-harvest-moon-2025--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-harvest-moon-2025--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -2328,8 +2390,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/3e89rc6nbg7nlhtpw3aew/DUM_0022.JPG",
           "source": "https://www.dropbox.com/scl/fi/3e89rc6nbg7nlhtpw3aew/DUM_0022.JPG",
-          "local": "/plants/lantana-havana-red-40--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-havana-red-40--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-red-40--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -2343,15 +2406,17 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/v62f68w06czclecwme71t/DUM_0068.JPG",
           "source": "https://www.dropbox.com/scl/fi/v62f68w06czclecwme71t/DUM_0068.JPG",
-          "local": "/plants/lantana-havana-red-40--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-havana-red-40--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-red-40--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/c9l92fqlycdmf2a6e6b9k/DUM_0048.JPG",
           "source": "https://www.dropbox.com/scl/fi/c9l92fqlycdmf2a6e6b9k/DUM_0048.JPG",
-          "local": "/plants/lantana-havana-red-40--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-havana-red-40--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-red-40--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -2377,15 +2442,17 @@
           "date": "2026-01-13",
           "url": "https://www.dropbox.com/scl/fi/xcdmkq45wmecyzk2dqyvv/DUM_0049.JPG",
           "source": "https://www.dropbox.com/scl/fi/xcdmkq45wmecyzk2dqyvv/DUM_0049.JPG",
-          "local": "/plants/lantana-havana-sunrise-24--2026-01-13.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-havana-sunrise-24--2026-01-13.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-sunrise-24--2026-01-13-thumb.webp"
         },
         {
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/f9cfeaawbxgtyyfn2v4px/DUM_0020.JPG",
           "source": "https://www.dropbox.com/scl/fi/f9cfeaawbxgtyyfn2v4px/DUM_0020.JPG",
-          "local": "/plants/lantana-havana-sunrise-24--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-havana-sunrise-24--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-sunrise-24--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -2399,15 +2466,17 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/lpynuhza88y4ippvkcma5/DUM_0066.JPG",
           "source": "https://www.dropbox.com/scl/fi/lpynuhza88y4ippvkcma5/DUM_0066.JPG",
-          "local": "/plants/lantana-havana-sunrise-24--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-havana-sunrise-24--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-sunrise-24--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/k3y2hrk0rqg3x4ju33zm9/DUM_0046.JPG",
           "source": "https://www.dropbox.com/scl/fi/k3y2hrk0rqg3x4ju33zm9/DUM_0046.JPG",
-          "local": "/plants/lantana-havana-sunrise-24--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-havana-sunrise-24--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-sunrise-24--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -2433,15 +2502,17 @@
           "date": "2026-01-13",
           "url": "https://www.dropbox.com/scl/fi/ini8tuzyam7tex9t4mrfe/DUM_0048.JPG",
           "source": "https://www.dropbox.com/scl/fi/ini8tuzyam7tex9t4mrfe/DUM_0048.JPG",
-          "local": "/plants/lantana-havana-sunset-21--2026-01-13.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-havana-sunset-21--2026-01-13.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-sunset-21--2026-01-13-thumb.webp"
         },
         {
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/ijeocgum0vh3xnui5agg3/DUM_0021.JPG",
           "source": "https://www.dropbox.com/scl/fi/ijeocgum0vh3xnui5agg3/DUM_0021.JPG",
-          "local": "/plants/lantana-havana-sunset-21--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-havana-sunset-21--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-sunset-21--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -2455,15 +2526,17 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/949we278pb8h0xes5qgyc/DUM_0067.JPG",
           "source": "https://www.dropbox.com/scl/fi/949we278pb8h0xes5qgyc/DUM_0067.JPG",
-          "local": "/plants/lantana-havana-sunset-21--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-havana-sunset-21--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-sunset-21--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/46c41pr7fwxr32dg5nwul/DUM_0047.JPG",
           "source": "https://www.dropbox.com/scl/fi/46c41pr7fwxr32dg5nwul/DUM_0047.JPG",
-          "local": "/plants/lantana-havana-sunset-21--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-havana-sunset-21--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-havana-sunset-21--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -2497,8 +2570,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/wfi7pl3qmjljxhs9lmg03/DUM_0026.JPG",
           "source": "https://www.dropbox.com/scl/fi/wfi7pl3qmjljxhs9lmg03/DUM_0026.JPG",
-          "local": "/plants/lantana-heartland-citrus-2025--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-heartland-citrus-2025--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-heartland-citrus-2025--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -2512,8 +2586,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/r255wfdq4t9a5d94ge299/DUM_0072.JPG",
           "source": "https://www.dropbox.com/scl/fi/r255wfdq4t9a5d94ge299/DUM_0072.JPG",
-          "local": "/plants/lantana-heartland-citrus-2025--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-heartland-citrus-2025--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-heartland-citrus-2025--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -2555,8 +2630,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/ifhe5regqbb0bwezw6cvz/DUM_0025.JPG",
           "source": "https://www.dropbox.com/scl/fi/ifhe5regqbb0bwezw6cvz/DUM_0025.JPG",
-          "local": "/plants/lantana-heartland-white-2025--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-heartland-white-2025--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-heartland-white-2025--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -2570,15 +2646,17 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/m0ed07iwqmgh3v77katl4/DUM_0071.JPG",
           "source": "https://www.dropbox.com/scl/fi/m0ed07iwqmgh3v77katl4/DUM_0071.JPG",
-          "local": "/plants/lantana-heartland-white-2025--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-heartland-white-2025--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-heartland-white-2025--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/zw7fm4zgqeglecpr2vz16/DUM_0051.JPG",
           "source": "https://www.dropbox.com/scl/fi/zw7fm4zgqeglecpr2vz16/DUM_0051.JPG",
-          "local": "/plants/lantana-heartland-white-2025--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-heartland-white-2025--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-heartland-white-2025--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -2664,22 +2742,25 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/dd3eyqtq2qop1v1oswvgu/DAN_0064.JPG",
           "source": "https://www.dropbox.com/scl/fi/dd3eyqtq2qop1v1oswvgu/DAN_0064.JPG",
-          "local": "/plants/lantana-lemon-quartz--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-lemon-quartz--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-lemon-quartz--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
           "url": "https://www.dropbox.com/scl/fi/1w1vdmbbvwkweuu2jzvyq/DAN_0044.JPG",
           "source": "https://www.dropbox.com/scl/fi/1w1vdmbbvwkweuu2jzvyq/DAN_0044.JPG",
-          "local": "/plants/lantana-lemon-quartz--2026-03-10.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-lemon-quartz--2026-03-10.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-lemon-quartz--2026-03-10-thumb.webp"
         },
         {
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/56jm0fyw1muj5rp6t3h5m/DAN_0044.JPG",
           "source": "https://www.dropbox.com/scl/fi/56jm0fyw1muj5rp6t3h5m/DAN_0044.JPG",
-          "local": "/plants/lantana-lemon-quartz--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/lantana-lemon-quartz--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/lantana-lemon-quartz--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -2721,8 +2802,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/dpzokdbln5yumjctrszm2/DUM_0006.JPG",
           "source": "https://www.dropbox.com/scl/fi/dpzokdbln5yumjctrszm2/DUM_0006.JPG",
-          "local": "/plants/coleus-main-street-franklin-street--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/coleus-main-street-franklin-street--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/coleus-main-street-franklin-street--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -2736,15 +2818,17 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/7im20j9fntnq7iw48z4kp/DUM_0060.JPG",
           "source": "https://www.dropbox.com/scl/fi/7im20j9fntnq7iw48z4kp/DUM_0060.JPG",
-          "local": "/plants/coleus-main-street-franklin-street--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/coleus-main-street-franklin-street--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/coleus-main-street-franklin-street--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/5hj726xn7px2tg1t1t7yx/DUM_0040.JPG",
           "source": "https://www.dropbox.com/scl/fi/5hj726xn7px2tg1t1t7yx/DUM_0040.JPG",
-          "local": "/plants/coleus-main-street-franklin-street--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/coleus-main-street-franklin-street--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/coleus-main-street-franklin-street--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -2778,8 +2862,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/08nkktfuoxb5s8ywmd00f/DUM_0012.JPG",
           "source": "https://www.dropbox.com/scl/fi/08nkktfuoxb5s8ywmd00f/DUM_0012.JPG",
-          "local": "/plants/osteospermum-margarita-cool-purple-2025--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/osteospermum-margarita-cool-purple-2025--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/osteospermum-margarita-cool-purple-2025--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -2793,15 +2878,17 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/5cdo8wy0aja0x2zzraalq/DUM_0056.JPG",
           "source": "https://www.dropbox.com/scl/fi/5cdo8wy0aja0x2zzraalq/DUM_0056.JPG",
-          "local": "/plants/osteospermum-margarita-cool-purple-2025--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/osteospermum-margarita-cool-purple-2025--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/osteospermum-margarita-cool-purple-2025--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/wwd5tkg9rku3a866cckih/DUM_0036.JPG",
           "source": "https://www.dropbox.com/scl/fi/wwd5tkg9rku3a866cckih/DUM_0036.JPG",
-          "local": "/plants/osteospermum-margarita-cool-purple-2025--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/osteospermum-margarita-cool-purple-2025--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/osteospermum-margarita-cool-purple-2025--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -2835,8 +2922,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/t1rpno2yxz28g8j7vujdj/DUM_0010.JPG",
           "source": "https://www.dropbox.com/scl/fi/t1rpno2yxz28g8j7vujdj/DUM_0010.JPG",
-          "local": "/plants/osteospermum-margarita-dark-pink--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/osteospermum-margarita-dark-pink--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/osteospermum-margarita-dark-pink--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -2850,15 +2938,17 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/3zzwowmp8q8o11vmaio2k/DUM_0058.JPG",
           "source": "https://www.dropbox.com/scl/fi/3zzwowmp8q8o11vmaio2k/DUM_0058.JPG",
-          "local": "/plants/osteospermum-margarita-dark-pink--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/osteospermum-margarita-dark-pink--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/osteospermum-margarita-dark-pink--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/28tghikb2oajf7zjeq8ex/DUM_0038.JPG",
           "source": "https://www.dropbox.com/scl/fi/28tghikb2oajf7zjeq8ex/DUM_0038.JPG",
-          "local": "/plants/osteospermum-margarita-dark-pink--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/osteospermum-margarita-dark-pink--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/osteospermum-margarita-dark-pink--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -2892,8 +2982,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/00da1nq33dvogqdd44mt6/DUM_0011.JPG",
           "source": "https://www.dropbox.com/scl/fi/00da1nq33dvogqdd44mt6/DUM_0011.JPG",
-          "local": "/plants/osteospermum-margarita-kardinal-2022--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/osteospermum-margarita-kardinal-2022--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/osteospermum-margarita-kardinal-2022--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -2907,15 +2998,17 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/1apst6si4w250xop0021q/DUM_0057.JPG",
           "source": "https://www.dropbox.com/scl/fi/1apst6si4w250xop0021q/DUM_0057.JPG",
-          "local": "/plants/osteospermum-margarita-kardinal-2022--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/osteospermum-margarita-kardinal-2022--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/osteospermum-margarita-kardinal-2022--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/wwd5tkg9rku3a866cckih/DUM_0036.JPG",
           "source": "https://www.dropbox.com/scl/fi/wwd5tkg9rku3a866cckih/DUM_0036.JPG",
-          "local": "/plants/osteospermum-margarita-kardinal-2022--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/osteospermum-margarita-kardinal-2022--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/osteospermum-margarita-kardinal-2022--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -2949,8 +3042,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/1xq9br00ljjsidegrk6sj/DUM_0013.JPG",
           "source": "https://www.dropbox.com/scl/fi/1xq9br00ljjsidegrk6sj/DUM_0013.JPG",
-          "local": "/plants/osteospermum-margarita-white-2022--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/osteospermum-margarita-white-2022--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/osteospermum-margarita-white-2022--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -2972,8 +3066,9 @@
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/ibzszwejbf56swgdxwzz9/DUM_0035.JPG",
           "source": "https://www.dropbox.com/scl/fi/ibzszwejbf56swgdxwzz9/DUM_0035.JPG",
-          "local": "/plants/osteospermum-margarita-white-2022--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/osteospermum-margarita-white-2022--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/osteospermum-margarita-white-2022--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -3007,8 +3102,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/gsgsg7dpmg3xa3kkoy45s/DUM_0014.JPG",
           "source": "https://www.dropbox.com/scl/fi/gsgsg7dpmg3xa3kkoy45s/DUM_0014.JPG",
-          "local": "/plants/osteospermum-margarita-yellow-2022--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/osteospermum-margarita-yellow-2022--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/osteospermum-margarita-yellow-2022--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -3030,8 +3126,9 @@
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/8fgtc4pqx7iiguoymlitd/DUM_0034.JPG",
           "source": "https://www.dropbox.com/scl/fi/8fgtc4pqx7iiguoymlitd/DUM_0034.JPG",
-          "local": "/plants/osteospermum-margarita-yellow-2022--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/osteospermum-margarita-yellow-2022--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/osteospermum-margarita-yellow-2022--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -3065,22 +3162,25 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/rl5kf7zo0n192c8utfopc/DAN_0060.JPG",
           "source": "https://www.dropbox.com/scl/fi/rl5kf7zo0n192c8utfopc/DAN_0060.JPG",
-          "local": "/plants/portulaca-mega-pazzaz-tropical-twist--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/portulaca-mega-pazzaz-tropical-twist--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/portulaca-mega-pazzaz-tropical-twist--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
           "url": "https://www.dropbox.com/scl/fi/bry75ofkc4g2ov5znhquu/DAN_0038.JPG",
           "source": "https://www.dropbox.com/scl/fi/bry75ofkc4g2ov5znhquu/DAN_0038.JPG",
-          "local": "/plants/portulaca-mega-pazzaz-tropical-twist--2026-03-10.jpg",
-          "mirrored": false
+          "local": "/plants/portulaca-mega-pazzaz-tropical-twist--2026-03-10.webp",
+          "mirrored": true,
+          "thumb": "/plants/portulaca-mega-pazzaz-tropical-twist--2026-03-10-thumb.webp"
         },
         {
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/p4m2132qu10uy98bs7l4k/DAN_0040.JPG",
           "source": "https://www.dropbox.com/scl/fi/p4m2132qu10uy98bs7l4k/DAN_0040.JPG",
-          "local": "/plants/portulaca-mega-pazzaz-tropical-twist--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/portulaca-mega-pazzaz-tropical-twist--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/portulaca-mega-pazzaz-tropical-twist--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -3422,22 +3522,25 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/5pfb2btnx8gz8cp4cv7l4/DAN_0057.JPG",
           "source": "https://www.dropbox.com/scl/fi/5pfb2btnx8gz8cp4cv7l4/DAN_0057.JPG",
-          "local": "/plants/impatiens-ngi-sol-prime-orchid--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/impatiens-ngi-sol-prime-orchid--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/impatiens-ngi-sol-prime-orchid--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
           "url": "https://www.dropbox.com/scl/fi/xko2ia4qtr1ha5g2f3jyk/DAN_0036.JPG",
           "source": "https://www.dropbox.com/scl/fi/xko2ia4qtr1ha5g2f3jyk/DAN_0036.JPG",
-          "local": "/plants/impatiens-ngi-sol-prime-orchid--2026-03-10.jpg",
-          "mirrored": false
+          "local": "/plants/impatiens-ngi-sol-prime-orchid--2026-03-10.webp",
+          "mirrored": true,
+          "thumb": "/plants/impatiens-ngi-sol-prime-orchid--2026-03-10-thumb.webp"
         },
         {
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/aswqt9ysx4089qdxvwpkn/DAN_0037.JPG",
           "source": "https://www.dropbox.com/scl/fi/aswqt9ysx4089qdxvwpkn/DAN_0037.JPG",
-          "local": "/plants/impatiens-ngi-sol-prime-orchid--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/impatiens-ngi-sol-prime-orchid--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/impatiens-ngi-sol-prime-orchid--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -3479,22 +3582,25 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/kn7dn4erhkvnb66355riw/DAN_0058.JPG",
           "source": "https://www.dropbox.com/scl/fi/kn7dn4erhkvnb66355riw/DAN_0058.JPG",
-          "local": "/plants/impatiens-ngi-sol-prime-pearl--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/impatiens-ngi-sol-prime-pearl--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/impatiens-ngi-sol-prime-pearl--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
           "url": "https://www.dropbox.com/scl/fi/htkocwnjysr2fi4ai2mze/DAN_0035.JPG",
           "source": "https://www.dropbox.com/scl/fi/htkocwnjysr2fi4ai2mze/DAN_0035.JPG",
-          "local": "/plants/impatiens-ngi-sol-prime-pearl--2026-03-10.jpg",
-          "mirrored": false
+          "local": "/plants/impatiens-ngi-sol-prime-pearl--2026-03-10.webp",
+          "mirrored": true,
+          "thumb": "/plants/impatiens-ngi-sol-prime-pearl--2026-03-10-thumb.webp"
         },
         {
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/4zjnkllwtnorwdpxoiwfk/DAN_0038.JPG",
           "source": "https://www.dropbox.com/scl/fi/4zjnkllwtnorwdpxoiwfk/DAN_0038.JPG",
-          "local": "/plants/impatiens-ngi-sol-prime-pearl--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/impatiens-ngi-sol-prime-pearl--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/impatiens-ngi-sol-prime-pearl--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -3536,8 +3642,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/7ycbkdf8xsuwvwwxvr8br/DUM_0053.JPG",
           "source": "https://www.dropbox.com/scl/fi/7ycbkdf8xsuwvwwxvr8br/DUM_0053.JPG",
-          "local": "/plants/coreopsis-grandifolia-radiant-velvet-in-gold--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/coreopsis-grandifolia-radiant-velvet-in-gold--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/coreopsis-grandifolia-radiant-velvet-in-gold--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -3551,8 +3658,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/7vjqqhcogmzv1cf0ci1z6/DUM_0099.JPG",
           "source": "https://www.dropbox.com/scl/fi/7vjqqhcogmzv1cf0ci1z6/DUM_0099.JPG",
-          "local": "/plants/coreopsis-grandifolia-radiant-velvet-in-gold--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/coreopsis-grandifolia-radiant-velvet-in-gold--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/coreopsis-grandifolia-radiant-velvet-in-gold--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -3594,22 +3702,25 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/us5dczg78jzkheerllwen/DAN_0059.JPG",
           "source": "https://www.dropbox.com/scl/fi/us5dczg78jzkheerllwen/DAN_0059.JPG",
-          "local": "/plants/salvia-sallyfun-blue-lagoon--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/salvia-sallyfun-blue-lagoon--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/salvia-sallyfun-blue-lagoon--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
           "url": "https://www.dropbox.com/scl/fi/at194jgjc1u90sslr40ag/DAN_0034.JPG",
           "source": "https://www.dropbox.com/scl/fi/at194jgjc1u90sslr40ag/DAN_0034.JPG",
-          "local": "/plants/salvia-sallyfun-blue-lagoon--2026-03-10.jpg",
-          "mirrored": false
+          "local": "/plants/salvia-sallyfun-blue-lagoon--2026-03-10.webp",
+          "mirrored": true,
+          "thumb": "/plants/salvia-sallyfun-blue-lagoon--2026-03-10-thumb.webp"
         },
         {
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/ttokf1llriwwbiybdxvls/DAN_0039.JPG",
           "source": "https://www.dropbox.com/scl/fi/ttokf1llriwwbiybdxvls/DAN_0039.JPG",
-          "local": "/plants/salvia-sallyfun-blue-lagoon--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/salvia-sallyfun-blue-lagoon--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/salvia-sallyfun-blue-lagoon--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -3643,15 +3754,17 @@
           "date": "2026-01-13",
           "url": "https://www.dropbox.com/scl/fi/p86boc8cs1zoy9y8t7wx3/DUM_0054.JPG",
           "source": "https://www.dropbox.com/scl/fi/p86boc8cs1zoy9y8t7wx3/DUM_0054.JPG",
-          "local": "/plants/geranium-interspecific-santana-dark-red--2026-01-13.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-santana-dark-red--2026-01-13.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-dark-red--2026-01-13-thumb.webp"
         },
         {
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/981cokszx5zkcx120sb7k/DUM_0036.JPG",
           "source": "https://www.dropbox.com/scl/fi/981cokszx5zkcx120sb7k/DUM_0036.JPG",
-          "local": "/plants/geranium-interspecific-santana-dark-red--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-santana-dark-red--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-dark-red--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -3665,8 +3778,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/40rrx1kwnrzsmc5w6m7mt/DUM_0082.JPG",
           "source": "https://www.dropbox.com/scl/fi/40rrx1kwnrzsmc5w6m7mt/DUM_0082.JPG",
-          "local": "/plants/geranium-interspecific-santana-dark-red--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-santana-dark-red--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-dark-red--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -3708,8 +3822,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/8op1qgunvfcb493usgfga/DUM_0030.JPG",
           "source": "https://www.dropbox.com/scl/fi/8op1qgunvfcb493usgfga/DUM_0030.JPG",
-          "local": "/plants/geranium-interspecific-santana-fire--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-santana-fire--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-fire--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -3723,8 +3838,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/t9hqs4ojw1q0iq5vscz1l/DUM_0076.JPG",
           "source": "https://www.dropbox.com/scl/fi/t9hqs4ojw1q0iq5vscz1l/DUM_0076.JPG",
-          "local": "/plants/geranium-interspecific-santana-fire--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-santana-fire--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-fire--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -3758,15 +3874,17 @@
           "date": "2026-01-13",
           "url": "https://www.dropbox.com/scl/fi/zlvgt5z5bszj1v4c9qrx5/DUM_0052.JPG",
           "source": "https://www.dropbox.com/scl/fi/zlvgt5z5bszj1v4c9qrx5/DUM_0052.JPG",
-          "local": "/plants/geranium-interspecific-santana-pink--2026-01-13.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-santana-pink--2026-01-13.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-pink--2026-01-13-thumb.webp"
         },
         {
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/2v4eqo4onwwmu1i8mldot/DUM_0034.JPG",
           "source": "https://www.dropbox.com/scl/fi/2v4eqo4onwwmu1i8mldot/DUM_0034.JPG",
-          "local": "/plants/geranium-interspecific-santana-pink--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-santana-pink--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-pink--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -3780,8 +3898,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/t65hflzyfr6ymq9psztmp/DUM_0080.JPG",
           "source": "https://www.dropbox.com/scl/fi/t65hflzyfr6ymq9psztmp/DUM_0080.JPG",
-          "local": "/plants/geranium-interspecific-santana-pink--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-santana-pink--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-pink--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -3815,15 +3934,17 @@
           "date": "2026-01-13",
           "url": "https://www.dropbox.com/scl/fi/8j9c0d1nk3fm8dncm8oj8/DUM_0051.JPG",
           "source": "https://www.dropbox.com/scl/fi/8j9c0d1nk3fm8dncm8oj8/DUM_0051.JPG",
-          "local": "/plants/geranium-interspecific-santana-pink-splash--2026-01-13.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-santana-pink-splash--2026-01-13.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-pink-splash--2026-01-13-thumb.webp"
         },
         {
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/q5xa27kol7ivn2mj2pk7z/DUM_0033.JPG",
           "source": "https://www.dropbox.com/scl/fi/q5xa27kol7ivn2mj2pk7z/DUM_0033.JPG",
-          "local": "/plants/geranium-interspecific-santana-pink-splash--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-santana-pink-splash--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-pink-splash--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -3837,8 +3958,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/0ouhyneao6j29nt9wu3ml/DUM_0079.JPG",
           "source": "https://www.dropbox.com/scl/fi/0ouhyneao6j29nt9wu3ml/DUM_0079.JPG",
-          "local": "/plants/geranium-interspecific-santana-pink-splash--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-santana-pink-splash--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-pink-splash--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -3872,15 +3994,17 @@
           "date": "2026-01-13",
           "url": "https://www.dropbox.com/scl/fi/59zkauy1a90wkfu26106p/DUM_0055.JPG",
           "source": "https://www.dropbox.com/scl/fi/59zkauy1a90wkfu26106p/DUM_0055.JPG",
-          "local": "/plants/geranium-interspecific-santana-purple--2026-01-13.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-santana-purple--2026-01-13.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-purple--2026-01-13-thumb.webp"
         },
         {
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/zd0ebo2qfmznt5urbu5nk/DUM_0031.JPG",
           "source": "https://www.dropbox.com/scl/fi/zd0ebo2qfmznt5urbu5nk/DUM_0031.JPG",
-          "local": "/plants/geranium-interspecific-santana-purple--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-santana-purple--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-purple--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -3894,8 +4018,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/92dwq1hzu0s65nb8k4rp5/DUM_0077.JPG",
           "source": "https://www.dropbox.com/scl/fi/92dwq1hzu0s65nb8k4rp5/DUM_0077.JPG",
-          "local": "/plants/geranium-interspecific-santana-purple--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-santana-purple--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-purple--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -3929,15 +4054,17 @@
           "date": "2026-01-13",
           "url": "https://www.dropbox.com/scl/fi/5m9stutmh2hs4m50m7nk7/DUM_0053.JPG",
           "source": "https://www.dropbox.com/scl/fi/5m9stutmh2hs4m50m7nk7/DUM_0053.JPG",
-          "local": "/plants/geranium-interspecific-santana-white--2026-01-13.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-santana-white--2026-01-13.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-white--2026-01-13-thumb.webp"
         },
         {
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/sgwgdohg8m7pcqcszyehg/DUM_0035.JPG",
           "source": "https://www.dropbox.com/scl/fi/sgwgdohg8m7pcqcszyehg/DUM_0035.JPG",
-          "local": "/plants/geranium-interspecific-santana-white--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-santana-white--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-white--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -3951,8 +4078,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/vxt0rmxnvzdosub92d6x1/DUM_0081.JPG",
           "source": "https://www.dropbox.com/scl/fi/vxt0rmxnvzdosub92d6x1/DUM_0081.JPG",
-          "local": "/plants/geranium-interspecific-santana-white--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-santana-white--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-white--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -3986,15 +4114,17 @@
           "date": "2026-01-13",
           "url": "https://www.dropbox.com/scl/fi/qbbcf871n0ld60a2m5ecl/DUM_0050.JPG",
           "source": "https://www.dropbox.com/scl/fi/qbbcf871n0ld60a2m5ecl/DUM_0050.JPG",
-          "local": "/plants/geranium-interspecific-santana-white-splash--2026-01-13.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-santana-white-splash--2026-01-13.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-white-splash--2026-01-13-thumb.webp"
         },
         {
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/ttnujll7907rcl2nl0m4t/DUM_0032.JPG",
           "source": "https://www.dropbox.com/scl/fi/ttnujll7907rcl2nl0m4t/DUM_0032.JPG",
-          "local": "/plants/geranium-interspecific-santana-white-splash--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-santana-white-splash--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-white-splash--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -4008,8 +4138,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/92dwq1hzu0s65nb8k4rp5/DUM_0077.JPG",
           "source": "https://www.dropbox.com/scl/fi/92dwq1hzu0s65nb8k4rp5/DUM_0077.JPG",
-          "local": "/plants/geranium-interspecific-santana-white-splash--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-santana-white-splash--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-santana-white-splash--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -4051,8 +4182,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/j767co8gmjcyyrr6699yu/DUM_0044.JPG",
           "source": "https://www.dropbox.com/scl/fi/j767co8gmjcyyrr6699yu/DUM_0044.JPG",
-          "local": "/plants/geranium-interspecific-sarita-dark-red--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-sarita-dark-red--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-sarita-dark-red--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -4066,8 +4198,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/q0z3felg09mtoto4l75jz/DUM_0090.JPG",
           "source": "https://www.dropbox.com/scl/fi/q0z3felg09mtoto4l75jz/DUM_0090.JPG",
-          "local": "/plants/geranium-interspecific-sarita-dark-red--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-sarita-dark-red--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-sarita-dark-red--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -4109,8 +4242,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/xjfpels4ixb6c5vkty7m7/DUM_0042.JPG",
           "source": "https://www.dropbox.com/scl/fi/xjfpels4ixb6c5vkty7m7/DUM_0042.JPG",
-          "local": "/plants/geranium-interspecific-sarita-lilac-splash--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-sarita-lilac-splash--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-sarita-lilac-splash--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -4124,8 +4258,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/8bi2lr7d2021ez2b088kj/DUM_0088.JPG",
           "source": "https://www.dropbox.com/scl/fi/8bi2lr7d2021ez2b088kj/DUM_0088.JPG",
-          "local": "/plants/geranium-interspecific-sarita-lilac-splash--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-sarita-lilac-splash--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-sarita-lilac-splash--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -4167,8 +4302,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/nd2fzb3ip57nphrljfi53/DUM_0045.JPG",
           "source": "https://www.dropbox.com/scl/fi/nd2fzb3ip57nphrljfi53/DUM_0045.JPG",
-          "local": "/plants/geranium-interspecific-sarita-punch--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-sarita-punch--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-sarita-punch--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -4182,8 +4318,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/tcj2s2pt5ixifakdrc0o0/DUM_0091.JPG",
           "source": "https://www.dropbox.com/scl/fi/tcj2s2pt5ixifakdrc0o0/DUM_0091.JPG",
-          "local": "/plants/geranium-interspecific-sarita-punch--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-sarita-punch--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-sarita-punch--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -4225,8 +4362,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/thl2edtgwtnnu2i8zylvg/DUM_0043.JPG",
           "source": "https://www.dropbox.com/scl/fi/thl2edtgwtnnu2i8zylvg/DUM_0043.JPG",
-          "local": "/plants/geranium-interspecific-sarita-sunstar-red--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-sarita-sunstar-red--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-sarita-sunstar-red--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -4240,8 +4378,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/x7k1fzi2pk8g6frox63o9/DUM_0089.JPG",
           "source": "https://www.dropbox.com/scl/fi/x7k1fzi2pk8g6frox63o9/DUM_0089.JPG",
-          "local": "/plants/geranium-interspecific-sarita-sunstar-red--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-sarita-sunstar-red--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-sarita-sunstar-red--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -4283,8 +4422,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/24xad2fv1o9zg995bh6my/DUM_0046.JPG",
           "source": "https://www.dropbox.com/scl/fi/24xad2fv1o9zg995bh6my/DUM_0046.JPG",
-          "local": "/plants/geranium-interspecific-sarita-wild-salmon--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-sarita-wild-salmon--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-sarita-wild-salmon--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -4298,8 +4438,9 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/92hfpg793td518vbzonrq/DUM_0092.JPG",
           "source": "https://www.dropbox.com/scl/fi/92hfpg793td518vbzonrq/DUM_0092.JPG",
-          "local": "/plants/geranium-interspecific-sarita-wild-salmon--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/geranium-interspecific-sarita-wild-salmon--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/geranium-interspecific-sarita-wild-salmon--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
@@ -4401,8 +4542,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/eazbz34tecmjeusmj5ied/DUM_0002.JPG",
           "source": "https://www.dropbox.com/scl/fi/eazbz34tecmjeusmj5ied/DUM_0002.JPG",
-          "local": "/plants/nepeta-faassenii-serene-lilac--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/nepeta-faassenii-serene-lilac--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/nepeta-faassenii-serene-lilac--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -4424,8 +4566,9 @@
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/e52i1dgo4k1oxspgr8npm/DUM_0028.JPG",
           "source": "https://www.dropbox.com/scl/fi/e52i1dgo4k1oxspgr8npm/DUM_0028.JPG",
-          "local": "/plants/nepeta-faassenii-serene-lilac--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/nepeta-faassenii-serene-lilac--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/nepeta-faassenii-serene-lilac--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -4759,8 +4902,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/sa96vguredvf5m4d1tsr4/DUM_0009.JPG",
           "source": "https://www.dropbox.com/scl/fi/sa96vguredvf5m4d1tsr4/DUM_0009.JPG",
-          "local": "/plants/gaillardia-aristata-spintop-mariachi--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/gaillardia-aristata-spintop-mariachi--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/gaillardia-aristata-spintop-mariachi--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -4774,15 +4918,17 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/s07gqdw31y8jj2dvh4kgh/DUM_0059.JPG",
           "source": "https://www.dropbox.com/scl/fi/s07gqdw31y8jj2dvh4kgh/DUM_0059.JPG",
-          "local": "/plants/gaillardia-aristata-spintop-mariachi--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/gaillardia-aristata-spintop-mariachi--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/gaillardia-aristata-spintop-mariachi--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/p5tae40njatykvexebff3/DUM_0039.JPG",
           "source": "https://www.dropbox.com/scl/fi/p5tae40njatykvexebff3/DUM_0039.JPG",
-          "local": "/plants/gaillardia-aristata-spintop-mariachi--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/gaillardia-aristata-spintop-mariachi--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/gaillardia-aristata-spintop-mariachi--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -4816,8 +4962,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/5lfjmz7uea0tmc1a6a10x/DUM_0017.JPG",
           "source": "https://www.dropbox.com/scl/fi/5lfjmz7uea0tmc1a6a10x/DUM_0017.JPG",
-          "local": "/plants/dahlia-summer-bees-red-bicolor--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/dahlia-summer-bees-red-bicolor--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/dahlia-summer-bees-red-bicolor--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -4831,15 +4978,17 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/emmsbjqy0g3t2zdoocs45/DUM_0063.JPG",
           "source": "https://www.dropbox.com/scl/fi/emmsbjqy0g3t2zdoocs45/DUM_0063.JPG",
-          "local": "/plants/dahlia-summer-bees-red-bicolor--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/dahlia-summer-bees-red-bicolor--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/dahlia-summer-bees-red-bicolor--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/19pdl5w937xxjapaww4dz/DUM_0043.JPG",
           "source": "https://www.dropbox.com/scl/fi/19pdl5w937xxjapaww4dz/DUM_0043.JPG",
-          "local": "/plants/dahlia-summer-bees-red-bicolor--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/dahlia-summer-bees-red-bicolor--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/dahlia-summer-bees-red-bicolor--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -4873,8 +5022,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/av4o7flue8sw9rr0jmdnu/DUM_0016.JPG",
           "source": "https://www.dropbox.com/scl/fi/av4o7flue8sw9rr0jmdnu/DUM_0016.JPG",
-          "local": "/plants/dahlia-summer-bees-salmon-bicolor--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/dahlia-summer-bees-salmon-bicolor--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/dahlia-summer-bees-salmon-bicolor--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -4888,15 +5038,17 @@
           "date": "2026-04-07",
           "url": "https://www.dropbox.com/scl/fi/g1b8invx11i010j63crmd/DUM_0062.JPG",
           "source": "https://www.dropbox.com/scl/fi/g1b8invx11i010j63crmd/DUM_0062.JPG",
-          "local": "/plants/dahlia-summer-bees-salmon-bicolor--2026-04-07.jpg",
-          "mirrored": false
+          "local": "/plants/dahlia-summer-bees-salmon-bicolor--2026-04-07.webp",
+          "mirrored": true,
+          "thumb": "/plants/dahlia-summer-bees-salmon-bicolor--2026-04-07-thumb.webp"
         },
         {
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/qegtz9yfqqvw2is7701hc/DUM_0042.JPG",
           "source": "https://www.dropbox.com/scl/fi/qegtz9yfqqvw2is7701hc/DUM_0042.JPG",
-          "local": "/plants/dahlia-summer-bees-salmon-bicolor--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/dahlia-summer-bees-salmon-bicolor--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/dahlia-summer-bees-salmon-bicolor--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",
@@ -4930,8 +5082,9 @@
           "date": "2026-02-18",
           "url": "https://www.dropbox.com/scl/fi/ou64fnexe6i3dwuya8bgy/DUM_0003.JPG",
           "source": "https://www.dropbox.com/scl/fi/ou64fnexe6i3dwuya8bgy/DUM_0003.JPG",
-          "local": "/plants/penstemon-hybrid-super-star--2026-02-18.jpg",
-          "mirrored": false
+          "local": "/plants/penstemon-hybrid-super-star--2026-02-18.webp",
+          "mirrored": true,
+          "thumb": "/plants/penstemon-hybrid-super-star--2026-02-18-thumb.webp"
         },
         {
           "date": "2026-03-10",
@@ -4953,8 +5106,9 @@
           "date": "2026-05-06",
           "url": "https://www.dropbox.com/scl/fi/7a4ots6xntq8r3q87ad9w/DUM_0029.JPG",
           "source": "https://www.dropbox.com/scl/fi/7a4ots6xntq8r3q87ad9w/DUM_0029.JPG",
-          "local": "/plants/penstemon-hybrid-super-star--2026-05-06.jpg",
-          "mirrored": false
+          "local": "/plants/penstemon-hybrid-super-star--2026-05-06.webp",
+          "mirrored": true,
+          "thumb": "/plants/penstemon-hybrid-super-star--2026-05-06-thumb.webp"
         }
       ],
       "status": "In Ground",

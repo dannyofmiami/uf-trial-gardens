@@ -19,12 +19,16 @@ function getUrls(img: TrialImage | undefined, variant: Variant): string[] {
   return [small, img.local];
 }
 
-export default function TrialPhoto({
-  c, className = '', variant = 'detail', image,
-}: { c: Cultivar; className?: string; variant?: Variant; image?: TrialImage }) {
-  // an explicit image (e.g. one evaluation round's photo) wins; otherwise fall
-  // back to the most recently taken photo that's actually been mirrored locally
-  const img = image ?? latestMirroredImage(c);
+export default function TrialPhoto(props: {
+  c: Cultivar; className?: string; variant?: Variant; image?: TrialImage;
+}) {
+  const { c, className = '', variant = 'detail', image } = props;
+  // an explicit `image` (even an undefined one, e.g. a round with no photo on
+  // file) wins over the default -- only fall back to the most recently taken
+  // mirrored photo when the caller didn't pass the prop at all, so selecting a
+  // photo-less round shows "no photo" instead of silently reusing another
+  // round's picture
+  const img = 'image' in props ? image : latestMirroredImage(c);
   const urls = getUrls(img, variant);
   const [attempt, setAttempt] = useState(0);
 
