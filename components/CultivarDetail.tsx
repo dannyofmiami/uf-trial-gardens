@@ -55,7 +55,9 @@ export default function CultivarDetail({
                     src={withBase(heroImage.local)}
                     alt={`${c.name} (${c.genus}), photographed ${fmtDate(heroImage.date)}`}
                     caption={`${c.name} · ${fmtDate(heroImage.date)}`}
-                  />
+                  >
+                    <RoundScores e={evals.find((e) => e.date === heroImage.date)} />
+                  </PhotoLightbox>
                 </>
               ) : (
                 <TrialPhoto c={c} image={heroImage} className="aspect-[4/3] w-full" />
@@ -99,6 +101,24 @@ export default function CultivarDetail({
                     </span>
                   ))}
               </div>
+
+              {meta.sponsors.length > 0 && (
+                <ul className="mt-4 space-y-1 text-sm text-muted">
+                  {meta.sponsors.map((s) => (
+                    <li key={s.name}>
+                      {s.credit}{' '}
+                      <a
+                        href={s.url}
+                        target="_blank"
+                        rel="sponsored noopener noreferrer"
+                        className="font-semibold text-uf-blue underline underline-offset-4"
+                      >
+                        {s.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         </div>
@@ -199,5 +219,31 @@ export default function CultivarDetail({
         </div>
       </Section>
     </>
+  );
+}
+
+// the round's four scores + AVG, shown under the enlarged photo
+function RoundScores({ e }: { e: Evaluation | undefined }) {
+  if (!e || e.avg === null) {
+    return <p className="text-center text-sm text-white/70">Not yet scored this round</p>;
+  }
+  const items = [
+    ...CATEGORIES.map((cat) => ({ code: cat.code, label: cat.label, value: e[cat.key] })),
+    { code: 'AVG', label: 'Average', value: e.avg },
+  ];
+  return (
+    <dl className="flex flex-wrap justify-center gap-x-5 gap-y-1">
+      {items.map((it) => (
+        <div key={it.code} className="flex items-baseline gap-1.5" title={it.label}>
+          <dt className="font-mono text-[11px] tracking-[.1em] text-white/60">
+            {it.code}
+            <span className="sr-only"> ({it.label})</span>
+          </dt>
+          <dd className={`font-mono tabular-nums ${it.code === 'AVG' ? 'text-base font-bold' : 'text-sm'}`}>
+            {it.value?.toFixed(1) ?? '—'}
+          </dd>
+        </div>
+      ))}
+    </dl>
   );
 }

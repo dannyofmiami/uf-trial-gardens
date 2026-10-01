@@ -20,7 +20,9 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run build
+      # sample scores until the trial team enters real ratings -- switch back to
+      # `npm run build` then (data/trials.mock.json vs data/trials.json)
+      - run: npm run build:mock
         env:
           # repo name, so links work at username.github.io/repo-name/
           NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
