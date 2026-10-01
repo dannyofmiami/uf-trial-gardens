@@ -1,4 +1,5 @@
-import raw from '@/data/trials.json';
+// data/trials.json, or data/trials.mock.json under `npm run dev:mock` (see next.config.mjs)
+import raw from '@trial-data';
 
 export type Scores = {
   heatResistance: number | null;
@@ -51,6 +52,12 @@ export type Award = {
   winnerId: string | null;
 };
 
+export type Sponsor = {
+  credit: string;   // e.g. "Grown in soil from"
+  name: string;
+  url: string;
+};
+
 export type TrialData = {
   meta: {
     source: string;
@@ -59,15 +66,19 @@ export type TrialData = {
     hardinessZone: string;
     cultivarCount: number;
     evaluationCount: number;
+    mock?: boolean;   // true only in data/trials.mock.json
+    sponsors: Sponsor[];
     dataQuality: {
       missingFlowerColor: number;
       missingImage: number;
       imagesHotlinked: number;
       imagesMirrored: number;
-      perfectScoreShare: number;
+      perfectScoreShare: number | null;
       latestSnapshotAllPerfect: boolean;
       awardsUndecidedByTie: boolean;
-      note: string;
+      duplicateImageLinks: number;
+      unscoredEvaluations: number;
+      note: string | null;
     };
   };
   facets: { genera: string[]; suppliers: string[]; colors: string[]; dates: string[] };

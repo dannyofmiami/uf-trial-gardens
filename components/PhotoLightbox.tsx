@@ -3,8 +3,11 @@
 import { useEffect, useRef } from 'react';
 
 export default function PhotoLightbox({
-  src, alt, caption, open, onClose,
-}: { src: string; alt: string; caption?: string; open: boolean; onClose: () => void }) {
+  src, alt, caption, open, onClose, children,
+}: {
+  src: string; alt: string; caption?: string; open: boolean; onClose: () => void;
+  children?: React.ReactNode;
+}) {
   const ref = useRef<HTMLDialogElement>(null);
 
   useEffect(() => {
@@ -52,8 +55,9 @@ export default function PhotoLightbox({
           className="max-h-full max-w-full min-h-0 object-contain"
         />
         {caption && (
-          <p className="font-mono text-[11px] uppercase tracking-[.12em] text-white/80">{caption}</p>
+          <p className="shrink-0 font-mono text-[11px] uppercase tracking-[.12em] text-white/80">{caption}</p>
         )}
+        {children && <div className="shrink-0">{children}</div>}
       </div>
     </dialog>
   );
