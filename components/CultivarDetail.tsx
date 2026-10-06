@@ -6,7 +6,7 @@ import {
   fmtDate, imageForDate, latestMirroredImage, withBase, CATEGORIES,
   type Cultivar, type Evaluation, type TrialData,
 } from '@/lib/data';
-import { Section, Notice, ScoreBar, AvgBadge } from '@/components/Ui';
+import { Section, ScoreBar, AvgBadge } from '@/components/Ui';
 import TrialPhoto from '@/components/TrialPhoto';
 import PhotoLightbox from '@/components/PhotoLightbox';
 
@@ -20,9 +20,20 @@ export default function CultivarDetail({
   const heroImage = selectedDate ? imageForDate(c, selectedDate) : undefined;
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const heroButton = useRef<HTMLButtonElement>(null);
+  // whatever opened the viewer (hero photo or a round row) gets focus back on close
+  const opener = useRef<HTMLElement | null>(null);
+  const openLightbox = (from: HTMLElement) => {
+    opener.current = from;
+    setLightboxOpen(true);
+  };
   const closeLightbox = () => {
     setLightboxOpen(false);
-    heroButton.current?.focus();
+    (opener.current ?? heroButton.current)?.focus();
+  };
+  // a round with a photo opens it full screen; one without just becomes the selection
+  const openRound = (date: string, row: HTMLElement) => {
+    setSelectedDate(date);
+    if (imageForDate(c, date)?.mirrored) openLightbox(row);
   };
 
   return (
@@ -43,7 +54,7 @@ export default function CultivarDetail({
                   <button
                     ref={heroButton}
                     type="button"
-                    onClick={() => setLightboxOpen(true)}
+                    onClick={(ev) => openLightbox(ev.currentTarget)}
                     aria-label={`View larger photo of ${c.name}, ${fmtDate(heroImage.date)}`}
                     className="block w-full cursor-zoom-in focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-uf-blue"
                   >
@@ -139,9 +150,9 @@ export default function CultivarDetail({
           </div>
         )}
 
-        <h2 className="mt-12 font-display text-xl font-bold">Round-by-round history</h2>
+        <h2 className="mt-12 font-display text-xl font-bold">History</h2>
         <p className="mt-1 text-sm text-muted">
-          Every dated evaluation with its four category scores. Click a round to view its photo above.
+          Every dated evaluation with its four category scores. Click a round to view its photo full screen.
         </p>
 
         {/* [ifas] .stack on every table, .table-scroll when it's wide */}
@@ -165,21 +176,24 @@ export default function CultivarDetail({
             <tbody>
               {evals.map((e) => {
                 const selected = e.date === selectedDate;
+                const hasPhoto = !!imageForDate(c, e.date)?.mirrored;
                 return (
                   <tr
                     key={e.date}
                     role="button"
                     tabIndex={0}
                     aria-pressed={selected}
-                    aria-label={`View the photo from the ${fmtDate(e.date)} round`}
-                    onClick={() => setSelectedDate(e.date)}
+                    aria-label={hasPhoto
+                      ? `View the photo from the ${fmtDate(e.date)} round full screen`
+                      : `Select the ${fmtDate(e.date)} round (no photo on file)`}
+                    onClick={(ev) => openRound(e.date, ev.currentTarget)}
                     onKeyDown={(ev) => {
                       if (ev.key === 'Enter' || ev.key === ' ') {
                         ev.preventDefault();
-                        setSelectedDate(e.date);
+                        openRound(e.date, ev.currentTarget);
                       }
                     }}
-                    className={`cursor-pointer border-t border-line transition hover:bg-ground ${selected ? 'bg-ground' : ''}`}
+                    className={`${hasPhoto ? 'cursor-zoom-in' : 'cursor-pointer'} border-t border-line transition hover:bg-ground ${selected ? 'bg-ground' : ''}`}
                   >
                     <th scope="row" data-label="Round" className="whitespace-nowrap px-4 py-3 text-left font-medium">
                       {fmtDate(e.date)}
@@ -206,16 +220,6 @@ export default function CultivarDetail({
               })}
             </tbody>
           </table>
-        </div>
-
-        <div className="mt-8">
-          <Notice>
-            The source export carries no observation notes, weather readings or flower color for
-            this cultivar. All three fields exist in the data model and populate as soon as the
-            trial team supplies them.{' '}
-            {c.images.length > 0 && !c.images.some((i) => i.mirrored) &&
-              'None of this cultivar\'s photos have been mirrored from Dropbox yet, run npm run photos once they\'re downloaded.'}
-          </Notice>
         </div>
       </Section>
     </>
