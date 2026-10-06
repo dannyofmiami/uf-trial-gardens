@@ -47,7 +47,14 @@ export default function Visit() {
 
           <div>
             <h2 className="font-display text-2xl font-bold">Contact the trial team</h2>
-            <form className="mt-5 space-y-4">
+            {/* No backend yet. Left enabled, the browser's default GET would put the
+                visitor's name and message in the URL, so host and CDN logs would record
+                them. Disabled fields can't be submitted. */}
+            <p className="mt-3 text-sm text-muted">
+              Online messages aren&apos;t available yet. This form will be connected soon.
+            </p>
+            <form className="mt-5">
+              <fieldset disabled className="space-y-4 opacity-60">
               {[
                 { id: 'name', label: 'Name', type: 'text', autoComplete: 'name' },
                 { id: 'org', label: 'Organization', type: 'text', autoComplete: 'organization' },
@@ -73,6 +80,7 @@ export default function Visit() {
               >
                 Send message
               </button>
+              </fieldset>
             </form>
           </div>
         </div>

@@ -12,9 +12,13 @@
 // Flags: --force (re-download files already staged), --no-import (download only)
 
 import XLSX from 'xlsx';
+import * as fs from 'node:fs';
 import { mkdir, writeFile, access, readdir } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { spawnSync } from 'node:child_process';
+
+// SheetJS's ES module build only reads files from disk once given Node's fs
+XLSX.set_fs(fs);
 
 const args = process.argv.slice(2);
 const force = args.includes('--force');

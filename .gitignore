@@ -8,3 +8,7 @@ out/
 # docs kept local, only README.md is committed
 *.md
 !README.md
+
+# Playwright
+test-results/
+playwright-report/

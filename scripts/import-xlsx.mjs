@@ -4,9 +4,13 @@
 //   node scripts/import-xlsx.mjs "./DATA Trial Garden Website V.1.xlsx"
 
 import XLSX from 'xlsx';
+import * as fs from 'node:fs';
 import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { derive } from './lib/derive.mjs';
+
+// SheetJS's ES module build only reads files from disk once given Node's fs
+XLSX.set_fs(fs);
 
 const SRC = process.argv[2] ?? './DATA Trial Garden Website V.1.xlsx';
 const OUT = resolve('./data/trials.json');

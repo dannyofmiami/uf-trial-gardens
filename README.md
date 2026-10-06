@@ -6,6 +6,7 @@
 UF/IFAS Tropical Research and Education Center in Homestead, Florida.**
 
 [![Deploy to GitHub Pages](https://github.com/dannyofmiami/uf-trial-gardens/actions/workflows/pages.yml/badge.svg)](https://github.com/dannyofmiami/uf-trial-gardens/actions/workflows/pages.yml)
+[![Tests](https://github.com/dannyofmiami/uf-trial-gardens/actions/workflows/test.yml/badge.svg)](https://github.com/dannyofmiami/uf-trial-gardens/actions/workflows/test.yml)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fdannyofmiami.github.io%2Fuf-trial-gardens%2F&label=site)](https://dannyofmiami.github.io/uf-trial-gardens/)
 [![Last commit](https://img.shields.io/github/last-commit/dannyofmiami/uf-trial-gardens/main)](https://github.com/dannyofmiami/uf-trial-gardens/commits/main)
 [![Scores: sample data](https://img.shields.io/badge/scores-sample%20data-orange)](#mock-data)
@@ -101,6 +102,7 @@ are entered).
 | `npm run dev:mock` | Dev server with sample scores (`data/trials.mock.json`) |
 | `npm run build` | Static production build of the real data, to `out/` |
 | `npm run build:mock` | Static production build with sample scores — **what the live site deploys today** |
+| `npm test` | Build the deployed version, serve it with the Azure security headers, and run the browser tests (desktop + phone) |
 | `npx tsc --noEmit` | Type-check the project (ESLint isn't set up yet, so `npm run lint` only offers to configure it) |
 | `npm run import -- <file.xlsx>` | Rebuild `data/trials.json` from the trial spreadsheet |
 | `npm run mock` | Regenerate `data/trials.mock.json` from `data/trials.json` |
@@ -226,8 +228,8 @@ docs/screenshots/           images used in this README
   belongs in the spreadsheet.
 - **Flower color is empty** for all 87 cultivars, so there's no color filter yet.
 - **No observation notes or weather** in the source data, though the data model has room for both.
-- **The contact form doesn't send.** The Visit page form has no `action` or submit handler, so
-  "Send message" reloads the page and the message is lost.
+- **The contact form is disabled** until it has a backend. Enabled without one, the browser
+  would put visitors' details in the page URL, where host and CDN logs would record them.
 - **Hosting size.** Photos total about 191 MB; Azure Static Web Apps' free tier caps a site at
   250 MB, so more rounds will need smaller images or separate photo storage.
 
@@ -235,7 +237,8 @@ docs/screenshots/           images used in this README
 
 1. Branch off `main` (`git switch -c short-descriptive-name`).
 2. Run `npm run dev:mock` and check your change on desktop and mobile widths.
-3. Run `npx tsc --noEmit` and `npm run build` to catch type and build errors.
+3. Run `npx tsc --noEmit` and `npm test`. The tests (in `tests/e2e/`) also run on GitHub for
+   every pull request; first-time setup locally uses your installed Google Chrome.
 4. Open a pull request into `main`; merging it deploys the site.
 
 ## License
