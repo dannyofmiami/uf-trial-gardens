@@ -28,8 +28,10 @@ jobs:
           cache: npm
       - run: npm ci
       # sample scores until the trial team enters real ratings -- switch back to
-      # `npm run build` then (data/trials.mock.json vs data/trials.json)
-      - run: npm run build:mock
+      # `npm run build` then (data/trials.mock.json vs data/trials.json).
+      # build:demo = build:mock plus the browser-only /admin demo (lib/admin-demo.ts),
+      # until the real admin API is hosted.
+      - run: npm run build:demo
         env:
           # repo name, so links work at username.github.io/repo-name/
           NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}

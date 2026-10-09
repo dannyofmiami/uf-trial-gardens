@@ -5,9 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "dev:mock": "NEXT_PUBLIC_MOCK_DATA=1 next dev",
+    "dev:admin": "NEXT_PUBLIC_MOCK_DATA=1 NEXT_PUBLIC_ADMIN_API_URL=http://127.0.0.1:3001/api/admin next dev",
+    "admin:server": "node --env-file-if-exists=.env.local scripts/admin-server.mjs",
     "mock": "node scripts/mock-data.mjs",
     "build": "next build",
     "build:mock": "NEXT_PUBLIC_MOCK_DATA=1 next build",
+    "build:demo": "NEXT_PUBLIC_MOCK_DATA=1 NEXT_PUBLIC_ADMIN_DEMO=1 next build",
     "test": "playwright test",
     "start": "next start",
     "lint": "next lint",

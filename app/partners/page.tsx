@@ -79,8 +79,7 @@ export default function Partners() {
         </p>
         <p className="mt-4 text-xs text-muted">
           Logos are trademarks of their respective owners, sourced from each company&apos;s own official
-          site for source identification. Confirm usage with each supplier as part of the UF/IFAS
-          branding review before public launch.
+          site for source identification.
         </p>
       </Section>
     </>

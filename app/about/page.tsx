@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { meta, SCALE } from '@/lib/data';
-import { PageHeader, Section, Notice, CategoryLegend } from '@/components/Ui';
+import { PageHeader, Section, Notice, CategoryLegend, scoreTone } from '@/components/Ui';
 
 export const metadata: Metadata = {
   title: 'About the Program',
@@ -33,6 +33,11 @@ export default function About() {
           create a set of stresses which can only be simulated in bench trials conducted in colder
           and dryer climates. We plant candidate ornamental plants side-by-side in ground and report
           on our observations without bias.
+        </p>
+        <p className="mt-4 max-w-3xl text-muted leading-relaxed">
+          South Florida&rsquo;s summer arrives early and stays long. A plant that holds up through
+          all of that has shown what it can take, which gives growers in other hot, humid parts of
+          the United States an early look at how it may handle their own summers.
         </p>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -70,10 +75,11 @@ export default function About() {
 
         <ul className="mt-6 grid gap-2 sm:grid-cols-5">
           {SCALE.map((s) => (
-            <li key={s.v} className="border border-line bg-white px-4 py-3">
+            // same colors a cultivar's score gets on its own page
+            <li key={s.v} className={`${scoreTone(s.v)} px-4 py-3`}>
               <span className="font-display text-2xl font-bold tabular-nums">{s.v.toFixed(1)}</span>
               <span className="mt-1 block text-sm font-medium">{s.label}</span>
-              {s.note && <span className="block text-xs text-muted">{s.note}</span>}
+              {s.note && <span className="block text-xs opacity-90">{s.note}</span>}
             </li>
           ))}
         </ul>

@@ -1,5 +1,5 @@
 import { readFileSync } from 'node:fs';
-import { test, expect, type Page } from '@playwright/test';
+import { test, expect, type Page } from './fixtures';
 import type { TrialData } from '../../lib/data';
 
 // The suite runs against `npm run build:mock`, so expectations come from the sample data.
@@ -41,6 +41,35 @@ test.describe('security headers', () => {
     const res = await page.goto('/no-such-page/');
     expect(res?.status()).toBe(404);
     await expect(page.locator('main')).toBeVisible();
+  });
+});
+
+test.describe('alt text (UF/IFAS branding: every image needs a description)', () => {
+  for (const path of ['/', '/trial-gardens/', `/trial-gardens/${PLANT}/`, '/partners/', '/visit/', '/about/']) {
+    test(`${path} has meaningful alt text on every image`, async ({ page }) => {
+      await page.goto(path);
+      await page.waitForLoadState('networkidle');
+      // images marked decorative (role=presentation / aria-hidden) may have empty alt
+      const imgs = await page.locator('img').evaluateAll((els) => els.map((e) => ({
+        src: e.getAttribute('src') ?? '',
+        alt: e.getAttribute('alt'),
+        decorative: e.getAttribute('role') === 'presentation' || e.closest('[aria-hidden="true"]') !== null,
+      })));
+      const bad = imgs.filter((i) => !i.decorative && (!i.alt || !i.alt.trim() || /\.(webp|png|jpe?g|svg)$/i.test(i.alt)));
+      expect(bad, JSON.stringify(bad.slice(0, 5))).toEqual([]);
+      expect(imgs.length).toBeGreaterThan(0);
+    });
+  }
+
+  test('cultivar photos name the plant and the date', async ({ page }) => {
+    await page.goto(`/trial-gardens/${PLANT}/`);
+    const alts = await page.locator('main img').evaluateAll((els) => els.map((e) => e.getAttribute('alt') ?? ''));
+    expect(alts.length).toBeGreaterThan(0);
+    for (const alt of alts) {
+      expect(alt).toContain(plant.name);
+      expect(alt).toContain(plant.genus);
+      expect(alt).toMatch(/photographed \w{3} \d{1,2}, \d{4}/);
+    }
   });
 });
 
