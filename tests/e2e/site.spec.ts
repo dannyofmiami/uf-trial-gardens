@@ -127,12 +127,13 @@ test.describe('cultivar page', () => {
       if (e.avg === null) {
         await expect(dialog).toContainText('Not yet scored this round');
       } else {
-        const score = (code: string) => dialog.locator('dl > div').filter({ hasText: code }).locator('dd');
-        await expect(score('AVG')).toHaveText(e.avg.toFixed(1));
-        await expect(score('RES')).toHaveText(e.heatResistance!.toFixed(1));
-        await expect(score('UNF')).toHaveText(e.uniformity!.toFixed(1));
-        await expect(score('FLW')).toHaveText(e.flowerPower!.toFixed(1));
-        await expect(score('FOL')).toHaveText(e.foliage!.toFixed(1));
+        const score = (label: string) =>
+          dialog.locator('dl > div').filter({ has: page.locator('dt', { hasText: new RegExp(`^${label}$`) }) }).locator('dd');
+        await expect(score('Average')).toHaveText(e.avg.toFixed(1));
+        await expect(score('Heat Resistance')).toHaveText(e.heatResistance!.toFixed(1));
+        await expect(score('Uniformity')).toHaveText(e.uniformity!.toFixed(1));
+        await expect(score('Flower Power')).toHaveText(e.flowerPower!.toFixed(1));
+        await expect(score('Foliage')).toHaveText(e.foliage!.toFixed(1));
       }
       await page.keyboard.press('Escape');
       await waitClosed(page);
