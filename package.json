@@ -17,6 +17,7 @@
     "import": "node scripts/import-xlsx.mjs",
     "mirror": "node scripts/mirror-images.mjs",
     "photos": "node scripts/import-photos.mjs",
+    "weather": "NODE_USE_ENV_PROXY=1 node scripts/weather.mjs",
     "dropbox:auth": "NODE_USE_ENV_PROXY=1 node --env-file-if-exists=.env.local scripts/dropbox-auth.mjs",
     "dropbox:photos": "NODE_USE_ENV_PROXY=1 node --env-file-if-exists=.env.local scripts/dropbox-photos.mjs"
   },
