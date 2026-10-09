@@ -1,12 +1,14 @@
 import Link from 'next/link';
 import { cultivars, facets, meta, SCALE } from '@/lib/data';
-import { Section, CategoryLegend, CultivarCard } from '@/components/Ui';
+import { Section, CategoryLegend, CultivarCard, scoreTone } from '@/components/Ui';
+import SiteBanner from '@/components/SiteBanner';
 
 export default function Home() {
   const top = [...cultivars].sort((a, b) => (b.currentAvg ?? 0) - (a.currentAvg ?? 0)).slice(0, 8);
 
   return (
     <>
+      <SiteBanner />
       <div className="border-b-4 border-uf-orange bg-white">
         <div className="mx-auto w-full max-w-6xl px-5 py-16">
           <p className="font-mono text-[11px] font-semibold uppercase tracking-[.16em] text-uf-blue">
@@ -16,7 +18,7 @@ export default function Home() {
             Independent performance data for plants that have to survive summer.
           </h1>
           <p className="mt-5 max-w-[62ch] font-serif text-lg leading-relaxed text-muted">
-            Ornamental cultivars grown in the ground, side by side, through Homestead&rsquo;s heat,
+            Plants grown in the ground, side by side, through Homestead&rsquo;s heat,
             humidity and rainfall, then scored on the same 1–5 scale and published without
             favoring any supplier or brand.
           </p>
@@ -46,7 +48,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Section className="pt-0">
+      <Section className="pt-8">
         <p className="font-mono text-[11px] font-semibold uppercase tracking-[.16em] text-uf-blue">
           How we score
         </p>
@@ -60,12 +62,13 @@ export default function Home() {
 
         <div className="mt-8"><CategoryLegend /></div>
 
-        <ol className="mt-px grid gap-px bg-line sm:grid-cols-5">
+        {/* same colors a cultivar's score gets on its own page */}
+        <ol className="mt-px grid gap-px bg-white sm:grid-cols-5">
           {SCALE.map((s) => (
-            <li key={s.v} className="bg-white px-4 py-3">
+            <li key={s.v} className={`${scoreTone(s.v)} px-4 py-3`}>
               <span className="font-display text-2xl font-bold tabular-nums">{s.v.toFixed(1)}</span>
               <span className="mt-0.5 block text-sm font-semibold">{s.label}</span>
-              {s.note && <span className="block text-xs text-muted">{s.note}</span>}
+              {s.note && <span className="block text-xs opacity-90">{s.note}</span>}
             </li>
           ))}
         </ol>

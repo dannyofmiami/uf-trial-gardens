@@ -28,6 +28,7 @@ export const metadata: Metadata = {
 };
 
 const NAV = [
+  { href: '/', label: 'Home' },
   { href: '/about/', label: 'About the Program' },
   { href: '/trial-gardens/', label: 'Gardens Database' },
   { href: '/partners/', label: 'Industry Partners' },
