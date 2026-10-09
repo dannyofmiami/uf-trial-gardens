@@ -9,6 +9,7 @@ import {
 import { Section, ScoreBar, AvgBadge } from '@/components/Ui';
 import TrialPhoto from '@/components/TrialPhoto';
 import PhotoLightbox from '@/components/PhotoLightbox';
+import { weatherForDate, WEATHER_SOURCE } from '@/lib/weather';
 
 export default function CultivarDetail({
   c, evals, meta,
@@ -67,7 +68,7 @@ export default function CultivarDetail({
                     alt={`${c.name} (${c.genus}), photographed ${fmtDate(heroImage.date)}`}
                     caption={`${c.name} · ${fmtDate(heroImage.date)}`}
                   >
-                    <RoundScores e={evals.find((e) => e.date === heroImage.date)} />
+                    <PhotoFacts date={heroImage.date} e={evals.find((e) => e.date === heroImage.date)} />
                   </PhotoLightbox>
                 </>
               ) : (
@@ -152,7 +153,8 @@ export default function CultivarDetail({
 
         <h2 className="mt-12 font-display text-xl font-bold">History</h2>
         <p className="mt-1 text-sm text-muted">
-          Every dated evaluation with its four category scores. Click a round to view its photo full screen.
+          Every dated evaluation with its four category scores. Click a round to view its photo full
+          screen, along with that round&rsquo;s scores and the weather that day.
         </p>
 
         {/* [ifas] .stack on every table, .table-scroll when it's wide */}
@@ -226,28 +228,62 @@ export default function CultivarDetail({
   );
 }
 
-// the round's four scores + AVG, shown under the enlarged photo
-function RoundScores({ e }: { e: Evaluation | undefined }) {
-  if (!e || e.avg === null) {
-    return <p className="text-center text-sm text-white/70">Not yet scored this round</p>;
-  }
-  const items = [
-    ...CATEGORIES.map((cat) => ({ code: cat.code, label: cat.label, value: e[cat.key] })),
-    { code: 'AVG', label: 'Average', value: e.avg },
-  ];
+// Under the enlarged photo: that day's weather and the round's scores, side by side
+function PhotoFacts({ date, e }: { date: string; e: Evaluation | undefined }) {
+  const w = weatherForDate(date);
   return (
-    <dl className="flex flex-wrap justify-center gap-x-5 gap-y-1">
-      {items.map((it) => (
-        <div key={it.code} className="flex items-baseline gap-1.5" title={it.label}>
-          <dt className="font-mono text-[11px] tracking-[.1em] text-white/60">
-            {it.code}
-            <span className="sr-only"> ({it.label})</span>
-          </dt>
-          <dd className={`font-mono tabular-nums ${it.code === 'AVG' ? 'text-base font-bold' : 'text-sm'}`}>
-            {it.value?.toFixed(1) ?? '—'}
-          </dd>
+    <div className={`grid w-[min(34rem,calc(100vw-2rem))] gap-px border border-white/20 bg-white/20 ${w ? 'grid-cols-2' : 'grid-cols-1'}`}>
+      {w && (
+        <FactPanel
+          title="Weather that day"
+          footnote={WEATHER_SOURCE}
+          rows={[
+            { label: 'High', value: w.highF === null ? null : `${Math.round(w.highF)}°F` },
+            { label: 'Low', value: w.lowF === null ? null : `${Math.round(w.lowF)}°F` },
+            { label: 'Rain', value: w.rainIn === null ? null : `${w.rainIn.toFixed(2)} in` },
+            { label: 'Humidity', value: w.humidityPct === null ? null : `${w.humidityPct}%` },
+            {
+              label: 'Sunlight', value: w.dli === null ? null : `${w.dli} DLI`,
+              title: 'Daily light integral: mol/m² of light over the day (estimated from solar radiation)',
+            },
+          ]}
+        />
+      )}
+      {e && e.avg !== null ? (
+        <FactPanel
+          title="Scores this round"
+          rows={[
+            ...CATEGORIES.map((cat) => ({ label: cat.label, value: e[cat.key]?.toFixed(1) ?? '—' })),
+            { label: 'Average', value: e.avg.toFixed(1), strong: true },
+          ]}
+        />
+      ) : (
+        <div className="bg-black p-3">
+          <p className="font-mono text-[10px] uppercase tracking-[.12em] text-white/60">Scores this round</p>
+          <p className="mt-2 text-sm text-white/70">Not yet scored this round</p>
         </div>
-      ))}
-    </dl>
+      )}
+    </div>
+  );
+}
+
+function FactPanel({ title, footnote, rows }: {
+  title: string;
+  footnote?: string;
+  rows: { label: string; value: string | null; title?: string; strong?: boolean }[];
+}) {
+  return (
+    <div className="flex flex-col bg-black p-3 [@media(max-height:500px)]:px-3 [@media(max-height:500px)]:py-1.5">
+      <p className="font-mono text-[10px] uppercase tracking-[.12em] text-white/60">{title}</p>
+      <dl className="mt-1.5 space-y-0.5 [@media(max-height:500px)]:mt-0.5 [@media(max-height:500px)]:space-y-0">
+        {rows.filter((r) => r.value !== null).map((r) => (
+          <div key={r.label} className="flex items-baseline justify-between gap-3" title={r.title}>
+            <dt className="text-xs text-white/70">{r.label}</dt>
+            <dd className={`font-mono tabular-nums ${r.strong ? 'text-base font-bold' : 'text-sm'} [@media(max-height:500px)]:text-xs`}>{r.value}</dd>
+          </div>
+        ))}
+      </dl>
+      {footnote && <p className="mt-auto pt-2 text-[10px] text-white/50 [@media(max-height:500px)]:pt-0.5">{footnote}</p>}
+    </div>
   );
 }

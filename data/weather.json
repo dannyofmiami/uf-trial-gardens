@@ -1,0 +1,42 @@
+{
+  "source": "FAWN Homestead station (440)",
+  "sourceUrl": "https://fawn.ifas.ufl.edu/",
+  "fetchedAt": "2026-10-09T17:43:33.740Z",
+  "days": {
+    "2026-01-13": {
+      "highF": 73.1,
+      "lowF": 66.7,
+      "rainIn": 0.04,
+      "humidityPct": 94,
+      "dli": 17
+    },
+    "2026-02-18": {
+      "highF": 81,
+      "lowF": 58.7,
+      "rainIn": 0,
+      "humidityPct": 83,
+      "dli": 31
+    },
+    "2026-03-10": {
+      "highF": 84.6,
+      "lowF": 65,
+      "rainIn": 0,
+      "humidityPct": 83,
+      "dli": 42
+    },
+    "2026-04-07": {
+      "highF": 81.3,
+      "lowF": 67.7,
+      "rainIn": 0.32,
+      "humidityPct": 87,
+      "dli": 27
+    },
+    "2026-05-06": {
+      "highF": 88,
+      "lowF": 70.2,
+      "rainIn": 0,
+      "humidityPct": 81,
+      "dli": 44
+    }
+  }
+}
