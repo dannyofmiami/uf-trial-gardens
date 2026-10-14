@@ -22,7 +22,7 @@
     "dropbox:photos": "NODE_USE_ENV_PROXY=1 node --env-file-if-exists=.env.local scripts/dropbox-photos.mjs"
   },
   "dependencies": {
-    "next": "^15.5.0",
+    "next": "^16.4.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
