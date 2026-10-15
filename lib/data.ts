@@ -25,7 +25,8 @@ export type Cultivar = {
   flowerColor: string | null;
   year: number | null;
   images: TrialImage[];
-  status: string;
+  status: string;              // where it's planted
+  lightExposure?: string;      // 'Full sun' | 'Full shade' -- not recorded yet
   currentAvg: number | null;
   latestEvaluation: string;
   evaluationCount: number;
@@ -87,7 +88,6 @@ export type TrialData = {
   evaluations: Evaluation[];
 };
 
-// prefix for files in /public, needed when the site isn't at the domain root (GitHub Pages)
 export const withBase = (path: string) => (process.env.NEXT_PUBLIC_BASE_PATH || '') + path;
 
 const data = raw as unknown as TrialData;
@@ -100,7 +100,7 @@ export const evaluations = data.evaluations;
 
 export const getCultivar = (id: string) => cultivars.find((c) => c.id === id);
 
-// most recent mirrored photo, for the hero/card image -- images are stored oldest-first
+// most recent mirrored photo, for the hero/card image. oldest image first
 export const latestMirroredImage = (c: Cultivar): TrialImage | undefined =>
   [...c.images].reverse().find((i) => i.mirrored);
 

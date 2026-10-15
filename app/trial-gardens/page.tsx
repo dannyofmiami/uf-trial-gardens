@@ -23,6 +23,7 @@ export default function TrialGardens() {
             cultivars={cultivars}
             genera={facets.genera}
             suppliers={facets.suppliers}
+            colors={facets.colors}
           />
         </div>
       </Section>

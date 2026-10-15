@@ -8,6 +8,7 @@ import * as fs from 'node:fs';
 import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { derive } from './lib/derive.mjs';
+import { inferFlowerColor } from './lib/flower-color.mjs';
 
 // SheetJS's ES module build only reads files from disk once given Node's fs
 XLSX.set_fs(fs);
@@ -137,6 +138,8 @@ for (const sheetName of wb.SheetNames) {
 // insertion order already follows sheet order, but sort explicitly so a cultivar's
 // images are guaranteed chronological even if the workbook's tabs aren't
 for (const c of cultivars.values()) c.images.sort((a, b) => a.date.localeCompare(b.date));
+// the spreadsheet's FLOWER COLOR wins; until it's filled in, infer from the name
+for (const c of cultivars.values()) c.flowerColor ||= inferFlowerColor(c.name);
 
 const list = [...cultivars.values()];
 const { awards, dataQuality, facets } = derive(list, evaluations, {

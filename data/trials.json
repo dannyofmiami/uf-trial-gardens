@@ -7,7 +7,7 @@
     "cultivarCount": 87,
     "evaluationCount": 435,
     "dataQuality": {
-      "missingFlowerColor": 87,
+      "missingFlowerColor": 17,
       "missingImage": 0,
       "imagesHotlinked": 430,
       "imagesMirrored": 430,
@@ -60,7 +60,17 @@
       "PanAmerican Seed",
       "Selecta"
     ],
-    "colors": [],
+    "colors": [
+      "Blue",
+      "Multicolor",
+      "Orange",
+      "Pink",
+      "Purple",
+      "Red",
+      "Unknown",
+      "White",
+      "Yellow"
+    ],
     "dates": [
       "2026-01-13",
       "2026-02-18",
@@ -127,7 +137,7 @@
       "name": "Akila Sunshine Yellow",
       "genus": "Osteospermum",
       "supplier": "PanAmerican Seed",
-      "flowerColor": null,
+      "flowerColor": "Yellow",
       "year": 2026,
       "images": [
         {
@@ -187,7 +197,7 @@
       "name": "Always Sunny Gold",
       "genus": "Sunflower",
       "supplier": "PanAmerican Seed",
-      "flowerColor": null,
+      "flowerColor": "Yellow",
       "year": 2026,
       "images": [
         {
@@ -231,7 +241,7 @@
       "name": "Beach Bum Blue",
       "genus": "Evolvulus",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Blue",
       "year": 2026,
       "images": [
         {
@@ -291,7 +301,7 @@
       "name": "Beacon Pink",
       "genus": "Impatiens",
       "supplier": "PanAmerican Seed",
-      "flowerColor": null,
+      "flowerColor": "Pink",
       "year": 2026,
       "images": [
         {
@@ -351,7 +361,7 @@
       "name": "Big Bicolor Pink Imp",
       "genus": "Angelonia",
       "supplier": "Danziger",
-      "flowerColor": null,
+      "flowerColor": "Multicolor",
       "year": 2026,
       "images": [
         {
@@ -411,7 +421,7 @@
       "name": "Big Eeze Dark Red",
       "genus": "Geranium interspecific",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Red",
       "year": 2026,
       "images": [
         {
@@ -471,7 +481,7 @@
       "name": "Big Eeze Foxy Flamingo",
       "genus": "Geranium interspecific",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Pink",
       "year": 2026,
       "images": [
         {
@@ -531,7 +541,7 @@
       "name": "Big Eeze Fuchsia Blue",
       "genus": "Geranium interspecific",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Multicolor",
       "year": 2026,
       "images": [
         {
@@ -591,7 +601,7 @@
       "name": "Big Eeze Pink",
       "genus": "Geranium interspecific",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Pink",
       "year": 2026,
       "images": [
         {
@@ -651,7 +661,7 @@
       "name": "Big Eeze Pink Batik",
       "genus": "Geranium interspecific",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Pink",
       "year": 2026,
       "images": [
         {
@@ -711,7 +721,7 @@
       "name": "Big Grape",
       "genus": "Angelonia",
       "supplier": "Danziger",
-      "flowerColor": null,
+      "flowerColor": "Purple",
       "year": 2026,
       "images": [
         {
@@ -771,7 +781,7 @@
       "name": "Bloomtastic Honey",
       "genus": "Calibrachoa",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Unknown",
       "year": 2026,
       "images": [
         {
@@ -831,7 +841,7 @@
       "name": "Bloomtastic Orange Cartwheel",
       "genus": "Calibrachoa",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Orange",
       "year": 2026,
       "images": [
         {
@@ -891,7 +901,7 @@
       "name": "Bloomtastic Peach Grenadine 25",
       "genus": "Calibrachoa",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Orange",
       "year": 2026,
       "images": [
         {
@@ -951,7 +961,7 @@
       "name": "Caliburst Nectarine",
       "genus": "Petchoa",
       "supplier": "PanAmerican Seed",
-      "flowerColor": null,
+      "flowerColor": "Orange",
       "year": 2026,
       "images": [
         {
@@ -1011,7 +1021,7 @@
       "name": "Capella Hello Sunshine",
       "genus": "Petunia",
       "supplier": "Danziger",
-      "flowerColor": null,
+      "flowerColor": "Yellow",
       "year": 2026,
       "images": [
         {
@@ -1071,7 +1081,7 @@
       "name": "Capello Purple",
       "genus": "Scaevola",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Purple",
       "year": 2026,
       "images": [
         {
@@ -1131,7 +1141,7 @@
       "name": "Capello White",
       "genus": "Scaevola",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "White",
       "year": 2026,
       "images": [
         {
@@ -1191,7 +1201,7 @@
       "name": "Cha-cha Diva Orange",
       "genus": "Calibrachoa",
       "supplier": "BallFloral",
-      "flowerColor": null,
+      "flowerColor": "Orange",
       "year": 2026,
       "images": [
         {
@@ -1251,7 +1261,7 @@
       "name": "Colorbloom Orange with Light Eye",
       "genus": "Gerbera",
       "supplier": "PanAmerican Seed",
-      "flowerColor": null,
+      "flowerColor": "Orange",
       "year": 2026,
       "images": [
         {
@@ -1311,7 +1321,7 @@
       "name": "Cupcake Burgundy",
       "genus": "Portulaca",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Red",
       "year": 2026,
       "images": [
         {
@@ -1371,7 +1381,7 @@
       "name": "Cupheasy Lavendar",
       "genus": "Cuphea",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Purple",
       "year": 2026,
       "images": [
         {
@@ -1431,7 +1441,7 @@
       "name": "Dart Select Mixture",
       "genus": "Dianthus",
       "supplier": "PanAmerican Seed",
-      "flowerColor": null,
+      "flowerColor": "Multicolor",
       "year": 2026,
       "images": [
         {
@@ -1491,7 +1501,7 @@
       "name": "Down Town Bronze 47",
       "genus": "Coleus",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Unknown",
       "year": 2026,
       "images": [
         {
@@ -1551,7 +1561,7 @@
       "name": "Dragon Wing White Bronze Leaf",
       "genus": "Begonia",
       "supplier": "PanAmerican Seed",
-      "flowerColor": null,
+      "flowerColor": "White",
       "year": 2026,
       "images": [
         {
@@ -1611,7 +1621,7 @@
       "name": "Dragon Wing White Improved",
       "genus": "Begonia",
       "supplier": "PanAmerican Seed",
-      "flowerColor": null,
+      "flowerColor": "White",
       "year": 2026,
       "images": [
         {
@@ -1671,7 +1681,7 @@
       "name": "E3 Easy Wave Midnight Marble",
       "genus": "Petunia",
       "supplier": "PanAmerican Seed",
-      "flowerColor": null,
+      "flowerColor": "Unknown",
       "year": 2026,
       "images": [
         {
@@ -1731,7 +1741,7 @@
       "name": "Elegant Full Mixture",
       "genus": "Zinnia",
       "supplier": "PanAmerican Seed",
-      "flowerColor": null,
+      "flowerColor": "Multicolor",
       "year": 2026,
       "images": [
         {
@@ -1791,7 +1801,7 @@
       "name": "Elegant Soft Mixture",
       "genus": "Zinnia",
       "supplier": "PanAmerican Seed",
-      "flowerColor": null,
+      "flowerColor": "Multicolor",
       "year": 2026,
       "images": [
         {
@@ -1851,7 +1861,7 @@
       "name": "Flordenia Plus Chocolate Chill",
       "genus": "Dipladenia",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Unknown",
       "year": 2026,
       "images": [
         {
@@ -1903,7 +1913,7 @@
       "name": "Flordenia Plus White",
       "genus": "Dipladenia",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "White",
       "year": 2026,
       "images": [
         {
@@ -1955,7 +1965,7 @@
       "name": "Gem Diva Pink",
       "genus": "Lantana",
       "supplier": "Danziger",
-      "flowerColor": null,
+      "flowerColor": "Pink",
       "year": 2026,
       "images": [
         {
@@ -2015,7 +2025,7 @@
       "name": "Gem Pearl",
       "genus": "Lantana",
       "supplier": "Danziger",
-      "flowerColor": null,
+      "flowerColor": "White",
       "year": 2026,
       "images": [
         {
@@ -2075,7 +2085,7 @@
       "name": "Glimmer Strawberry Sparkler",
       "genus": "Impatiens",
       "supplier": "Ball FloraPlants",
-      "flowerColor": null,
+      "flowerColor": "Pink",
       "year": 2026,
       "images": [
         {
@@ -2135,7 +2145,7 @@
       "name": "Glory Days Pink Bicolor",
       "genus": "Geranium interspecific",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Multicolor",
       "year": 2026,
       "images": [
         {
@@ -2195,7 +2205,7 @@
       "name": "Glory Days Red Orange Bicolor",
       "genus": "Geranium interspecific",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Multicolor",
       "year": 2026,
       "images": [
         {
@@ -2255,7 +2265,7 @@
       "name": "Havana Full Moon 2025",
       "genus": "Lantana",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Unknown",
       "year": 2026,
       "images": [
         {
@@ -2315,7 +2325,7 @@
       "name": "Havana Harvest Moon 2025",
       "genus": "Lantana",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Unknown",
       "year": 2026,
       "images": [
         {
@@ -2375,7 +2385,7 @@
       "name": "Havana Red 40",
       "genus": "Lantana",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Red",
       "year": 2026,
       "images": [
         {
@@ -2435,7 +2445,7 @@
       "name": "Havana Sunrise 24",
       "genus": "Lantana",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Unknown",
       "year": 2026,
       "images": [
         {
@@ -2495,7 +2505,7 @@
       "name": "Havana Sunset 21",
       "genus": "Lantana",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Unknown",
       "year": 2026,
       "images": [
         {
@@ -2555,7 +2565,7 @@
       "name": "Heartland Citrus 2025",
       "genus": "Lantana",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Unknown",
       "year": 2026,
       "images": [
         {
@@ -2615,7 +2625,7 @@
       "name": "Heartland White 2025",
       "genus": "Lantana",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "White",
       "year": 2026,
       "images": [
         {
@@ -2675,7 +2685,7 @@
       "name": "Lanna Lace",
       "genus": "African Marigold",
       "supplier": "PanAmerican Seed",
-      "flowerColor": null,
+      "flowerColor": "Unknown",
       "year": 2026,
       "images": [
         {
@@ -2727,7 +2737,7 @@
       "name": "Lemon Quartz",
       "genus": "Lantana",
       "supplier": "Danziger",
-      "flowerColor": null,
+      "flowerColor": "Yellow",
       "year": 2026,
       "images": [
         {
@@ -2787,7 +2797,7 @@
       "name": "Main Street Franklin Street",
       "genus": "Coleus",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Unknown",
       "year": 2026,
       "images": [
         {
@@ -2847,7 +2857,7 @@
       "name": "Margarita Cool Purple 2025",
       "genus": "Osteospermum",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Purple",
       "year": 2026,
       "images": [
         {
@@ -2907,7 +2917,7 @@
       "name": "Margarita Dark Pink",
       "genus": "Osteospermum",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Pink",
       "year": 2026,
       "images": [
         {
@@ -2967,7 +2977,7 @@
       "name": "Margarita Kardinal 2022",
       "genus": "Osteospermum",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Red",
       "year": 2026,
       "images": [
         {
@@ -3027,7 +3037,7 @@
       "name": "Margarita White 2022",
       "genus": "Osteospermum",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "White",
       "year": 2026,
       "images": [
         {
@@ -3087,7 +3097,7 @@
       "name": "Margarita Yellow 2022",
       "genus": "Osteospermum",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Yellow",
       "year": 2026,
       "images": [
         {
@@ -3147,7 +3157,7 @@
       "name": "Mega Pazzaz Tropical Twist",
       "genus": "Portulaca",
       "supplier": "Danziger",
-      "flowerColor": null,
+      "flowerColor": "Unknown",
       "year": 2026,
       "images": [
         {
@@ -3207,7 +3217,7 @@
       "name": "MinFams Neo Coral Flash",
       "genus": "Calibrachoa",
       "supplier": "Selecta",
-      "flowerColor": null,
+      "flowerColor": "Pink",
       "year": 2026,
       "images": [
         {
@@ -3267,7 +3277,7 @@
       "name": "MinFams Neo Rose Flash",
       "genus": "Calibrachoa",
       "supplier": "Selecta",
-      "flowerColor": null,
+      "flowerColor": "Pink",
       "year": 2026,
       "images": [
         {
@@ -3327,7 +3337,7 @@
       "name": "Monarch Magic",
       "genus": "Ageratum",
       "supplier": "Ball FloraPlants",
-      "flowerColor": null,
+      "flowerColor": "Unknown",
       "year": 2026,
       "images": [
         {
@@ -3387,7 +3397,7 @@
       "name": "Mystical Blue",
       "genus": "Salvia",
       "supplier": "Ball FloraPlants",
-      "flowerColor": null,
+      "flowerColor": "Blue",
       "year": 2026,
       "images": [
         {
@@ -3447,7 +3457,7 @@
       "name": "Mystical White",
       "genus": "Salvia",
       "supplier": "Ball FloraPlants",
-      "flowerColor": null,
+      "flowerColor": "White",
       "year": 2026,
       "images": [
         {
@@ -3507,7 +3517,7 @@
       "name": "NGI Sol Prime Orchid",
       "genus": "Impatiens",
       "supplier": "Danziger",
-      "flowerColor": null,
+      "flowerColor": "Purple",
       "year": 2026,
       "images": [
         {
@@ -3567,7 +3577,7 @@
       "name": "NGI Sol Prime Pearl",
       "genus": "Impatiens",
       "supplier": "Danziger",
-      "flowerColor": null,
+      "flowerColor": "White",
       "year": 2026,
       "images": [
         {
@@ -3627,7 +3637,7 @@
       "name": "Radiant Velvet in Gold",
       "genus": "Coreopsis grandifolia",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Yellow",
       "year": 2026,
       "images": [
         {
@@ -3687,7 +3697,7 @@
       "name": "Sallyfun Blue Lagoon",
       "genus": "Salvia",
       "supplier": "Danziger",
-      "flowerColor": null,
+      "flowerColor": "Blue",
       "year": 2026,
       "images": [
         {
@@ -3747,7 +3757,7 @@
       "name": "Santana Dark Red",
       "genus": "Geranium interspecific",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Red",
       "year": 2026,
       "images": [
         {
@@ -3807,7 +3817,7 @@
       "name": "Santana Fire",
       "genus": "Geranium interspecific",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Unknown",
       "year": 2026,
       "images": [
         {
@@ -3867,7 +3877,7 @@
       "name": "Santana Pink",
       "genus": "Geranium interspecific",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Pink",
       "year": 2026,
       "images": [
         {
@@ -3927,7 +3937,7 @@
       "name": "Santana Pink Splash",
       "genus": "Geranium interspecific",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Pink",
       "year": 2026,
       "images": [
         {
@@ -3987,7 +3997,7 @@
       "name": "Santana Purple",
       "genus": "Geranium interspecific",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Purple",
       "year": 2026,
       "images": [
         {
@@ -4047,7 +4057,7 @@
       "name": "Santana White",
       "genus": "Geranium interspecific",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "White",
       "year": 2026,
       "images": [
         {
@@ -4107,7 +4117,7 @@
       "name": "Santana White Splash",
       "genus": "Geranium interspecific",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "White",
       "year": 2026,
       "images": [
         {
@@ -4167,7 +4177,7 @@
       "name": "Sarita Dark Red",
       "genus": "Geranium interspecific",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Red",
       "year": 2026,
       "images": [
         {
@@ -4227,7 +4237,7 @@
       "name": "Sarita Lilac Splash",
       "genus": "Geranium interspecific",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Purple",
       "year": 2026,
       "images": [
         {
@@ -4287,7 +4297,7 @@
       "name": "Sarita Punch",
       "genus": "Geranium interspecific",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Unknown",
       "year": 2026,
       "images": [
         {
@@ -4347,7 +4357,7 @@
       "name": "Sarita Sunstar Red",
       "genus": "Geranium interspecific",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Red",
       "year": 2026,
       "images": [
         {
@@ -4407,7 +4417,7 @@
       "name": "Sarita Wild Salmon",
       "genus": "Geranium interspecific",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Pink",
       "year": 2026,
       "images": [
         {
@@ -4467,7 +4477,7 @@
       "name": "Serena Magenta",
       "genus": "Angelonia",
       "supplier": "PanAmerican Seed",
-      "flowerColor": null,
+      "flowerColor": "Pink",
       "year": 2026,
       "images": [
         {
@@ -4527,7 +4537,7 @@
       "name": "Serene Lilac",
       "genus": "Nepeta faassenii",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Purple",
       "year": 2026,
       "images": [
         {
@@ -4587,7 +4597,7 @@
       "name": "Serenita Cherry Red",
       "genus": "Angelonia",
       "supplier": "PanAmerican Seed",
-      "flowerColor": null,
+      "flowerColor": "Red",
       "year": 2026,
       "images": [
         {
@@ -4647,7 +4657,7 @@
       "name": "Shamrock Lavendar",
       "genus": "Lantana",
       "supplier": "Ball FloraPlants",
-      "flowerColor": null,
+      "flowerColor": "Purple",
       "year": 2026,
       "images": [
         {
@@ -4707,7 +4717,7 @@
       "name": "Shamrock Rose",
       "genus": "Lantana",
       "supplier": "Ball FloraPlants",
-      "flowerColor": null,
+      "flowerColor": "Pink",
       "year": 2026,
       "images": [
         {
@@ -4767,7 +4777,7 @@
       "name": "Slingshot CherryTrtwhl",
       "genus": "Petunia",
       "supplier": "Ball FloraPlants",
-      "flowerColor": null,
+      "flowerColor": "Red",
       "year": 2026,
       "images": [
         {
@@ -4827,7 +4837,7 @@
       "name": "Solarscape XL Red Glow",
       "genus": "Interspecific Impatiens",
       "supplier": "PanAmerican Seed",
-      "flowerColor": null,
+      "flowerColor": "Red",
       "year": 2026,
       "images": [
         {
@@ -4887,7 +4897,7 @@
       "name": "SpinTop Mariachi",
       "genus": "Gaillardia aristata",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Unknown",
       "year": 2026,
       "images": [
         {
@@ -4947,7 +4957,7 @@
       "name": "Summer Bees Red Bicolor",
       "genus": "Dahlia",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Multicolor",
       "year": 2026,
       "images": [
         {
@@ -5007,7 +5017,7 @@
       "name": "Summer Bees Salmon Bicolor",
       "genus": "Dahlia",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Multicolor",
       "year": 2026,
       "images": [
         {
@@ -5067,7 +5077,7 @@
       "name": "Super Star",
       "genus": "Penstemon hybrid",
       "supplier": "Dümmen Orange",
-      "flowerColor": null,
+      "flowerColor": "Unknown",
       "year": 2026,
       "images": [
         {
@@ -5127,7 +5137,7 @@
       "name": "Tattoo Boysenberry",
       "genus": "Vinca",
       "supplier": "PanAmerican Seed",
-      "flowerColor": null,
+      "flowerColor": "Purple",
       "year": 2026,
       "images": [
         {
@@ -5187,7 +5197,7 @@
       "name": "Uno Double Light Pink 26",
       "genus": "Calibrachoa",
       "supplier": "Selecta",
-      "flowerColor": null,
+      "flowerColor": "Pink",
       "year": 2026,
       "images": [
         {
@@ -5247,7 +5257,7 @@
       "name": "Venti PinkBurst",
       "genus": "Dahlia",
       "supplier": "Selecta",
-      "flowerColor": null,
+      "flowerColor": "Pink",
       "year": 2026,
       "images": [
         {
