@@ -4,14 +4,26 @@ import { useState } from 'react';
 import { CultivarCard } from '@/components/Ui';
 import type { Cultivar } from '@/lib/data';
 
-type Props = { cultivars: Cultivar[]; genera: string[]; suppliers: string[] };
+type Props = { cultivars: Cultivar[]; genera: string[]; suppliers: string[]; colors: string[] };
+
+// Light exposure isn't in the trial data yet, so this filter matches nothing until it is.
+const LIGHT = ['Full sun', 'Full shade'];
+// Planting type reads each cultivar's status ('In Ground' today).
+const PLANTING = [
+  { value: 'inground', label: 'In-ground' },
+  { value: 'inbasket', label: 'In-basket' },
+];
+const plantingKey = (status: string) => status.toLowerCase().replace(/[^a-z]/g, '');
 
 type SortKey = 'avg' | 'name' | 'genus';
 
-export default function DatabaseBrowser({ cultivars, genera, suppliers }: Props) {
+export default function DatabaseBrowser({ cultivars, genera, suppliers, colors }: Props) {
   const [q, setQ] = useState('');
   const [genus, setGenus] = useState('');
   const [supplier, setSupplier] = useState('');
+  const [color, setColor] = useState('');
+  const [light, setLight] = useState('');
+  const [planting, setPlanting] = useState('');
   const [minAvg, setMinAvg] = useState(0);
   const [sort, setSort] = useState<SortKey>('avg');
 
@@ -20,9 +32,12 @@ export default function DatabaseBrowser({ cultivars, genera, suppliers }: Props)
   const results = cultivars.filter((c) => {
     if (genus && c.genus !== genus) return false;
     if (supplier && c.supplier !== supplier) return false;
+    if (color && c.flowerColor !== color) return false;
+    if (light && c.lightExposure !== light) return false;
+    if (planting && plantingKey(c.status) !== planting) return false;
     if (minAvg && (c.currentAvg ?? 0) < minAvg) return false;
     if (needle) {
-      const text = `${c.name} ${c.genus} ${c.supplier ?? ''}`.toLowerCase();
+      const text = `${c.name} ${c.genus} ${c.supplier ?? ''} ${c.flowerColor ?? ''}`.toLowerCase();
       if (!text.includes(needle)) return false;
     }
     return true;
@@ -34,8 +49,19 @@ export default function DatabaseBrowser({ cultivars, genera, suppliers }: Props)
     return (b.currentAvg ?? 0) - (a.currentAvg ?? 0) || a.name.localeCompare(b.name);
   });
 
-  const reset = () => { setQ(''); setGenus(''); setSupplier(''); setMinAvg(0); setSort('avg'); };
-  const active = q || genus || supplier || minAvg;
+  const reset = () => {
+    setQ(''); setGenus(''); setSupplier(''); setColor(''); setLight(''); setPlanting('');
+    setMinAvg(0); setSort('avg');
+  };
+  const active = q || genus || supplier || color || light || planting || minAvg;
+
+  // say why a filter came up empty when it's for data that hasn't been recorded
+  const emptyReason =
+    light && !cultivars.some((c) => c.lightExposure)
+      ? "Light exposure hasn't been recorded for these cultivars yet."
+      : planting && !cultivars.some((c) => plantingKey(c.status) === planting)
+        ? `No cultivars in this trial are planted ${planting === 'inbasket' ? 'in baskets' : 'in the ground'}.`
+        : 'No cultivars match those filters.';
 
   const field = 'border border-line bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-uf-blue';
   const legend = 'font-mono text-[10px] font-semibold uppercase tracking-[.12em] text-muted';
@@ -43,12 +69,12 @@ export default function DatabaseBrowser({ cultivars, genera, suppliers }: Props)
   return (
     <div>
       <div className="border border-line bg-white p-4">
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           <label className="lg:col-span-2 flex flex-col gap-1">
             <span className={legend}>Search</span>
             <input
               type="search" value={q} onChange={(e) => setQ(e.target.value)}
-              placeholder="Cultivar, genus, or supplier" className={field}
+              placeholder="Cultivar, genus, supplier, or color" className={field}
             />
           </label>
 
@@ -65,6 +91,30 @@ export default function DatabaseBrowser({ cultivars, genera, suppliers }: Props)
             <select value={supplier} onChange={(e) => setSupplier(e.target.value)} className={field}>
               <option value="">All suppliers</option>
               {suppliers.map((s) => <option key={s} value={s}>{s}</option>)}
+            </select>
+          </label>
+
+          <label className="flex flex-col gap-1">
+            <span className={legend}>Flower color</span>
+            <select value={color} onChange={(e) => setColor(e.target.value)} className={field}>
+              <option value="">All colors</option>
+              {colors.map((c) => <option key={c} value={c}>{c}</option>)}
+            </select>
+          </label>
+
+          <label className="flex flex-col gap-1">
+            <span className={legend}>Light exposure</span>
+            <select value={light} onChange={(e) => setLight(e.target.value)} className={field}>
+              <option value="">Any light</option>
+              {LIGHT.map((l) => <option key={l} value={l}>{l}</option>)}
+            </select>
+          </label>
+
+          <label className="flex flex-col gap-1">
+            <span className={legend}>Planting type</span>
+            <select value={planting} onChange={(e) => setPlanting(e.target.value)} className={field}>
+              <option value="">All planting types</option>
+              {PLANTING.map((p) => <option key={p.value} value={p.value}>{p.label}</option>)}
             </select>
           </label>
 
@@ -105,7 +155,7 @@ export default function DatabaseBrowser({ cultivars, genera, suppliers }: Props)
 
       {results.length === 0 ? (
         <p className="mt-8 border border-dashed border-line p-12 text-center text-muted">
-          No cultivars match those filters.
+          {emptyReason}
         </p>
       ) : (
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

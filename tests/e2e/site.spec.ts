@@ -78,11 +78,43 @@ test.describe('trial gardens database', () => {
     await page.goto('/trial-gardens/');
     const cards = page.locator(`main a[href*="/trial-gardens/"]`);
     await expect(cards).toHaveCount(data.cultivars.length);
-    await page.getByPlaceholder('Cultivar, genus, or supplier').fill('lantana');
+    await page.getByPlaceholder('Cultivar, genus, supplier, or color').fill('lantana');
     const lantanas = data.cultivars.filter((c) =>
       [c.name, c.genus, c.supplier].some((v) => v?.toLowerCase().includes('lantana'))).length;
     await expect(cards).toHaveCount(lantanas);
     expect(lantanas).toBeGreaterThan(0);
+  });
+
+  test('flower color, light exposure and planting type filters', async ({ page }) => {
+    test.slow(); // many steps, each re-rendering the full list
+    await page.goto('/trial-gardens/');
+    const cards = page.locator(`main a[href*="/trial-gardens/"]`);
+    const pick = (label: string, option: string) => page.getByLabel(label).selectOption({ label: option });
+
+    await pick('Flower color', 'Pink');
+    await expect(cards).toHaveCount(data.cultivars.filter((c) => c.flowerColor === 'Pink').length);
+    await pick('Flower color', 'Unknown');
+    await expect(cards).toHaveCount(data.cultivars.filter((c) => c.flowerColor === 'Unknown').length);
+    await pick('Flower color', 'All colors');
+
+    // every cultivar is in the ground today; none in baskets
+    await pick('Planting type', 'In-ground');
+    await expect(cards).toHaveCount(data.cultivars.length);
+    await pick('Planting type', 'In-basket');
+    await expect(cards).toHaveCount(0);
+    await expect(page.getByText('No cultivars in this trial are planted in baskets.')).toBeVisible();
+    await pick('Planting type', 'All planting types');
+
+    // light exposure isn't recorded yet
+    await pick('Light exposure', 'Full sun');
+    await expect(cards).toHaveCount(0);
+    await expect(page.getByText("Light exposure hasn't been recorded for these cultivars yet.")).toBeVisible();
+    await page.getByRole('button', { name: 'Clear filters' }).click();
+    await expect(cards).toHaveCount(data.cultivars.length);
+  });
+
+  test('every cultivar has a flower color, inferred from its name or "Unknown"', () => {
+    for (const c of data.cultivars) expect(c.flowerColor, c.name).toBeTruthy();
   });
 });
 

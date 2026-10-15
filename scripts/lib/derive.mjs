@@ -1,8 +1,6 @@
-// Everything computed *from* the scores: each cultivar's latest average and scores,
-// the awards, the data-quality flags and the filter facets. Shared by import-xlsx.mjs
-// (real data) and mock-data.mjs (sample data) so both come out consistent.
-//
 // Mutates each cultivar in `list` (latest* fields, awards).
+
+import { UNKNOWN_COLOR } from './flower-color.mjs';
 
 export function derive(list, evaluations, { duplicateImageLinks = 0 } = {}) {
   const byId = new Map(list.map((c) => [c.id, c]));
@@ -91,7 +89,7 @@ export function derive(list, evaluations, { duplicateImageLinks = 0 } = {}) {
   }
 
   const dataQuality = {
-    missingFlowerColor: list.filter((c) => !c.flowerColor).length,
+    missingFlowerColor: list.filter((c) => !c.flowerColor || c.flowerColor === UNKNOWN_COLOR).length,
     missingImage: list.filter((c) => !c.images.length).length,
     imagesHotlinked: list.reduce((n, c) => n + c.images.length, 0),
     imagesMirrored: list.reduce((n, c) => n + c.images.filter((i) => i.mirrored).length, 0),
