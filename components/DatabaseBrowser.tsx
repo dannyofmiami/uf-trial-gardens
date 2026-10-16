@@ -7,7 +7,7 @@ import type { Cultivar } from '@/lib/data';
 type Props = { cultivars: Cultivar[]; genera: string[]; suppliers: string[]; colors: string[] };
 
 // Light exposure isn't in the trial data yet, so this filter matches nothing until it is.
-const LIGHT = ['Full sun', 'Full shade'];
+const LIGHT = ['Full sun', 'Partial Shade'];
 // Planting type reads each cultivar's status ('In Ground' today).
 const PLANTING = [
   { value: 'inground', label: 'In-ground' },
