@@ -26,7 +26,7 @@ export type Cultivar = {
   year: number | null;
   images: TrialImage[];
   status: string;              // where it's planted
-  lightExposure?: string;      // 'Full sun' | 'Full shade' -- not recorded yet
+  lightExposure?: string;      // 'Full sun' | 'Partial Shade' -- not recorded yet
   currentAvg: number | null;
   latestEvaluation: string;
   evaluationCount: number;
