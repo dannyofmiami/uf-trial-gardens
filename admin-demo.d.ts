@@ -3,6 +3,6 @@
 declare module '@admin-demo' {
   export const ADMIN_DEMO: boolean;
   export const demoBanner: () => import('./lib/banner').Banner | null;
-  export const resetDemoBanner: () => void;
+  export const demoCultivarEdits: () => import('./lib/cultivar-edits').EditsFile | null;
   export const demoCall: typeof import('./lib/admin-demo').demoCall;
 }

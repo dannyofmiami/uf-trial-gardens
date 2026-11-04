@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { CultivarCard } from '@/components/Ui';
 import type { Cultivar } from '@/lib/data';
+import { applyToCultivar, useCultivarEdits } from '@/lib/cultivar-edits';
 
 type Props = { cultivars: Cultivar[]; genera: string[]; suppliers: string[]; colors: string[] };
 
@@ -17,7 +18,16 @@ const plantingKey = (status: string) => status.toLowerCase().replace(/[^a-z]/g, 
 
 type SortKey = 'avg' | 'name' | 'genus';
 
-export default function DatabaseBrowser({ cultivars, genera, suppliers, colors }: Props) {
+export default function DatabaseBrowser({ cultivars: built, ...facets }: Props) {
+  // corrections saved in /admin, layered over the built data once they load
+  const edits = useCultivarEdits();
+  const cultivars = built.map((c) => applyToCultivar(c, edits.cultivars[c.id]));
+  // an edit can bring in a genus, supplier or color the built lists don't have yet
+  const withEdited = (list: string[], values: (string | null)[]) =>
+    [...list, ...[...new Set(values)].filter((v): v is string => !!v && !list.includes(v)).sort()];
+  const genera = withEdited(facets.genera, cultivars.map((c) => c.genus));
+  const suppliers = withEdited(facets.suppliers, cultivars.map((c) => c.supplier));
+  const colors = withEdited(facets.colors, cultivars.map((c) => c.flowerColor));
   const [q, setQ] = useState('');
   const [genus, setGenus] = useState('');
   const [supplier, setSupplier] = useState('');
