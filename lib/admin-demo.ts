@@ -8,12 +8,15 @@
 
 import { BANNER_PATH, type Banner } from '@/lib/banner';
 import { validateBanner } from '@/lib/banner-validate.mjs';
+import { isCultivarId, isEmptyEdit, validateCultivarEdit } from '@/lib/cultivar-validate.mjs';
+import type { EditsFile } from '@/lib/cultivar-edits';
 import { withBase } from '@/lib/data';
 
 export const ADMIN_DEMO = true;
 export const DEMO_PASSWORD = 'trial-gardens-demo';
 
 const BANNER_KEY = 'trial-gardens-demo-banner';
+const EDITS_KEY = 'trial-gardens-demo-cultivars';
 const DEMO_TOKEN = 'demo-session';
 
 export function demoBanner(): Banner | null {
@@ -25,8 +28,13 @@ export function demoBanner(): Banner | null {
   }
 }
 
-export function resetDemoBanner() {
-  try { localStorage.removeItem(BANNER_KEY); } catch {}
+export function demoCultivarEdits(): EditsFile | null {
+  try {
+    const saved = localStorage.getItem(EDITS_KEY);
+    return saved ? (JSON.parse(saved) as EditsFile) : null;
+  } catch {
+    return null;
+  }
 }
 
 type Reply = { ok: boolean; status: number; data: any };
@@ -58,6 +66,25 @@ export async function demoCall(path: string, init: RequestInit & { token?: strin
     const saved = { ...result.banner, updatedAt: new Date().toISOString() };
     try { localStorage.setItem(BANNER_KEY, JSON.stringify(saved)); } catch {
       return reply(500, { error: "This browser blocked saving. Nothing was saved." });
+    }
+    return reply(200, saved);
+  }
+  if (method === 'GET' && path === '/cultivars') {
+    return reply(200, demoCultivarEdits() ?? { cultivars: {} });
+  }
+  const id = /^\/cultivars\/([^/]+)$/.exec(path)?.[1];
+  if (method === 'PUT' && id) {
+    if (init.token !== DEMO_TOKEN) return reply(401, { error: 'Your session has expired. Sign in again.' });
+    if (!isCultivarId(id)) return reply(404, { error: 'Not found.' });
+    const result = validateCultivarEdit(body);
+    if (result.errors) return reply(400, { error: 'Please fix the highlighted fields.', fields: result.errors });
+    const all: EditsFile = demoCultivarEdits() ?? { cultivars: {} };
+    const updatedAt = new Date().toISOString();
+    const saved = { ...result.edit, updatedAt };
+    if (isEmptyEdit(result.edit)) delete all.cultivars[id];
+    else all.cultivars[id] = saved;
+    try { localStorage.setItem(EDITS_KEY, JSON.stringify({ ...all, updatedAt })); } catch {
+      return reply(500, { error: 'This browser blocked saving. Nothing was saved.' });
     }
     return reply(200, saved);
   }

@@ -2,38 +2,14 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { withBase } from '@/lib/data';
 import { EMPTY_BANNER, isBannerActive, type Banner } from '@/lib/banner';
 import BannerView from '@/components/BannerView';
-import { ADMIN_DEMO, demoCall, resetDemoBanner } from '@admin-demo';
-
-// The admin API checks the password and saves changes; this page never sees or stores
-// the password itself, only a signed session token (kept for this browser tab).
-const API = process.env.NEXT_PUBLIC_ADMIN_API_URL || withBase('/api/admin');
-const TOKEN_KEY = 'trial-gardens-admin-token';
+import { ADMIN_DEMO } from '@admin-demo';
+import { call, storage, Field } from '@/components/admin/shared';
+import CultivarEditor from '@/components/admin/CultivarEditor';
 
 type FieldErrors = Partial<Record<keyof Banner, string>>;
-
-async function call(path: string, init: RequestInit & { token?: string } = {}) {
-  if (ADMIN_DEMO) return demoCall(path, init);
-  const { token, ...rest } = init;
-  const res = await fetch(`${API}${path}`, {
-    ...rest,
-    cache: 'no-store',
-    headers: {
-      'Content-Type': 'application/json',
-      ...(token ? { Authorization: `Bearer ${token}` } : {}),
-    },
-  });
-  const data = await res.json().catch(() => ({}));
-  return { ok: res.ok, status: res.status, data };
-}
-
-const storage = {
-  get: () => { try { return sessionStorage.getItem(TOKEN_KEY); } catch { return null; } },
-  set: (t: string) => { try { sessionStorage.setItem(TOKEN_KEY, t); } catch {} },
-  clear: () => { try { sessionStorage.removeItem(TOKEN_KEY); } catch {} },
-};
+type Tab = 'cultivars' | 'banner';
 
 export default function AdminPanel() {
   const [token, setToken] = useState<string | null>(null);
@@ -54,31 +30,52 @@ export default function AdminPanel() {
   if (checking) return <p className="text-muted">Checking your session…</p>;
   return (
     <>
-      {ADMIN_DEMO && <DemoNotice />}
       {token
-        ? <BannerEditor token={token} onSignOut={signOut} />
+        ? <SignedIn token={token} onSignOut={signOut} />
         : <LoginForm notice={notice} onSignedIn={(t) => { storage.set(t); setNotice(''); setToken(t); }} />}
     </>
   );
 }
 
-function DemoNotice() {
+function SignedIn({ token, onSignOut }: { token: string; onSignOut: (message?: string) => void }) {
+  const [tab, setTab] = useState<Tab>('cultivars');
+  const tabs: { id: Tab; label: string }[] = [
+    { id: 'cultivars', label: 'Cultivars' },
+    { id: 'banner', label: 'Home page banner' },
+  ];
   return (
-    <div className="mb-8 max-w-3xl border-l-4 border-uf-orange bg-white p-4 text-sm leading-relaxed">
-      <p className="font-semibold">Demo version</p>
-      <p className="mt-1 text-muted">
-        This shows how the admin will work. Changes are saved in your browser only, so other
-        visitors won&rsquo;t see them. The live site will check the password on a server and
-        publish changes for everyone.
-      </p>
-      <button
-        type="button"
-        onClick={() => { resetDemoBanner(); location.reload(); }}
-        className="mt-2 font-semibold text-uf-blue underline underline-offset-4"
-      >
-        Reset the demo banner
-      </button>
-    </div>
+    <>
+      <div className="mb-8 flex flex-wrap items-end justify-between gap-4 border-b border-line">
+        <div role="tablist" aria-label="What to edit" className="flex gap-1">
+          {tabs.map((t) => (
+            <button
+              key={t.id}
+              type="button"
+              role="tab"
+              id={`tab-${t.id}`}
+              aria-selected={tab === t.id}
+              aria-controls={`panel-${t.id}`}
+              onClick={() => setTab(t.id)}
+              className={`-mb-px border-b-4 px-4 py-3 text-sm font-semibold transition ${
+                tab === t.id ? 'border-uf-orange text-ink' : 'border-transparent text-muted hover:text-uf-blue'
+              }`}
+            >
+              {t.label}
+            </button>
+          ))}
+        </div>
+        <button type="button" onClick={() => onSignOut('Signed out.')} className="mb-3 text-sm font-semibold text-uf-blue underline underline-offset-4">
+          Sign out
+        </button>
+      </div>
+      {/* both stay mounted, so switching tabs never loses unsaved work */}
+      <div role="tabpanel" id="panel-cultivars" aria-labelledby="tab-cultivars" hidden={tab !== 'cultivars'}>
+        <CultivarEditor token={token} onSignOut={onSignOut} />
+      </div>
+      <div role="tabpanel" id="panel-banner" aria-labelledby="tab-banner" hidden={tab !== 'banner'}>
+        <BannerEditor token={token} onSignOut={onSignOut} />
+      </div>
+    </>
   );
 }
 
@@ -173,12 +170,7 @@ function BannerEditor({ token, onSignOut }: { token: string; onSignOut: (message
   return (
     <div className="grid gap-10 lg:grid-cols-[minmax(0,26rem)_1fr]">
       <form onSubmit={save} noValidate className="space-y-5 border border-line bg-white p-6">
-        <div className="flex items-baseline justify-between gap-3">
-          <h2 className="font-display text-xl font-bold">Home page banner</h2>
-          <button type="button" onClick={() => onSignOut('Signed out.')} className="text-sm font-semibold text-uf-blue underline underline-offset-4">
-            Sign out
-          </button>
-        </div>
+        <h2 className="font-display text-xl font-bold">Home page banner</h2>
 
         <label className="flex items-center gap-3 text-sm font-medium">
           <input type="checkbox" checked={banner.enabled} onChange={(e) => set('enabled', e.target.checked)} className="h-5 w-5" />
@@ -233,20 +225,6 @@ function BannerEditor({ token, onSignOut }: { token: string; onSignOut: (message
           )}
         </div>
       </div>
-    </div>
-  );
-}
-
-function Field({ id, label, hint, error, children }: {
-  id: string; label: string; hint?: string; error?: string; children: React.ReactNode;
-}) {
-  return (
-    <div className="flex flex-col gap-1">
-      <label htmlFor={id} className="text-sm font-medium">
-        {label} {hint && <span className="font-normal text-muted">({hint})</span>}
-      </label>
-      {children}
-      {error && <p className="text-sm font-medium text-[#B3261E]">{error}</p>}
     </div>
   );
 }

@@ -85,6 +85,7 @@ test.describe('admin panel', () => {
     await page.goto('/admin/');
     await page.getByLabel('Password').fill(PASSWORD);
     await page.getByRole('button', { name: 'Sign in' }).click();
+    await page.getByRole('tab', { name: 'Home page banner' }).click();
     await expect(page.getByLabel('Title')).toHaveValue(repoBanner.title);
 
     const title = `Open House moved to January 2 (${Date.now()})`;
@@ -103,6 +104,7 @@ test.describe('admin panel', () => {
       await page.getByLabel('Password').fill(PASSWORD);
       await page.getByRole('button', { name: 'Sign in' }).click();
     }
+    await page.getByRole('tab', { name: 'Home page banner' }).click();
     await page.getByLabel('Button link').fill('javascript:alert(1)');
     await page.getByRole('button', { name: 'Save banner' }).click();
     await expect(page.locator('main form').getByRole('alert')).toContainText('fix the highlighted fields');

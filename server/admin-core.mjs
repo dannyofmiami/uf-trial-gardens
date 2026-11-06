@@ -1,4 +1,4 @@
-// Admin API core: password login, signed sessions, and banner reads/writes.
+// Admin API core: password login, signed sessions, and banner and cultivar-edit reads/writes.
 // Plain Node, no dependencies, and no HTTP framework -- the same handler runs behind the
 // local dev server (scripts/admin-server.mjs), the test server (tests/serve.mjs) and an
 // AWS Lambda (server/lambda.mjs). Storage is passed in, so files locally and S3 in prod.
@@ -8,9 +8,12 @@
 //   GET  /banner                   -> banner JSON
 //   PUT  /banner   (Bearer token)  -> saved banner JSON
 //   GET  /session  (Bearer token)  -> {ok: true, expiresAt}
+//   GET  /cultivars                -> all cultivar edits {cultivars: {id: edit}}
+//   PUT  /cultivars/:id  (Bearer)  -> saved edit; an empty edit restores the sheet's values
 
 import { createHash, createHmac, randomBytes, timingSafeEqual } from 'node:crypto';
 import { validateBanner } from '../lib/banner-validate.mjs';
+import { isCultivarId, isEmptyEdit, validateCultivarEdit } from '../lib/cultivar-validate.mjs';
 
 export { validateBanner };
 
@@ -75,6 +78,7 @@ export function createAdminApi({ password, sessionSecret = '', store, now = () =
       }
 
       if (route === 'GET /banner') return json(200, await store.getBanner());
+      if (route === 'GET /cultivars') return json(200, await store.getEdits());
 
       const session = verify(bearer(headers));
       if (route === 'GET /session') {
@@ -86,6 +90,20 @@ export function createAdminApi({ password, sessionSecret = '', store, now = () =
         if (result.errors) return json(400, { error: 'Please fix the highlighted fields.', fields: result.errors });
         const saved = { ...result.banner, updatedAt: new Date(now()).toISOString() };
         await store.putBanner(saved);
+        return json(200, saved);
+      }
+      const cultivarId = /^PUT \/cultivars\/([^/]+)$/.exec(route)?.[1];
+      if (cultivarId) {
+        if (!session) return json(401, { error: 'Your session has expired. Sign in again.' });
+        if (!isCultivarId(cultivarId)) return json(404, { error: 'Not found.' });
+        const result = validateCultivarEdit(parseJson(body));
+        if (result.errors) return json(400, { error: 'Please fix the highlighted fields.', fields: result.errors });
+        const updatedAt = new Date(now()).toISOString();
+        const saved = { ...result.edit, updatedAt };
+        const all = await store.getEdits();
+        if (isEmptyEdit(result.edit)) delete all.cultivars[cultivarId];
+        else all.cultivars[cultivarId] = saved;
+        await store.putEdits({ ...all, updatedAt });
         return json(200, saved);
       }
       return json(404, { error: 'Not found.' });

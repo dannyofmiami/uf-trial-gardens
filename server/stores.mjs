@@ -1,26 +1,38 @@
-// Where the banner is kept. Same shape for both: getBanner() / putBanner(banner).
+// Where the banner and cultivar edits are kept. Same shape for both stores:
+// getBanner() / putBanner(banner) and getEdits() / putEdits(edits).
 import { readFile, writeFile, rename, mkdir } from 'node:fs/promises';
-import { dirname } from 'node:path';
+import { dirname, join } from 'node:path';
 
-// Local file -- the site serves this same file at /content/banner.json.
-export function fileStore(path) {
+const NO_BANNER = { enabled: false };
+const noEdits = () => ({ cultivars: {} });
+// a stored edits file that's missing or malformed counts as no edits
+const asEdits = (v) => (v && typeof v.cultivars === 'object' && !Array.isArray(v.cultivars) ? v : noEdits());
+
+// Local files -- the site serves these same files at /content/banner.json and
+// /content/cultivar-edits.json. The edits file sits next to the banner unless given.
+export function fileStore(path, editsPath = join(dirname(path), 'cultivar-edits.json')) {
+  const read = async (p, fallback) => {
+    try { return JSON.parse(await readFile(p, 'utf8')); } catch { return fallback; }
+  };
+  const write = async (p, value) => {
+    await mkdir(dirname(p), { recursive: true });
+    const tmp = `${p}.${process.pid}.tmp`;
+    await writeFile(tmp, JSON.stringify(value, null, 2) + '\n');
+    await rename(tmp, p); // atomic, so a visitor never reads a half-written file
+  };
   return {
-    async getBanner() {
-      try { return JSON.parse(await readFile(path, 'utf8')); } catch { return { enabled: false }; }
-    },
-    async putBanner(banner) {
-      await mkdir(dirname(path), { recursive: true });
-      const tmp = `${path}.${process.pid}.tmp`;
-      await writeFile(tmp, JSON.stringify(banner, null, 2) + '\n');
-      await rename(tmp, path); // atomic, so a visitor never reads a half-written file
-    },
+    getBanner: () => read(path, NO_BANNER),
+    putBanner: (banner) => write(path, banner),
+    getEdits: async () => asEdits(await read(editsPath, null)),
+    putEdits: (edits) => write(editsPath, edits),
   };
 }
 
-// S3 object -- the site bucket's content/banner.json, read by visitors through CloudFront.
-// Uses the AWS SDK v3 that the Lambda Node.js runtime already includes, so it needs no
-// install in Lambda. Not exercised by this repo's tests; verify on the AWS setup.
-export function s3Store({ bucket, key = 'content/banner.json', region }) {
+// S3 objects -- the site bucket's content/banner.json and content/cultivar-edits.json, read
+// by visitors through CloudFront. Uses the AWS SDK v3 that the Lambda Node.js runtime already
+// includes, so it needs no install in Lambda. Not exercised by this repo's tests; verify on
+// the AWS setup.
+export function s3Store({ bucket, key = 'content/banner.json', editsKey = 'content/cultivar-edits.json', region }) {
   let client;
   const s3 = async () => {
     if (!client) {
@@ -29,26 +41,30 @@ export function s3Store({ bucket, key = 'content/banner.json', region }) {
     }
     return client;
   };
+  const read = async (Key, fallback) => {
+    const { GetObjectCommand } = await import('@aws-sdk/client-s3');
+    try {
+      const res = await (await s3()).send(new GetObjectCommand({ Bucket: bucket, Key }));
+      return JSON.parse(await res.Body.transformToString());
+    } catch (err) {
+      if (err?.name === 'NoSuchKey') return fallback;
+      throw err;
+    }
+  };
+  const write = async (Key, value) => {
+    const { PutObjectCommand } = await import('@aws-sdk/client-s3');
+    await (await s3()).send(new PutObjectCommand({
+      Bucket: bucket,
+      Key,
+      Body: JSON.stringify(value, null, 2),
+      ContentType: 'application/json',
+      CacheControl: 'no-cache', // CloudFront and browsers recheck it, so edits show quickly
+    }));
+  };
   return {
-    async getBanner() {
-      const { GetObjectCommand } = await import('@aws-sdk/client-s3');
-      try {
-        const res = await (await s3()).send(new GetObjectCommand({ Bucket: bucket, Key: key }));
-        return JSON.parse(await res.Body.transformToString());
-      } catch (err) {
-        if (err?.name === 'NoSuchKey') return { enabled: false };
-        throw err;
-      }
-    },
-    async putBanner(banner) {
-      const { PutObjectCommand } = await import('@aws-sdk/client-s3');
-      await (await s3()).send(new PutObjectCommand({
-        Bucket: bucket,
-        Key: key,
-        Body: JSON.stringify(banner, null, 2),
-        ContentType: 'application/json',
-        CacheControl: 'no-cache', // CloudFront and browsers recheck it, so edits show quickly
-      }));
-    },
+    getBanner: () => read(key, NO_BANNER),
+    putBanner: (banner) => write(key, banner),
+    getEdits: async () => asEdits(await read(editsKey, null)),
+    putEdits: (edits) => write(editsKey, edits),
   };
 }

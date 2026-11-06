@@ -10,10 +10,15 @@ import { Section, ScoreBar, AvgBadge } from '@/components/Ui';
 import TrialPhoto from '@/components/TrialPhoto';
 import PhotoLightbox from '@/components/PhotoLightbox';
 import { weatherForDate, WEATHER_SOURCE } from '@/lib/weather';
+import { applyToCultivar, applyToEvaluations, useCultivarEdits } from '@/lib/cultivar-edits';
 
 export default function CultivarDetail({
-  c, evals, meta,
+  c: built, evals: builtEvals, meta,
 }: { c: Cultivar; evals: Evaluation[]; meta: TrialData['meta'] }) {
+  // corrections saved in /admin, layered over the built data once they load
+  const edit = useCultivarEdits().cultivars[built.id];
+  const c = applyToCultivar(built, edit);
+  const evals = applyToEvaluations(builtEvals, edit);
   const latest = evals[0];
   const [selectedDate, setSelectedDate] = useState(
     latestMirroredImage(c)?.date ?? latest?.date,
@@ -105,7 +110,7 @@ export default function CultivarDetail({
               </div>
 
               <div className="mt-5 flex flex-wrap gap-2">
-                {[c.status, c.flowerColor, c.supplier ? `Supplier: ${c.supplier}` : null]
+                {[c.status, c.lightExposure, c.flowerColor, c.supplier ? `Supplier: ${c.supplier}` : null]
                   .filter(Boolean)
                   .map((chip) => (
                     <span key={chip as string} className="border border-line px-3 py-1 font-mono text-[11px] text-muted">
@@ -256,6 +261,7 @@ function PhotoFacts({ date, e }: { date: string; e: Evaluation | undefined }) {
             ...CATEGORIES.map((cat) => ({ label: cat.label, value: e[cat.key]?.toFixed(1) ?? '—' })),
             { label: 'Average', value: e.avg.toFixed(1), strong: true },
           ]}
+          footnote={e.notes ? `Note: ${e.notes}` : undefined}
         />
       ) : (
         <div className="bg-black p-3">

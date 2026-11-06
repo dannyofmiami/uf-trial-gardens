@@ -7,6 +7,7 @@
 //   ADMIN_SESSION_SECRET  random 32+ byte string; must be set here so sessions survive
 //                         across Lambda instances
 //   BANNER_BUCKET         the site's S3 bucket; BANNER_KEY defaults to content/banner.json
+//                         and EDITS_KEY (cultivar edits) to content/cultivar-edits.json
 //
 // Not exercised by this repo's tests (the shared core is); verify on the AWS setup.
 // Login rate limiting in the core is per instance, so add an API Gateway / WAF rate limit.
@@ -21,7 +22,7 @@ export async function handler(event) {
   api ??= createAdminApi({
     password: process.env.ADMIN_PASSWORD,
     sessionSecret: process.env.ADMIN_SESSION_SECRET,
-    store: s3Store({ bucket: process.env.BANNER_BUCKET, key: process.env.BANNER_KEY, region: process.env.AWS_REGION }),
+    store: s3Store({ bucket: process.env.BANNER_BUCKET, key: process.env.BANNER_KEY, editsKey: process.env.EDITS_KEY, region: process.env.AWS_REGION }),
   });
   const res = await api.handle({
     method: event.requestContext.http.method,

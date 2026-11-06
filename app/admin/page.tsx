@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function AdminPage() {
   return (
     <>
-      <PageHeader eyebrow="Site admin" title="Manage the site" lede="Sign in to update the announcement banner on the home page." />
+      <PageHeader eyebrow="Site admin" title="Manage the site" lede="Sign in to correct cultivar details and scores, or update the home page banner." />
       <Section>
         <AdminPanel />
       </Section>

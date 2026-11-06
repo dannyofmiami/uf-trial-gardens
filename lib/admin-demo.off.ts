@@ -4,5 +4,5 @@ import type { demoCall as DemoCall } from './admin-demo';
 
 export const ADMIN_DEMO = false;
 export const demoBanner = () => null;
-export const resetDemoBanner = () => {};
+export const demoCultivarEdits = () => null;
 export const demoCall: typeof DemoCall = async () => ({ ok: false, status: 404, data: {} });
