@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { CultivarCard } from '@/components/Ui';
 import type { Cultivar } from '@/lib/data';
-import { applyToCultivar, useCultivarEdits } from '@/lib/cultivar-edits';
+import { allCultivars, useCultivarEdits } from '@/lib/cultivar-edits';
 
 type Props = { cultivars: Cultivar[]; genera: string[]; suppliers: string[]; colors: string[] };
 
@@ -21,14 +21,18 @@ type SortKey = 'avg' | 'name' | 'genus';
 export default function DatabaseBrowser({ cultivars: built, ...facets }: Props) {
   // corrections saved in /admin, layered over the built data once they load
   const edits = useCultivarEdits();
-  const cultivars = built.map((c) => applyToCultivar(c, edits.cultivars[c.id]));
+  // the spreadsheet's trials with their corrections, plus trials added in /admin
+  const cultivars = allCultivars(built, edits);
   // an edit can bring in a genus, supplier or color the built lists don't have yet
   const withEdited = (list: string[], values: (string | null)[]) =>
     [...list, ...[...new Set(values)].filter((v): v is string => !!v && !list.includes(v)).sort()];
   const genera = withEdited(facets.genera, cultivars.map((c) => c.genus));
   const suppliers = withEdited(facets.suppliers, cultivars.map((c) => c.supplier));
   const colors = withEdited(facets.colors, cultivars.map((c) => c.flowerColor));
+  // trial years, newest first (includes a year an edit brought in)
+  const years = [...new Set(cultivars.map((c) => c.year).filter((y): y is number => y != null))].sort((a, b) => b - a);
   const [q, setQ] = useState('');
+  const [year, setYear] = useState('');
   const [genus, setGenus] = useState('');
   const [supplier, setSupplier] = useState('');
   const [color, setColor] = useState('');
@@ -40,6 +44,7 @@ export default function DatabaseBrowser({ cultivars: built, ...facets }: Props) 
   const needle = q.trim().toLowerCase();
 
   const results = cultivars.filter((c) => {
+    if (year && String(c.year) !== year) return false;
     if (genus && c.genus !== genus) return false;
     if (supplier && c.supplier !== supplier) return false;
     if (color && c.flowerColor !== color) return false;
@@ -60,10 +65,10 @@ export default function DatabaseBrowser({ cultivars: built, ...facets }: Props) 
   });
 
   const reset = () => {
-    setQ(''); setGenus(''); setSupplier(''); setColor(''); setLight(''); setPlanting('');
+    setQ(''); setYear(''); setGenus(''); setSupplier(''); setColor(''); setLight(''); setPlanting('');
     setMinAvg(0); setSort('avg');
   };
-  const active = q || genus || supplier || color || light || planting || minAvg;
+  const active = q || year || genus || supplier || color || light || planting || minAvg;
 
   // say why a filter came up empty when it's for data that hasn't been recorded
   const emptyReason =
@@ -86,6 +91,14 @@ export default function DatabaseBrowser({ cultivars: built, ...facets }: Props) 
               type="search" value={q} onChange={(e) => setQ(e.target.value)}
               placeholder="Cultivar, genus, supplier, or color" className={field}
             />
+          </label>
+
+          <label className="flex flex-col gap-1">
+            <span className={legend}>Year</span>
+            <select value={year} onChange={(e) => setYear(e.target.value)} className={field}>
+              <option value="">All years</option>
+              {years.map((y) => <option key={y} value={y}>{y}</option>)}
+            </select>
           </label>
 
           <label className="flex flex-col gap-1">
@@ -128,14 +141,6 @@ export default function DatabaseBrowser({ cultivars: built, ...facets }: Props) 
             </select>
           </label>
 
-          <label className="flex flex-col gap-1">
-            <span className={legend}>Sort by</span>
-            <select value={sort} onChange={(e) => setSort(e.target.value as SortKey)} className={field}>
-              <option value="avg">Highest AVG</option>
-              <option value="name">Cultivar name</option>
-              <option value="genus">Genus</option>
-            </select>
-          </label>
         </div>
 
         <div className="mt-4 flex flex-wrap items-center gap-2">
@@ -159,9 +164,19 @@ export default function DatabaseBrowser({ cultivars: built, ...facets }: Props) 
         </div>
       </div>
 
-      <p className="mt-6 font-mono text-xs uppercase tracking-[.08em] text-muted" role="status" aria-live="polite">
-        Showing <strong className="text-ink">{results.length}</strong> of {cultivars.length} cultivars
-      </p>
+      <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
+        <p className="font-mono text-xs uppercase tracking-[.08em] text-muted" role="status" aria-live="polite">
+          Showing <strong className="text-ink">{results.length}</strong> of {cultivars.length} cultivars
+        </p>
+        <label className="flex items-center gap-2">
+          <span className={legend}>Sort by</span>
+          <select value={sort} onChange={(e) => setSort(e.target.value as SortKey)} className={field}>
+            <option value="avg">Highest AVG</option>
+            <option value="name">Cultivar name</option>
+            <option value="genus">Genus</option>
+          </select>
+        </label>
+      </div>
 
       {results.length === 0 ? (
         <p className="mt-8 border border-dashed border-line p-12 text-center text-muted">

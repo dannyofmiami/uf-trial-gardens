@@ -104,13 +104,15 @@ export default function CultivarDetail({
                     Current AVG
                   </p>
                   <p className="text-sm text-muted">
-                    across {c.evaluationCount} evaluations · latest {fmtDate(c.latestEvaluation)}
+                    {c.evaluationCount
+                      ? `across ${c.evaluationCount} evaluation${c.evaluationCount === 1 ? '' : 's'} · latest ${fmtDate(c.latestEvaluation)}`
+                      : 'No evaluations yet'}
                   </p>
                 </div>
               </div>
 
               <div className="mt-5 flex flex-wrap gap-2">
-                {[c.status, c.lightExposure, c.flowerColor, c.supplier ? `Supplier: ${c.supplier}` : null]
+                {[c.year ? `Trial ${c.year}` : null, c.status, c.lightExposure, c.flowerColor, c.supplier ? `Supplier: ${c.supplier}` : null]
                   .filter(Boolean)
                   .map((chip) => (
                     <span key={chip as string} className="border border-line px-3 py-1 font-mono text-[11px] text-muted">
@@ -181,6 +183,11 @@ export default function CultivarDetail({
               </tr>
             </thead>
             <tbody>
+              {evals.length === 0 && (
+                <tr className="border-t border-line">
+                  <td colSpan={CATEGORIES.length + 3} className="px-4 py-6 text-center text-muted">No rounds recorded yet.</td>
+                </tr>
+              )}
               {evals.map((e) => {
                 const selected = e.date === selectedDate;
                 const hasPhoto = !!imageForDate(c, e.date)?.mirrored;

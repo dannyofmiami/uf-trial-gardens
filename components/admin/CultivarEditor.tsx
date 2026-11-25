@@ -1,24 +1,27 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import {
-  cultivars, facets, fmtDate, getEvaluations, withBase, CATEGORIES, SCALE,
+  cultivars, facets, fmtDate, getEvaluations, trialHref, withBase, CATEGORIES, SCALE,
   type Cultivar, type Evaluation,
 } from '@/lib/data';
 import {
-  applyToCultivar, applyToEvaluations, diffEdit, fieldsOf, roundAverage,
+  addedCultivar, applyToCultivar, applyToEvaluations, blankRound, diffEdit, fieldsOf, fullEdit, roundAverage,
   EMPTY_EDITS, type CultivarEdit, type CultivarFields, type EditsFile,
 } from '@/lib/cultivar-edits';
-import { LIGHT_EXPOSURES } from '@/lib/cultivar-validate.mjs';
+import { LIGHT_EXPOSURES, newTrialId, trialKey } from '@/lib/cultivar-validate.mjs';
 import { AvgBadge } from '@/components/Ui';
 import { ADMIN_DEMO } from '@admin-demo';
 import { call, errorText, Field, inputClass } from '@/components/admin/shared';
 
-// Edit any cultivar's details and round scores. Only differences from the spreadsheet are
-// saved (see lib/cultivar-edits.ts), so "restore" is always possible.
+// Edit any trial's details and rounds. For spreadsheet trials only the differences are saved
+// (see lib/cultivar-edits.ts), so "restore" is always possible. Trials added here (a cultivar
+// trialed again in a new year, light or planting) are saved whole and can be deleted.
 
 type Draft = { fields: CultivarFields; evals: Evaluation[] };
+// set inside an added trial's form, which has no spreadsheet values to compare with
+const AddedContext = createContext(false);
 type Errors = Record<string, string>;
 
 const COLORS = ['Red', 'Pink', 'Orange', 'Yellow', 'White', 'Blue', 'Purple', 'Multicolor', 'Unknown'];
@@ -38,10 +41,14 @@ const show = (v: unknown) => (v === null || v === undefined || v === '' ? 'blank
 const originalOf = (c: Cultivar): Draft => ({ fields: fieldsOf(c), evals: getEvaluations(c.id).reverse() });
 const savedOf = (c: Cultivar, edit: CultivarEdit | undefined): Draft => {
   const o = originalOf(c);
-  return { fields: fieldsOf(applyToCultivar(c, edit)), evals: applyToEvaluations(o.evals, edit) };
+  return { fields: fieldsOf(applyToCultivar(c, edit)), evals: applyToEvaluations(o.evals, edit, 'oldest') };
 };
+const addedDraft = (id: string, edit: CultivarEdit): Draft =>
+  ({ fields: fieldsOf(addedCultivar(id, edit)), evals: applyToEvaluations([], edit, 'oldest') });
 const countChanges = (e: CultivarEdit) =>
-  Object.keys(e.fields).length + Object.values(e.rounds).reduce((n, r) => n + Object.keys(r).length, 0);
+  Object.keys(e.fields).length + Object.values(e.rounds).reduce((n, r) => n + Object.keys(r).length, 0)
+  + (e.removedRounds?.length ?? 0);
+const today = () => new Date().toLocaleDateString('en-CA'); // YYYY-MM-DD, local time
 
 export default function CultivarEditor({ token, onSignOut }: { token: string; onSignOut: (message?: string) => void }) {
   const [edits, setEdits] = useState<EditsFile>(EMPTY_EDITS);
@@ -49,9 +56,13 @@ export default function CultivarEditor({ token, onSignOut }: { token: string; on
   const [query, setQuery] = useState('');
   const [onlyEdited, setOnlyEdited] = useState(false);
   const [selectedId, setSelectedId] = useState(cultivars[0]?.id ?? '');
+  // a new trial that hasn't been saved yet
+  const [pending, setPending] = useState<{ id: string; draft: Draft } | null>(null);
   const [draft, setDraft] = useState<Draft | null>(null);
+  const [newRoundDate, setNewRoundDate] = useState(today);
   const [errors, setErrors] = useState<Errors>({});
-  const [status, setStatus] = useState<{ kind: 'ok' | 'error'; text: string } | null>(null);
+  // link: offer "View it" (after a save)
+  const [status, setStatus] = useState<{ kind: 'ok' | 'error'; text: string; link?: boolean } | null>(null);
   const [busy, setBusy] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
 
@@ -62,14 +73,27 @@ export default function CultivarEditor({ token, onSignOut }: { token: string; on
       .finally(() => setLoaded(true));
   }, []);
 
-  const base = cultivars.find((c) => c.id === selectedId);
-  const original = useMemo(() => (base ? originalOf(base) : null), [base]);
-  const saved = useMemo(() => (base ? savedOf(base, edits.cultivars[base.id]) : null), [base, edits]);
+  const selectedEdit = edits.cultivars[selectedId];
+  const isPending = pending?.id === selectedId;
+  const isAdded = isPending || !!selectedEdit?.added;
+  const base = useMemo(() => {
+    if (isPending) return addedCultivar(pending!.id, fullEdit(pending!.draft));
+    if (selectedEdit?.added) return addedCultivar(selectedId, selectedEdit);
+    return cultivars.find((c) => c.id === selectedId);
+  }, [selectedId, selectedEdit, isPending, pending]);
+  const saved = useMemo(() => {
+    if (!base) return null;
+    if (isPending) return pending!.draft;
+    if (selectedEdit?.added) return addedDraft(selectedId, selectedEdit);
+    return savedOf(base, selectedEdit);
+  }, [base, selectedId, selectedEdit, isPending, pending]);
+  // spreadsheet trials compare against the sheet; added ones have nothing behind them
+  const original = useMemo(() => (base && !isAdded ? originalOf(base) : saved), [base, isAdded, saved]);
 
-  // start each cultivar from its saved version
+  // start each trial from its saved version
   useEffect(() => { if (loaded) setDraft(saved); }, [saved, loaded]);
 
-  const unsaved = !!(draft && saved) && countChanges(diffEdit(saved, draft)) > 0;
+  const unsaved = isPending || (!!(draft && saved) && countChanges(diffEdit(saved, draft)) > 0);
 
   // the browser asks before leaving the page with unsaved changes
   useEffect(() => {
@@ -81,7 +105,8 @@ export default function CultivarEditor({ token, onSignOut }: { token: string; on
 
   const choose = (id: string) => {
     if (id === selectedId) return;
-    if (unsaved && !confirm(`Discard your unsaved changes to ${draft!.fields.name}?`)) return;
+    if (unsaved && !confirm(`Discard your unsaved changes to ${draft!.fields.name || 'this new trial'}?`)) return;
+    if (pending && id !== pending.id) setPending(null);
     setSelectedId(id);
     setErrors({});
     setStatus(null);
@@ -91,11 +116,32 @@ export default function CultivarEditor({ token, onSignOut }: { token: string; on
     }
   };
 
+  // A new trial: the same cultivar again (a new year, light or planting), or a blank one.
+  const startNew = (from?: CultivarFields) => {
+    if (unsaved && !confirm(`Discard your unsaved changes to ${draft!.fields.name || 'this new trial'}?`)) return;
+    const id = newTrialId();
+    const fields: CultivarFields = from
+      ? { ...from, year: (from.year ?? new Date().getFullYear()) + 1, lightExposure: '' }
+      : { name: '', genus: '', supplier: null, flowerColor: 'Unknown', year: new Date().getFullYear() + 1, status: 'In Ground', lightExposure: '' };
+    setPending({ id, draft: { fields, evals: [] } });
+    setSelectedId(id);
+    setErrors({});
+    setStatus(null);
+    requestAnimationFrame(() => formRef.current?.scrollIntoView({ block: 'start' }));
+  };
+
   const needle = query.trim().toLowerCase();
-  const list = cultivars
-    .map((c) => applyToCultivar(c, edits.cultivars[c.id]))
-    .filter((c) => !onlyEdited || edits.cultivars[c.id])
-    .filter((c) => !needle || `${c.name} ${c.genus} ${c.supplier ?? ''}`.toLowerCase().includes(needle));
+  const all = [
+    ...cultivars.map((c) => applyToCultivar(c, edits.cultivars[c.id])),
+    ...Object.entries(edits.cultivars).filter(([, e]) => e.added).map(([id, e]) => addedCultivar(id, e))
+      .sort((a, b) => a.name.localeCompare(b.name)),
+  ];
+  const list = [
+    ...(pending ? [{ ...addedCultivar(pending.id, fullEdit(pending.draft)), name: pending.draft.fields.name || 'New trial' }] : []),
+    ...all
+      .filter((c) => !onlyEdited || edits.cultivars[c.id])
+      .filter((c) => !needle || `${c.name} ${c.genus} ${c.supplier ?? ''} ${c.year ?? ''}`.toLowerCase().includes(needle)),
+  ];
   const editedCount = Object.keys(edits.cultivars).length;
 
   const setField = <K extends keyof CultivarFields>(k: K, v: CultivarFields[K]) => {
@@ -106,14 +152,43 @@ export default function CultivarEditor({ token, onSignOut }: { token: string; on
     setDraft((d) => d && { ...d, evals: d.evals.map((e) => (e.date === date ? { ...e, ...patch } : e)) });
     setStatus(null);
   };
+  const addRound = (date: string) => {
+    if (!draft) return;
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) { setErrors({ ...errors, newRound: 'Choose the date of the round.' }); return; }
+    if (draft.evals.some((e) => e.date === date)) { setErrors({ ...errors, newRound: `There's already a round on ${fmtDate(date)}.` }); return; }
+    // a spreadsheet round that was removed comes back with its sheet values
+    const back = original?.evals.find((e) => e.date === date);
+    const round = back ?? blankRound(selectedId, date);
+    setDraft({ ...draft, evals: [...draft.evals, round].sort((a, b) => a.date.localeCompare(b.date)) });
+    setErrors(({ newRound: _, ...rest }) => rest);
+    setStatus(null);
+  };
+  const removeRound = (date: string) => {
+    setDraft((d) => d && { ...d, evals: d.evals.filter((e) => e.date !== date) });
+    setStatus(null);
+  };
 
   async function save(e: React.FormEvent) {
     e.preventDefault();
-    if (!draft || !original || !base) return;
+    if (!draft || !original || !base || !saved) return;
+    // two trials can't be the same cultivar in the same year, light and planting
+    const key = trialKey(draft.fields);
+    if (all.some((c) => c.id !== base.id && trialKey(fieldsOf(c)) === key)) {
+      setErrors({ year: 'Change the year, light exposure or planting type to tell the trials apart.' });
+      setStatus({
+        kind: 'error',
+        text: 'Another trial already has this cultivar, year, light exposure and planting type.',
+      });
+      return;
+    }
+    const removing = saved.evals.filter((e) => !draft.evals.some((d) => d.date === e.date));
+    if (removing.length && !confirm(
+      `Remove ${removing.length === 1 ? `the ${fmtDate(removing[0].date)} round` : `${removing.length} rounds`} and ${removing.length === 1 ? 'its' : 'their'} scores?`,
+    )) return;
     setBusy(true);
     setStatus(null);
     try {
-      const edit = diffEdit(original, draft);
+      const edit = isAdded ? fullEdit(draft) : diffEdit(original, draft);
       const r = await call(`/cultivars/${base.id}`, { method: 'PUT', token, body: JSON.stringify(edit) });
       if (r.status === 401) { onSignOut(r.data.error || 'Your session has expired. Sign in again.'); return; }
       if (!r.ok) {
@@ -122,14 +197,16 @@ export default function CultivarEditor({ token, onSignOut }: { token: string; on
         return;
       }
       setErrors({});
-      setEdits((all) => {
-        const next = { ...all.cultivars };
+      setEdits((prev) => {
+        const next = { ...prev.cultivars };
         if (countChanges(r.data)) next[base.id] = r.data; else delete next[base.id];
-        return { ...all, cultivars: next };
+        return { ...prev, cultivars: next };
       });
+      if (isPending) setPending(null);
       setStatus({
         kind: 'ok',
         text: `Saved${ADMIN_DEMO ? ' in this browser' : ''}. The public page shows this now.`,
+        link: true,
       });
     } catch {
       setStatus({ kind: 'error', text: "Couldn't reach the admin service. Nothing was saved." });
@@ -138,9 +215,37 @@ export default function CultivarEditor({ token, onSignOut }: { token: string; on
     }
   }
 
+  async function deleteTrial() {
+    if (!base) return;
+    if (isPending) {
+      setPending(null);
+      setSelectedId(cultivars[0]?.id ?? '');
+      return;
+    }
+    if (!confirm(`Delete the ${draft?.fields.year ?? ''} ${draft?.fields.name} trial and all its rounds? This can't be undone.`)) return;
+    setBusy(true);
+    try {
+      const r = await call(`/cultivars/${base.id}`, { method: 'PUT', token, body: JSON.stringify({ fields: {}, rounds: {} }) });
+      if (r.status === 401) { onSignOut(r.data.error || 'Your session has expired. Sign in again.'); return; }
+      if (!r.ok) { setStatus({ kind: 'error', text: r.data.error || 'Delete failed.' }); return; }
+      setEdits((prev) => {
+        const next = { ...prev.cultivars };
+        delete next[base.id];
+        return { ...prev, cultivars: next };
+      });
+      setSelectedId(cultivars[0]?.id ?? '');
+      setStatus({ kind: 'ok', text: 'Trial deleted.' });
+    } catch {
+      setStatus({ kind: 'error', text: "Couldn't reach the admin service. Nothing was deleted." });
+    } finally {
+      setBusy(false);
+    }
+  }
+
   if (!loaded || !draft || !original || !base) return <p className="text-muted">Loading cultivars…</p>;
 
-  const changedFromSheet = countChanges(diffEdit(original, draft));
+  const changedFromSheet = isAdded ? 0 : countChanges(diffEdit(original, draft));
+  const removedSheetRounds = isAdded ? [] : original.evals.filter((o) => !draft.evals.some((d) => d.date === o.date));
   const colors = [...COLORS, ...facets.colors.filter((c) => !COLORS.includes(c))];
   if (draft.fields.flowerColor && !colors.includes(draft.fields.flowerColor)) colors.push(draft.fields.flowerColor);
   const thumb = [...base.images].reverse().find((i) => i.mirrored);
@@ -161,8 +266,11 @@ export default function CultivarEditor({ token, onSignOut }: { token: string; on
           />
           <label className="mt-2 flex items-center gap-2 text-xs text-muted">
             <input type="checkbox" checked={onlyEdited} onChange={(e) => setOnlyEdited(e.target.checked)} />
-            Only show edited ({editedCount})
+            Only show edited or added ({editedCount})
           </label>
+          <button type="button" onClick={() => startNew()} className="mt-3 w-full border border-uf-blue px-3 py-1.5 text-sm font-semibold text-uf-blue hover:bg-ground">
+            + New trial
+          </button>
         </div>
         <ul className="max-h-72 overflow-y-auto lg:max-h-[70vh]">
           {list.map((c) => {
@@ -179,43 +287,62 @@ export default function CultivarEditor({ token, onSignOut }: { token: string; on
                 >
                   <span className="min-w-0 flex-1">
                     <span className="block truncate font-semibold">{c.name}</span>
-                    <span className="block truncate text-xs text-muted">{c.genus}</span>
+                    <span className="block truncate text-xs text-muted">
+                      {[c.genus, c.year, c.lightExposure, c.status === 'In Basket' ? 'In-basket' : null].filter(Boolean).join(' · ')}
+                    </span>
                   </span>
-                  {edits.cultivars[c.id] && (
-                    <span className="shrink-0 bg-uf-blue px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-[.08em] text-white">
-                      Edited
+                  {(pending?.id === c.id || edits.cultivars[c.id]) && (
+                    <span className={`shrink-0 px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-[.08em] text-white ${
+                      c.addedInAdmin ? 'bg-uf-orange' : 'bg-uf-blue'
+                    }`}>
+                      {pending?.id === c.id ? 'Unsaved' : c.addedInAdmin ? 'Added' : 'Edited'}
                     </span>
                   )}
                 </button>
               </li>
             );
           })}
-          {list.length === 0 && <li className="p-4 text-sm text-muted">No cultivars match.</li>}
+          {list.length === 0 && <li className="p-4 text-sm text-muted">No trials match.</li>}
         </ul>
       </nav>
 
       {/* ---- edit it ---- */}
-      <form ref={formRef} onSubmit={save} noValidate aria-label={`Edit ${draft.fields.name}`} className="min-w-0">
+      <AddedContext.Provider value={isAdded}>
+      <form ref={formRef} onSubmit={save} noValidate aria-label={`Edit ${draft.fields.name || 'new trial'}`} className="min-w-0">
         <div className="flex flex-wrap items-center gap-4 border border-line bg-white p-4">
           {thumb ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img src={withBase(thumb.thumb ?? thumb.local)} alt="" className="h-16 w-16 object-cover" />
           ) : <span className="h-16 w-16 bg-ground" />}
           <div className="min-w-0 flex-1">
-            <h2 className="font-display text-2xl font-bold leading-tight">{draft.fields.name || base.name}</h2>
+            <h2 className="font-display text-2xl font-bold leading-tight">{draft.fields.name || base.name || 'New trial'}</h2>
             <p className="text-sm text-muted">
-              {draft.fields.genus} · {edits.cultivars[base.id]?.updatedAt
-                ? `Last edited ${new Date(edits.cultivars[base.id].updatedAt!).toLocaleString('en-US')}`
-                : 'Spreadsheet values, not edited'}
+              {[draft.fields.genus, draft.fields.year].filter(Boolean).join(' · ')}
+              {' · '}
+              {isPending
+                ? 'New trial, not saved yet'
+                : selectedEdit?.updatedAt
+                  ? `${isAdded ? 'Added in admin, last saved' : 'Last edited'} ${new Date(selectedEdit.updatedAt).toLocaleString('en-US')}`
+                  : 'Spreadsheet values, not edited'}
             </p>
           </div>
-          <Link
-            href={`/trial-gardens/${base.id}/`}
-            target="_blank"
-            className="text-sm font-semibold text-uf-blue underline underline-offset-4"
-          >
-            View public page ↗
-          </Link>
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm font-semibold">
+            {!isPending && (
+              <button type="button" onClick={() => startNew(draft.fields)} className="text-uf-blue underline underline-offset-4">
+                Trial this cultivar again
+              </button>
+            )}
+            {isAdded && (
+              <button type="button" disabled={busy} onClick={deleteTrial} className="text-red-700 underline underline-offset-4 disabled:opacity-40">
+                {isPending ? 'Cancel new trial' : 'Delete this trial'}
+              </button>
+            )}
+            {!isPending && (
+              <Link href={trialHref(base)} target="_blank" className="text-uf-blue underline underline-offset-4">
+                View public page ↗
+              </Link>
+            )}
+          </div>
         </div>
 
         <div className="mt-6 grid gap-6 xl:grid-cols-[minmax(0,20rem)_minmax(0,1fr)]">
@@ -238,7 +365,7 @@ export default function CultivarEditor({ token, onSignOut }: { token: string; on
               <datalist id="supplier-options">{facets.suppliers.map((s) => <option key={s} value={s} />)}</datalist>
               <WasHint value={original.fields.supplier} current={draft.fields.supplier} onUse={() => setField('supplier', original.fields.supplier)} />
 
-              <Field id="f-year" label="Trial year" hint="optional" error={errors.year}>
+              <Field id="f-year" label="Trial year" hint={isAdded ? undefined : 'optional'} error={errors.year}>
                 <input
                   id="f-year" type="number" inputMode="numeric" min={1990} max={2100}
                   value={draft.fields.year ?? ''}
@@ -277,17 +404,47 @@ export default function CultivarEditor({ token, onSignOut }: { token: string; on
               Scores run from 1 (unacceptable) to 5 (excellent) in half steps. The round&rsquo;s
               average updates as you go. Adding or replacing photos comes with batch upload.
             </p>
+            {draft.evals.length === 0 && (
+              <p className="border border-dashed border-line p-4 text-sm text-muted">No rounds yet. Add the first one below.</p>
+            )}
             {draft.evals.map((e, i) => (
               <RoundCard
                 key={e.date}
                 c={base}
                 index={i}
                 round={e}
-                original={original.evals.find((o) => o.date === e.date)!}
+                original={isAdded ? undefined : original.evals.find((o) => o.date === e.date)}
                 errors={errors}
                 onChange={(patch) => setRound(e.date, patch)}
+                onRemove={() => removeRound(e.date)}
               />
             ))}
+            {removedSheetRounds.length > 0 && (
+              <p className="border-l-4 border-uf-orange pl-2 text-sm text-muted">
+                Removed from the spreadsheet&rsquo;s rounds:{' '}
+                {removedSheetRounds.map((r, i) => (
+                  <span key={r.date}>
+                    {i > 0 && ', '}
+                    {fmtDate(r.date)}{' '}
+                    <button type="button" onClick={() => addRound(r.date)} className="font-semibold text-uf-blue underline underline-offset-2">
+                      Put back
+                    </button>
+                  </span>
+                ))}
+              </p>
+            )}
+            <div className="flex flex-wrap items-end gap-3 border border-line bg-ground p-3">
+              <Field id="new-round-date" label="Add a round" hint="date of the evaluation" error={errors.newRound}>
+                <input
+                  id="new-round-date" type="date" value={newRoundDate}
+                  onChange={(e) => setNewRoundDate(e.target.value)}
+                  className={inputClass}
+                />
+              </Field>
+              <button type="button" onClick={() => addRound(newRoundDate)} className="bg-uf-blue px-4 py-2.5 text-sm font-semibold text-white">
+                Add round
+              </button>
+            </div>
           </Panel>
         </div>
 
@@ -297,17 +454,17 @@ export default function CultivarEditor({ token, onSignOut }: { token: string; on
             {status ? (
               <p role={status.kind === 'error' ? 'alert' : 'status'} className={status.kind === 'error' ? errorText : 'font-medium text-uf-blue'}>
                 {status.text}{' '}
-                {status.kind === 'ok' && (
-                  <Link href={`/trial-gardens/${base.id}/`} className="underline underline-offset-4">View it</Link>
-                )}
+                {status.link && <Link href={trialHref(base)} className="underline underline-offset-4">View it</Link>}
               </p>
             ) : unsaved ? (
               <p className="font-medium">You have unsaved changes.</p>
             ) : (
               <p className="text-muted">
-                {changedFromSheet
-                  ? `${changedFromSheet} value${changedFromSheet === 1 ? '' : 's'} differ from the spreadsheet.`
-                  : 'Matches the spreadsheet.'}
+                {isAdded
+                  ? 'Added in the admin page.'
+                  : changedFromSheet
+                    ? `${changedFromSheet} value${changedFromSheet === 1 ? '' : 's'} differ from the spreadsheet.`
+                    : 'Matches the spreadsheet.'}
               </p>
             )}
           </div>
@@ -329,10 +486,11 @@ export default function CultivarEditor({ token, onSignOut }: { token: string; on
             Discard changes
           </button>
           <button type="submit" disabled={!unsaved || busy} className="bg-uf-blue px-5 py-2.5 text-sm font-semibold text-white disabled:opacity-40">
-            {busy ? 'Saving…' : 'Save changes'}
+            {busy ? 'Saving…' : isPending ? 'Save new trial' : 'Save changes'}
           </button>
         </div>
       </form>
+      </AddedContext.Provider>
     </div>
   );
 }
@@ -348,7 +506,7 @@ function Panel({ title, children }: { title: string; children: React.ReactNode }
 
 // Shown under a field once it differs from the spreadsheet, with a one-click way back.
 function WasHint({ value, current, onUse }: { value: unknown; current: unknown; onUse: () => void }) {
-  if ((value ?? '') === (current ?? '')) return null;
+  if ((value ?? '') === (current ?? '') || useContext(AddedContext)) return null;
   return (
     <p className="-mt-2 border-l-4 border-uf-orange pl-2 text-xs text-muted">
       Spreadsheet: <span className="font-medium text-ink">{show(value)}</span>{' '}
@@ -390,12 +548,14 @@ function Choice({ legend, name, value, options, onChange, error }: {
   );
 }
 
-function RoundCard({ c, index, round, original, errors, onChange }: {
-  c: Cultivar; index: number; round: Evaluation; original: Evaluation; errors: Errors;
+function RoundCard({ c, index, round, original, errors, onChange, onRemove }: {
+  c: Cultivar; index: number; round: Evaluation; errors: Errors;
+  original: Evaluation | undefined;   // the spreadsheet's round; none for an added round
   onChange: (patch: Partial<Evaluation>) => void;
+  onRemove: () => void;
 }) {
   const img = c.images.find((i) => i.date === round.date && i.mirrored);
-  const scoresChanged = CATEGORIES.some((cat) => round[cat.key] !== original[cat.key]);
+  const scoresChanged = !original || CATEGORIES.some((cat) => round[cat.key] !== original[cat.key]);
   const avg = scoresChanged ? roundAverage(round) : round.avg;
   const id = (k: string) => `r-${round.date}-${k}`;
 
@@ -418,11 +578,18 @@ function RoundCard({ c, index, round, original, errors, onChange }: {
           <span className="text-xs text-muted">Average</span>
           <AvgBadge value={avg} />
         </div>
+        <button
+          type="button" onClick={onRemove}
+          aria-label={`Remove the ${fmtDate(round.date)} round`}
+          className="ml-1 text-xs font-semibold text-red-700 underline underline-offset-2"
+        >
+          Remove
+        </button>
       </header>
 
       <div className="grid gap-3 p-3 sm:grid-cols-2">
         {CATEGORIES.map((cat) => {
-          const changed = round[cat.key] !== original[cat.key];
+          const changed = !!original && round[cat.key] !== original[cat.key];
           return (
             <div key={cat.key} className={`flex flex-col gap-1 ${changed ? 'border-l-4 border-uf-orange pl-2' : ''}`}>
               <label htmlFor={id(cat.key)} className="text-sm font-medium" title={cat.blurb}>{cat.label}</label>
@@ -437,8 +604,8 @@ function RoundCard({ c, index, round, original, errors, onChange }: {
               </select>
               {changed && (
                 <p className="text-xs text-muted">
-                  Spreadsheet: {original[cat.key]?.toFixed(1) ?? 'not scored'}{' '}
-                  <button type="button" onClick={() => onChange({ [cat.key]: original[cat.key] })} className="font-semibold text-uf-blue underline underline-offset-2">
+                  Spreadsheet: {original![cat.key]?.toFixed(1) ?? 'not scored'}{' '}
+                  <button type="button" onClick={() => onChange({ [cat.key]: original![cat.key] })} className="font-semibold text-uf-blue underline underline-offset-2">
                     Use this
                   </button>
                 </p>

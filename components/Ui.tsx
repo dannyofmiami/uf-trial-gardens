@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CATEGORIES, type Cultivar } from '@/lib/data';
+import { CATEGORIES, trialHref, type Cultivar } from '@/lib/data';
 import TrialPhoto from '@/components/TrialPhoto';
 
 export function scoreTone(v: number | null) {
@@ -76,7 +76,7 @@ export function AvgBadge({ value, size = 'md' }: { value: number | null; size?: 
 export function CultivarCard({ c }: { c: Cultivar }) {
   return (
     <Link
-      href={`/trial-gardens/${c.id}/`}
+      href={trialHref(c)}
       className="group flex flex-col border border-line bg-white transition hover:border-uf-orange"
     >
       <div className="relative">

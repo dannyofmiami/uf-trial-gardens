@@ -85,11 +85,18 @@ test.describe('trial gardens database', () => {
     expect(lantanas).toBeGreaterThan(0);
   });
 
-  test('flower color, light exposure and planting type filters', async ({ page }) => {
+  test('year, flower color, light exposure and planting type filters', async ({ page }) => {
     test.slow(); // many steps, each re-rendering the full list
     await page.goto('/trial-gardens/');
     const cards = page.locator(`main a[href*="/trial-gardens/"]`);
     const pick = (label: string, option: string) => page.getByLabel(label).selectOption({ label: option });
+
+    // one option per trial year, newest first
+    const years = [...new Set(data.cultivars.map((c) => c.year).filter((y) => y != null))].sort((a, b) => b! - a!);
+    await expect(page.getByLabel('Year').locator('option')).toHaveText(['All years', ...years.map(String)]);
+    await pick('Year', String(years[0]));
+    await expect(cards).toHaveCount(data.cultivars.filter((c) => c.year === years[0]).length);
+    await pick('Year', 'All years');
 
     await pick('Flower color', 'Pink');
     await expect(cards).toHaveCount(data.cultivars.filter((c) => c.flowerColor === 'Pink').length);
