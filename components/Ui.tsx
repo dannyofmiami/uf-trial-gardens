@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CATEGORIES, type Cultivar } from '@/lib/data';
+import { CATEGORIES, trialHref, type Cultivar } from '@/lib/data';
 import TrialPhoto from '@/components/TrialPhoto';
 
 export function scoreTone(v: number | null) {
@@ -14,7 +14,7 @@ export function PageHeader({ eyebrow, title, lede }: { eyebrow?: string; title: 
     <div className="border-b-4 border-uf-orange bg-white">
       <div className="mx-auto w-full max-w-6xl px-5 py-12">
         {eyebrow && (
-          <p className="font-mono text-[11px] font-semibold uppercase tracking-[.16em] text-uf-blue">
+          <p className="font-sans text-[0.8125rem] font-semibold uppercase tracking-[.05em] text-uf-blue">
             {eyebrow}
           </p>
         )}
@@ -47,7 +47,7 @@ export function ScoreBar({ value, code, label }: { value: number | null; code: s
     <div>
       <div className="flex items-baseline justify-between gap-3">
         <span className="text-sm">
-          <span className="font-mono text-[11px] font-semibold tracking-[.1em] text-muted">{code}</span>
+          <span className="font-mono text-[0.8125rem] font-semibold tracking-[.05em] text-muted">{code}</span>
           <span className="ml-2 text-ifas-gray">{label}</span>
         </span>
         <span className="font-mono text-sm font-semibold tabular-nums">
@@ -76,7 +76,7 @@ export function AvgBadge({ value, size = 'md' }: { value: number | null; size?: 
 export function CultivarCard({ c }: { c: Cultivar }) {
   return (
     <Link
-      href={`/trial-gardens/${c.id}/`}
+      href={trialHref(c)}
       className="group flex flex-col border border-line bg-white transition hover:border-uf-orange"
     >
       <div className="relative">
@@ -91,7 +91,7 @@ export function CultivarCard({ c }: { c: Cultivar }) {
           {c.genus}
           {c.flowerColor ? ` · ${c.flowerColor}` : ''}
         </p>
-        <p className="mt-2 font-mono text-[11px] uppercase tracking-[.06em] text-muted">
+        <p className="mt-2 font-sans text-[0.8125rem] uppercase tracking-[.05em] text-muted">
           {c.supplier ?? 'Supplier not recorded'}
         </p>
       </div>
@@ -105,7 +105,7 @@ export function CategoryLegend() {
       {CATEGORIES.map((cat) => (
         <div key={cat.key} className="bg-white p-5">
           <dt>
-            <span className="font-mono text-[11px] font-semibold tracking-[.14em] text-uf-blue">
+            <span className="font-sans text-[0.8125rem] font-semibold tracking-[.05em] text-uf-blue">
               {cat.code}
             </span>
             <span className="mt-2 block font-display text-base font-bold">{cat.label}</span>

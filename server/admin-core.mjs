@@ -9,7 +9,10 @@
 //   PUT  /banner   (Bearer token)  -> saved banner JSON
 //   GET  /session  (Bearer token)  -> {ok: true, expiresAt}
 //   GET  /cultivars                -> all cultivar edits {cultivars: {id: edit}}
-//   PUT  /cultivars/:id  (Bearer)  -> saved edit; an empty edit restores the sheet's values
+//   PUT  /cultivars/:id  (Bearer)  -> saved edit: corrections, added or removed rounds, or a
+//                                     whole trial added in /admin (see lib/cultivar-validate.mjs).
+//                                     An empty edit restores the sheet's values, or deletes an
+//                                     added trial.
 
 import { createHash, createHmac, randomBytes, timingSafeEqual } from 'node:crypto';
 import { validateBanner } from '../lib/banner-validate.mjs';

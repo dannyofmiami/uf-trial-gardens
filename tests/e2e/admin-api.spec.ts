@@ -140,6 +140,37 @@ test.describe('admin API', () => {
     expect(edits().cultivars).toEqual({});
   });
 
+  test('rounds can be removed and added', async () => {
+    const { call, login } = setup();
+    const token = await login();
+    for (const bad of [{ removedRounds: ['soon'] }, { removedRounds: Array(61).fill('2026-01-13') }]) {
+      expect((await call('PUT', '/cultivars/akila', bad, token)).status, JSON.stringify(bad)).toBe(400);
+    }
+    const r = await call('PUT', '/cultivars/akila', {
+      removedRounds: ['2026-02-18', '2026-01-13', '2026-01-13'],
+      rounds: { '2027-01-12': { heatResistance: 4, uniformity: null, flowerPower: null, foliage: 4, notes: null } },
+    }, token);
+    expect(r.status).toBe(200);
+    expect(r.data.removedRounds).toEqual(['2026-01-13', '2026-02-18']);
+    expect(r.data.rounds['2027-01-12']).toEqual({ heatResistance: 4, uniformity: null, flowerPower: null, foliage: 4, notes: null });
+  });
+
+  test('a trial added in the admin needs its name, genus, year and planting, and an empty edit deletes it', async () => {
+    const { call, login, edits } = setup();
+    const token = await login();
+    const id = 't-0f8c2a52-3b1e-4c8e-9a51-6d2f3c1b7e90';
+    const fields = { name: 'Akila Sunshine Yellow', genus: 'Osteospermum', supplier: null, flowerColor: 'Yellow', year: 2027, status: 'In Ground', lightExposure: 'Partial Shade' };
+    for (const missing of ['name', 'genus', 'year', 'status']) {
+      const { [missing]: _, ...rest } = fields as Record<string, unknown>;
+      expect((await call('PUT', `/cultivars/${id}`, { added: true, fields: rest, rounds: {} }, token)).status, missing).toBe(400);
+    }
+    const r = await call('PUT', `/cultivars/${id}`, { added: true, fields, rounds: {} }, token);
+    expect(r.status).toBe(200);
+    expect(r.data).toMatchObject({ added: true, fields });
+    expect((await call('PUT', `/cultivars/${id}`, { fields: {}, rounds: {} }, token)).status).toBe(200);
+    expect(edits().cultivars).toEqual({});
+  });
+
   test('a cultivar edit keeps only known fields', async () => {
     const { call, login } = setup();
     const token = await login();

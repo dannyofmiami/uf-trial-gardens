@@ -52,7 +52,7 @@ export default function Partners() {
                     loading="lazy"
                   />
                 ) : (
-                  <span className="font-mono text-xs uppercase tracking-[.12em] text-muted">{s.name}</span>
+                  <span className="font-sans text-[0.8125rem] uppercase tracking-[.05em] text-muted">{s.name}</span>
                 )}
               </div>
               <div className="mt-4 flex items-baseline justify-between gap-3">

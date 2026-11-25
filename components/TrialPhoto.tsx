@@ -48,7 +48,7 @@ export default function TrialPhoto(props: {
         <div className="flex flex-col items-center gap-2 px-3">
           <span className={variant === 'round' ? 'text-xl' : 'text-4xl'}>🌱</span>
           {variant !== 'round' && (
-            <span className="font-mono text-[10px] uppercase tracking-[.12em] text-muted">
+            <span className="font-sans text-[0.8125rem] uppercase tracking-[.05em] text-muted">
               {urls.length === 0 ? 'photo unavail' : 'Photo playing hide-and-seek'}
             </span>
           )}

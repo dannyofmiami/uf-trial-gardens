@@ -32,6 +32,7 @@ export type Cultivar = {
   evaluationCount: number;
   latestScores: Scores;
   awards?: string[];
+  addedInAdmin?: boolean;      // a trial created in /admin (see lib/cultivar-edits.ts)
 };
 
 export type Evaluation = Scores & {
@@ -99,6 +100,10 @@ export const cultivars = data.cultivars;
 export const evaluations = data.evaluations;
 
 export const getCultivar = (id: string) => cultivars.find((c) => c.id === id);
+
+// Spreadsheet trials have a page each; trials added in /admin share one page that reads the id.
+export const trialHref = (c: Pick<Cultivar, 'id' | 'addedInAdmin'>) =>
+  c.addedInAdmin ? `/trial-gardens/view/?id=${encodeURIComponent(c.id)}` : `/trial-gardens/${c.id}/`;
 
 // most recent mirrored photo, for the hero/card image. oldest image first
 export const latestMirroredImage = (c: Cultivar): TrialImage | undefined =>
