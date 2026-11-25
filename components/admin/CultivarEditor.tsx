@@ -292,7 +292,7 @@ export default function CultivarEditor({ token, onSignOut }: { token: string; on
                     </span>
                   </span>
                   {(pending?.id === c.id || edits.cultivars[c.id]) && (
-                    <span className={`shrink-0 px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-[.08em] text-white ${
+                    <span className={`shrink-0 px-1.5 py-0.5 font-sans text-[0.75rem] uppercase tracking-[.05em] text-white ${
                       c.addedInAdmin ? 'bg-uf-orange' : 'bg-uf-blue'
                     }`}>
                       {pending?.id === c.id ? 'Unsaved' : c.addedInAdmin ? 'Added' : 'Edited'}
@@ -568,10 +568,10 @@ function RoundCard({ c, index, round, original, errors, onChange, onRemove }: {
             <img src={withBase(img.thumb ?? img.local)} alt={`${c.name}, ${fmtDate(round.date)}`} className="h-14 w-14 object-cover" />
           </a>
         ) : (
-          <span className="grid h-14 w-14 place-items-center bg-white text-center text-[10px] leading-tight text-muted">No photo</span>
+          <span className="grid h-14 w-14 place-items-center bg-white text-center text-[0.75rem] leading-tight text-muted">No photo</span>
         )}
         <div className="min-w-0 flex-1">
-          <p className="font-mono text-[11px] uppercase tracking-[.12em] text-muted">Round {index + 1}</p>
+          <p className="font-sans text-[0.8125rem] uppercase tracking-[.05em] text-muted">Round {index + 1}</p>
           <p className="font-semibold">{fmtDate(round.date)}</p>
         </div>
         <div className="flex items-center gap-2">

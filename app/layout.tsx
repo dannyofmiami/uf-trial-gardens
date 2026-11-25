@@ -84,14 +84,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               {/* [ifas] unit name under the logo */}
               <Link href="/" className="min-w-0">
                 <span className="block font-display text-xl font-bold leading-tight">{UNIT}</span>
-                <span className="block font-mono text-[11px] uppercase tracking-[.12em] text-white/75">
+                <span className="block font-sans text-[0.8125rem] uppercase tracking-[.05em] text-white/90">
                   {CENTER} · Homestead, FL
                 </span>
               </Link>
 
               <a
                 href="https://ufl.edu"
-                className="ml-auto hidden font-mono text-[11px] uppercase tracking-[.12em] text-white/75 hover:text-white sm:block"
+                className="ml-auto hidden font-sans text-[0.8125rem] uppercase tracking-[.05em] text-white/90 hover:text-white sm:block"
               >
                 University of Florida
               </a>

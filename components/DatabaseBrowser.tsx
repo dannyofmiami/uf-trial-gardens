@@ -79,7 +79,7 @@ export default function DatabaseBrowser({ cultivars: built, ...facets }: Props) 
         : 'No cultivars match those filters.';
 
   const field = 'border border-line bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-uf-blue';
-  const legend = 'font-mono text-[10px] font-semibold uppercase tracking-[.12em] text-muted';
+  const legend = 'font-sans text-[0.8125rem] font-semibold uppercase tracking-[.05em] text-muted';
 
   return (
     <div>
@@ -149,7 +149,7 @@ export default function DatabaseBrowser({ cultivars: built, ...facets }: Props) 
             <button
               key={v} type="button" onClick={() => setMinAvg(v)}
               aria-pressed={minAvg === v}
-              className={`border px-3 py-1 font-mono text-xs transition ${
+              className={`border px-3 py-1 font-sans text-[0.8125rem] transition ${
                 minAvg === v ? 'border-uf-blue bg-uf-blue text-white' : 'border-line hover:border-uf-orange'
               }`}
             >
@@ -165,7 +165,7 @@ export default function DatabaseBrowser({ cultivars: built, ...facets }: Props) 
       </div>
 
       <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
-        <p className="font-mono text-xs uppercase tracking-[.08em] text-muted" role="status" aria-live="polite">
+        <p className="font-sans text-[0.8125rem] uppercase tracking-[.05em] text-muted" role="status" aria-live="polite">
           Showing <strong className="text-ink">{results.length}</strong> of {cultivars.length} cultivars
         </p>
         <label className="flex items-center gap-2">

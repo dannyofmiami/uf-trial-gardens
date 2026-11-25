@@ -47,7 +47,7 @@ h1, h2, h3, h4 {
   table.stack thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
   table.stack tr { display: block; border-bottom: 2px solid var(--color-line); }
   table.stack td, table.stack th { display: block; width: 100%; text-align: left; }
-  table.stack td::before { content: attr(data-label) " "; font-weight: 600; color: var(--color-ifas-gray); }
+  table.stack td::before { content: attr(data-label) " "; font-family: var(--font-sans); font-weight: 600; color: var(--color-ifas-gray); }
 }
 
 .table-scroll { overflow-x: auto; }

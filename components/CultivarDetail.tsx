@@ -48,7 +48,7 @@ export default function CultivarDetail({
         <div className="mx-auto w-full max-w-6xl px-5 py-8">
           <Link
             href="/trial-gardens/"
-            className="font-mono text-[11px] uppercase tracking-[.12em] text-uf-blue underline-offset-4 hover:underline"
+            className="font-sans text-[0.8125rem] uppercase tracking-[.05em] text-uf-blue underline-offset-4 hover:underline"
           >
             ← Trial gardens database
           </Link>
@@ -80,7 +80,7 @@ export default function CultivarDetail({
                 <TrialPhoto c={c} image={heroImage} className="aspect-[4/3] w-full" />
               )}
               {selectedDate && (
-                <p className="mt-2 font-mono text-[11px] uppercase tracking-[.1em] text-muted">
+                <p className="mt-2 font-sans text-[0.8125rem] uppercase tracking-[.05em] text-muted">
                   {selectedDate === latestMirroredImage(c)?.date ? 'Latest photo' : 'Showing'}
                   {' · '}
                   {fmtDate(selectedDate)}
@@ -89,7 +89,7 @@ export default function CultivarDetail({
             </div>
 
             <div>
-              <p className="font-mono text-[11px] uppercase tracking-[.12em] text-muted">
+              <p className="font-sans text-[0.8125rem] uppercase tracking-[.05em] text-muted">
                 UF/IFAS TREC · {meta.site} · USDA Zone {meta.hardinessZone}
               </p>
               <h1 className="mt-2 font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl">
@@ -100,7 +100,7 @@ export default function CultivarDetail({
               <div className="mt-5 flex flex-wrap items-center gap-3">
                 <AvgBadge value={c.currentAvg} size="lg" />
                 <div>
-                  <p className="font-mono text-[11px] uppercase tracking-[.12em] text-muted">
+                  <p className="font-sans text-[0.8125rem] uppercase tracking-[.05em] text-muted">
                     Current AVG
                   </p>
                   <p className="text-sm text-muted">
@@ -115,7 +115,7 @@ export default function CultivarDetail({
                 {[c.year ? `Trial ${c.year}` : null, c.status, c.lightExposure, c.flowerColor, c.supplier ? `Supplier: ${c.supplier}` : null]
                   .filter(Boolean)
                   .map((chip) => (
-                    <span key={chip as string} className="border border-line px-3 py-1 font-mono text-[11px] text-muted">
+                    <span key={chip as string} className="border border-line px-3 py-1 font-sans text-[0.8125rem] text-muted">
                       {chip}
                     </span>
                   ))}
@@ -172,14 +172,14 @@ export default function CultivarDetail({
             </caption>
             <thead className="bg-ground text-left">
               <tr>
-                <th scope="col" className="px-4 py-3 font-mono text-[11px] uppercase tracking-[.1em]">Round</th>
-                <th scope="col" className="px-4 py-3 font-mono text-[11px] uppercase tracking-[.1em]">Photo</th>
+                <th scope="col" className="px-4 py-3 font-sans text-[0.8125rem] uppercase tracking-[.05em]">Round</th>
+                <th scope="col" className="px-4 py-3 font-sans text-[0.8125rem] uppercase tracking-[.05em]">Photo</th>
                 {CATEGORIES.map((cat) => (
-                  <th key={cat.key} scope="col" className="px-4 py-3 font-mono text-[11px] uppercase tracking-[.1em]" title={cat.label}>
+                  <th key={cat.key} scope="col" className="px-4 py-3 font-sans text-[0.8125rem] uppercase tracking-[.05em]" title={cat.label}>
                     {cat.code}
                   </th>
                 ))}
-                <th scope="col" className="px-4 py-3 font-mono text-[11px] uppercase tracking-[.1em]">AVG</th>
+                <th scope="col" className="px-4 py-3 font-sans text-[0.8125rem] uppercase tracking-[.05em]">AVG</th>
               </tr>
             </thead>
             <tbody>
@@ -272,7 +272,7 @@ function PhotoFacts({ date, e }: { date: string; e: Evaluation | undefined }) {
         />
       ) : (
         <div className="bg-black p-3">
-          <p className="font-mono text-[10px] uppercase tracking-[.12em] text-white/60">Scores this round</p>
+          <p className="font-sans text-[0.8125rem] uppercase tracking-[.05em] text-white">Scores this round</p>
           <p className="mt-2 text-sm text-white/70">Not yet scored this round</p>
         </div>
       )}
@@ -287,7 +287,7 @@ function FactPanel({ title, footnote, rows }: {
 }) {
   return (
     <div className="flex flex-col bg-black p-3 [@media(max-height:500px)]:px-3 [@media(max-height:500px)]:py-1.5">
-      <p className="font-mono text-[10px] uppercase tracking-[.12em] text-white/60">{title}</p>
+      <p className="font-sans text-[0.8125rem] uppercase tracking-[.05em] text-white">{title}</p>
       <dl className="mt-1.5 space-y-0.5 [@media(max-height:500px)]:mt-0.5 [@media(max-height:500px)]:space-y-0">
         {rows.filter((r) => r.value !== null).map((r) => (
           <div key={r.label} className="flex items-baseline justify-between gap-3" title={r.title}>
@@ -296,7 +296,7 @@ function FactPanel({ title, footnote, rows }: {
           </div>
         ))}
       </dl>
-      {footnote && <p className="mt-auto pt-2 text-[10px] text-white/50 [@media(max-height:500px)]:pt-0.5">{footnote}</p>}
+      {footnote && <p className="mt-auto pt-2 text-[0.75rem] text-white/80 [@media(max-height:500px)]:pt-0.5">{footnote}</p>}
     </div>
   );
 }

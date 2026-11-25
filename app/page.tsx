@@ -11,7 +11,7 @@ export default function Home() {
       <SiteBanner />
       <div className="border-b-4 border-uf-orange bg-white">
         <div className="mx-auto w-full max-w-6xl px-5 py-16">
-          <p className="font-mono text-[11px] font-semibold uppercase tracking-[.16em] text-uf-blue">
+          <p className="font-sans text-[0.8125rem] font-semibold uppercase tracking-[.05em] text-uf-blue">
             Florida&rsquo;s tropical trial site
           </p>
           <h1 className="mt-4 max-w-4xl font-display text-4xl font-extrabold leading-[1.04] tracking-tight sm:text-6xl">
@@ -49,7 +49,7 @@ export default function Home() {
       </div>
 
       <Section className="pt-8">
-        <p className="font-mono text-[11px] font-semibold uppercase tracking-[.16em] text-uf-blue">
+        <p className="font-sans text-[0.8125rem] font-semibold uppercase tracking-[.05em] text-uf-blue">
           How we score
         </p>
         <h2 className="mt-3 font-display text-3xl font-extrabold tracking-tight">
@@ -77,7 +77,7 @@ export default function Home() {
       <Section className="pt-0">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="font-mono text-[11px] font-semibold uppercase tracking-[.16em] text-uf-blue">
+            <p className="font-sans text-[0.8125rem] font-semibold uppercase tracking-[.05em] text-uf-blue">
               From the trial beds
             </p>
             <h2 className="mt-3 font-display text-3xl font-extrabold tracking-tight">

@@ -55,7 +55,7 @@ export default function PhotoLightbox({
           className="max-h-full max-w-full min-h-0 object-contain"
         />
         {caption && (
-          <p className="shrink-0 font-mono text-[11px] uppercase tracking-[.12em] text-white/80">{caption}</p>
+          <p className="shrink-0 font-sans text-[0.8125rem] uppercase tracking-[.05em] text-white/90">{caption}</p>
         )}
         {children && <div className="shrink-0">{children}</div>}
       </div>

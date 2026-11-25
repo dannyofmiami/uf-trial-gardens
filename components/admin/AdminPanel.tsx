@@ -213,7 +213,7 @@ function BannerEditor({ token, onSignOut }: { token: string; onSignOut: (message
       </form>
 
       <div>
-        <p className="font-mono text-[11px] font-semibold uppercase tracking-[.16em] text-muted">Preview</p>
+        <p className="font-sans text-[0.8125rem] font-semibold uppercase tracking-[.05em] text-muted">Preview</p>
         <p className="mt-1 text-sm text-muted">
           {live
             ? 'Visible on the home page today.'
